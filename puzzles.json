@@ -298,5 +298,35 @@
       "They became their country's first Black president in 1994.",
       "They won the Nobel Peace Prize for their work toward reconciliation."
     ]
+  },
+  {
+    "date": "2026-01-22",
+    "theme": "Pop Culture",
+    "answer": "Star Wars",
+    "clues": [
+      "George Lucas created this space opera franchise.",
+      "It features a mystical power called 'The Force'.",
+      "The first film was released in 1977."
+    ]
+  },
+  {
+    "date": "2026-01-23",
+    "theme": "Food & Fun",
+    "answer": "Pizza",
+    "clues": [
+      "Originating in Naples, Italy, this dish is popular worldwide.",
+      "It typically consists of a round, flattened dough topped with tomatoes, cheese, and various other ingredients.",
+      "Margherita is a classic variety with basil, mozzarella, and tomato."
+    ]
+  },
+  {
+    "date": "2026-01-24",
+    "theme": "Sports & Games",
+    "answer": "Basketball",
+    "clues": [
+      "Invented by James Naismith in 1891.",
+      "Players aim to shoot a ball through a hoop elevated 10 feet high.",
+      "It is played by two teams of five players on a rectangular court."
+    ]
   }
 ]
