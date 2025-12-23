@@ -1,0 +1,62 @@
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+.clue {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.button {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+.input {
+  padding: 8px;
+  margin: 5px;
+  width: 200px;
+}
+
+.guess-form {
+  margin-top: 15px;
+}
+
+.guesses {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.message {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.fun-fact {
+  margin-top: 20px;
+  background: #fff3cd;
+  padding: 10px;
+  border-radius: 8px;
+}
