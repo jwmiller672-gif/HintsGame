@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/GuessItGame/static/js/main.03da16f3.js",
+    "main.css": "/GuessItGame/static/css/main.65e75afc.css",
+    "main.js": "/GuessItGame/static/js/main.ec4617ee.js",
     "index.html": "/GuessItGame/index.html",
-    "main.03da16f3.js.map": "/GuessItGame/static/js/main.03da16f3.js.map"
+    "main.65e75afc.css.map": "/GuessItGame/static/css/main.65e75afc.css.map",
+    "main.ec4617ee.js.map": "/GuessItGame/static/js/main.ec4617ee.js.map"
   },
   "entrypoints": [
-    "static/js/main.03da16f3.js"
+    "static/css/main.65e75afc.css",
+    "static/js/main.ec4617ee.js"
   ]
 }
