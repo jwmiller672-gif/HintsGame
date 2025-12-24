@@ -268,7 +268,11 @@ export default function App() {
 
       {!gameStarted ? (
         <button
-          onClick={() => setGameStarted(true)}
+          onClick={() => {
+            setGameStarted(true);
+            setJustRevealed(0);
+            setCluesRevealed(1);
+          }}
           style={{ ...styles.button, fontSize: 20, padding: "15px 40px", marginTop: 20 }}
         >
           Play
