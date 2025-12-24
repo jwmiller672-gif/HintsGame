@@ -272,15 +272,15 @@ export default function App() {
 
   return (
     <div style={styles.container}>
-      <h1 style={{ ...styles.title, color: "#1976d2" }}>Guess It</h1>
-      <h2 style={{ ...styles.subtitle, color: "black" }}>
+      <h1 style={{ ...styles.title, color: "#1565c0" }}>Guess It</h1>
+      <h2 style={{ ...styles.subtitle, color: "#2c3e50" }}>
         The Daily Guessing Game
       </h2>
-      <p style={{ ...styles.instructions, color: "black" }}>
+      <p style={{ ...styles.instructions, color: "#546e7a" }}>
         Reveal the clues and guess the correct answer. If you guess incorrectly,
         the next clue is revealed.
       </p>
-      <h3 style={{ ...styles.todayTheme, color: "black" }}>
+      <h3 style={{ ...styles.todayTheme, color: "#2c3e50" }}>
         Today's Theme: {puzzle.category}
       </h3>
 
@@ -305,8 +305,8 @@ export default function App() {
                 key={i}
                 style={{
                   ...styles.clue,
-                  backgroundColor: i < cluesRevealed ? "#c8e6c9" : "#eee",
-                  color: "black",
+                  backgroundColor: i < cluesRevealed ? "#d4edda" : "#f8f9fa",
+                  color: "#2c3e50",
                   userSelect: "none",
                   display: "flex",
                   alignItems: "center",
@@ -403,9 +403,12 @@ const styles = {
   container: {
     maxWidth: 500,
     margin: "40px auto",
-    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
     textAlign: "center",
-    padding: "0 15px",
+    padding: "40px 30px",
+    backgroundColor: "#ffffff",
+    borderRadius: 16,
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.07), 0 10px 20px rgba(0, 0, 0, 0.05)",
   },
   title: {
     fontSize: 36,
@@ -431,14 +434,15 @@ const styles = {
     textAlign: "left",
   },
   clue: {
-    padding: "10px 15px",
-    borderRadius: 8,
+    padding: "12px 16px",
+    borderRadius: 10,
     marginBottom: 10,
     fontSize: 16,
-    boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+    boxShadow: "0 2px 4px rgba(0,0,0,0.08)",
+    fontWeight: 500,
   },
   button: {
-    backgroundColor: "#1976d2",
+    backgroundColor: "#1565c0",
     border: "none",
     color: "white",
     padding: "10px 20px",
