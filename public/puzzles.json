@@ -328,5 +328,75 @@
       "Players aim to shoot a ball through a hoop elevated 10 feet high.",
       "It is played by two teams of five players on a rectangular court."
     ]
+  },
+  {
+    "date": "2026-01-25",
+    "theme": "Wildcard",
+    "answer": "Fibonacci Sequence",
+    "clues": [
+      "This mathematical pattern appears frequently in nature, from flower petals to spiral galaxies.",
+      "Each number in the sequence is the sum of the two preceding numbers.",
+      "It begins: 0, 1, 1, 2, 3, 5, 8, 13..."
+    ]
+  },
+  {
+    "date": "2026-01-26",
+    "theme": "Around the World",
+    "answer": "Machu Picchu",
+    "clues": [
+      "This site was built in the 15th century but abandoned during the Spanish conquest.",
+      "American historian Hiram Bingham brought it to international attention in 1911.",
+      "It's an ancient Incan citadel perched high in the Andes Mountains of Peru."
+    ]
+  },
+  {
+    "date": "2026-01-27",
+    "theme": "Genius Ideas",
+    "answer": "Pasteurization",
+    "clues": [
+      "This process was developed to prevent wine and beer from spoiling during storage.",
+      "Louis Pasteur invented it in the 1860s.",
+      "It involves heating liquids to kill harmful bacteria without boiling."
+    ]
+  },
+  {
+    "date": "2026-01-28",
+    "theme": "Famous People",
+    "answer": "Marie Curie",
+    "clues": [
+      "This scientist was the first person to win Nobel Prizes in two different sciences.",
+      "They discovered the elements polonium and radium.",
+      "They pioneered research on radioactivity, a term they coined."
+    ]
+  },
+  {
+    "date": "2026-01-29",
+    "theme": "Pop Culture",
+    "answer": "Minecraft",
+    "clues": [
+      "Swedish programmer Markus Persson created this game and released it in 2011.",
+      "Players build and explore blocky, procedurally-generated 3D worlds.",
+      "It's the best-selling video game of all time."
+    ]
+  },
+  {
+    "date": "2026-01-30",
+    "theme": "Food & Fun",
+    "answer": "Ramen",
+    "clues": [
+      "This dish was introduced to Japan from China in the late 19th century.",
+      "Instant versions were invented by Momofuku Ando in 1958.",
+      "It consists of wheat noodles served in a savory broth with various toppings."
+    ]
+  },
+  {
+    "date": "2026-01-31",
+    "theme": "Sports & Games",
+    "answer": "Chess",
+    "clues": [
+      "This strategy game originated in India around the 6th century.",
+      "Each player begins with 16 pieces including a king, queen, rooks, knights, bishops, and pawns.",
+      "The objective is to checkmate your opponent's king."
+    ]
   }
 ]
