@@ -124,7 +124,9 @@ export default function App() {
 
   function calculateStars() {
     if (!won) return 0;
-    return 3 - (guessCount - 1);
+    // Award stars based on how many clues were revealed when they won
+    // 1 clue = 3 stars, 2 clues = 2 stars, 3 clues = 1 star
+    return 4 - cluesRevealed;
   }
 
   function submitGuess(e) {
