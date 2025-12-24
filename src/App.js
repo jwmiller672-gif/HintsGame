@@ -60,6 +60,7 @@ export default function App() {
   const [streak, setStreak] = useState(0);
   const [showIncorrectPrompt, setShowIncorrectPrompt] = useState(false);
   const [justRevealed, setJustRevealed] = useState(-1);
+  const [gameStarted, setGameStarted] = useState(false);
 
   useEffect(() => {
     fetch(process.env.PUBLIC_URL + "/puzzles.json")
@@ -265,100 +266,111 @@ export default function App() {
         Today's Theme: {puzzle.category}
       </h3>
 
-      <div style={styles.cluesContainer}>
-        {Array.from({ length: puzzle.clues.length }).map((_, i) => (
-          <div
-            key={i}
-            style={{
-              ...styles.clue,
-              backgroundColor: i < cluesRevealed ? "#c8e6c9" : "#eee",
-              color: "black",
-              userSelect: "none",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <strong style={{ minWidth: 60 }}>Clue {i + 1}:</strong>
-            <span
-              style={{
-                marginLeft: 10,
-                minHeight: "1em",
-                opacity: i < cluesRevealed ? 1 : 0,
-                transition:
-                  i === justRevealed ? "opacity 1.5s ease-in" : "none",
-              }}
-            >
-              {i < cluesRevealed ? puzzle.clues[i] : ""}
-            </span>
-          </div>
-        ))}
-      </div>
-
-      {!gameOver && cluesRevealed < puzzle.clues.length && (
-        <button onClick={revealClue} style={styles.button}>
-          Reveal Next Clue
-        </button>
-      )}
-
-      {!gameOver && (
-        <form onSubmit={submitGuess} style={styles.form}>
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder={canGuess ? "Your guess" : ""}
-            style={{
-              ...styles.input,
-              backgroundColor: canGuess ? "white" : "#eee",
-              color: canGuess ? "black" : "#888",
-              cursor: canGuess ? "text" : "not-allowed",
-            }}
-            autoFocus
-            autoComplete="off"
-            disabled={!canGuess}
-          />
-          <button
-            type="submit"
-            style={{ ...styles.button, marginLeft: 10 }}
-            disabled={!canGuess}
-          >
-            Guess
-          </button>
-        </form>
-      )}
-
-      {showIncorrectPrompt && !gameOver && (
-        <p style={{ color: "red", fontWeight: "bold", marginTop: 10 }}></p>
-      )}
-
-      <div style={styles.guesses}>
-        <strong>Guesses:</strong>{" "}
-        {guesses.length > 0 ? guesses.join(", ") : "None yet"}
-      </div>
-
-      {message && (
-        <p style={{ ...styles.message, color: won ? "#2e7d32" : "#c62828" }}>
-          {message}
-        </p>
-      )}
-      {gameOver && !won && (
-        <div style={{ ...styles.funFact, color: "#c62828" }}>
-          Better luck next time! Try again tomorrow.
-        </div>
-      )}
-
-      <div style={{ marginTop: 15, fontWeight: "600", fontSize: 18 }}>
-        🔥 Streak: {streak} day{streak !== 1 ? "s" : ""}
-      </div>
-
-      {showShare && (
+      {!gameStarted ? (
         <button
-          onClick={shareResults}
-          style={{ ...styles.button, marginTop: 15 }}
-          aria-label="Share your results"
+          onClick={() => setGameStarted(true)}
+          style={{ ...styles.button, fontSize: 20, padding: "15px 40px", marginTop: 20 }}
         >
-          Share Results! 🎉
+          Play
         </button>
+      ) : (
+        <>
+          <div style={styles.cluesContainer}>
+            {Array.from({ length: puzzle.clues.length }).map((_, i) => (
+              <div
+                key={i}
+                style={{
+                  ...styles.clue,
+                  backgroundColor: i < cluesRevealed ? "#c8e6c9" : "#eee",
+                  color: "black",
+                  userSelect: "none",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <strong style={{ minWidth: 60 }}>Clue {i + 1}:</strong>
+                <span
+                  style={{
+                    marginLeft: 10,
+                    minHeight: "1em",
+                    opacity: i < cluesRevealed ? 1 : 0,
+                    transition:
+                      i === justRevealed ? "opacity 1.5s ease-in" : "none",
+                  }}
+                >
+                  {i < cluesRevealed ? puzzle.clues[i] : ""}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {!gameOver && cluesRevealed < puzzle.clues.length && (
+            <button onClick={revealClue} style={styles.button}>
+              Reveal Next Clue
+            </button>
+          )}
+
+          {!gameOver && (
+            <form onSubmit={submitGuess} style={styles.form}>
+              <input
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                placeholder={canGuess ? "Your guess" : ""}
+                style={{
+                  ...styles.input,
+                  backgroundColor: canGuess ? "white" : "#eee",
+                  color: canGuess ? "black" : "#888",
+                  cursor: canGuess ? "text" : "not-allowed",
+                }}
+                autoFocus
+                autoComplete="off"
+                disabled={!canGuess}
+              />
+              <button
+                type="submit"
+                style={{ ...styles.button, marginLeft: 10 }}
+                disabled={!canGuess}
+              >
+                Guess
+              </button>
+            </form>
+          )}
+
+          {showIncorrectPrompt && !gameOver && (
+            <p style={{ color: "red", fontWeight: "bold", marginTop: 10 }}></p>
+          )}
+
+          <div style={styles.guesses}>
+            <strong>Guesses:</strong>{" "}
+            {guesses.length > 0 ? guesses.join(", ") : "None yet"}
+          </div>
+
+          {message && (
+            <p style={{ ...styles.message, color: won ? "#2e7d32" : "#c62828" }}>
+              {message}
+            </p>
+          )}
+          {gameOver && !won && (
+            <div style={{ ...styles.funFact, color: "#c62828" }}>
+              Better luck next time! Try again tomorrow.
+            </div>
+          )}
+
+          <div style={{ marginTop: 15, fontWeight: "600", fontSize: 18 }}>
+            🔥 Streak: {streak} day{streak !== 1 ? "s" : ""}
+          </div>
+
+          {showShare && (
+            <button
+              onClick={shareResults}
+              style={{ ...styles.button, marginTop: 15 }}
+              aria-label="Share your results"
+            >
+              Share Results! 🎉
+            </button>
+          )}
+        </>
       )}
     </div>
   );
