@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/GuessItGame/static/js/main.6261aee7.js",
+    "main.js": "/GuessItGame/static/js/main.0fd26b3b.js",
     "index.html": "/GuessItGame/index.html",
-    "main.6261aee7.js.map": "/GuessItGame/static/js/main.6261aee7.js.map"
+    "main.0fd26b3b.js.map": "/GuessItGame/static/js/main.0fd26b3b.js.map"
   },
   "entrypoints": [
-    "static/js/main.6261aee7.js"
+    "static/js/main.0fd26b3b.js"
   ]
 }
