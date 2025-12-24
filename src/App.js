@@ -241,7 +241,7 @@ export default function App() {
     const starsEmpty = "☆".repeat(3 - stars);
     const starString = starsFilled + starsEmpty;
 
-    const shareText = `Guess It: The Daily Guessing Game\n${starString}\nI got ${stars}/3 stars! Can you beat me?`;
+    const shareText = `Guess It: The Daily Guessing Game\n${starString}\nI got ${stars}/3 stars! Can you beat me?\n${window.location.href}`;
 
     if (navigator.share && isMobile()) {
       navigator
@@ -252,9 +252,7 @@ export default function App() {
         })
         .catch(() => { });
     } else if (isMobile()) {
-      const smsBody = encodeURIComponent(
-        shareText + "\n" + window.location.href
-      );
+      const smsBody = encodeURIComponent(shareText);
       window.location.href = `sms:?&body=${smsBody}`;
     } else {
       navigator.clipboard.writeText(shareText).then(() => {
