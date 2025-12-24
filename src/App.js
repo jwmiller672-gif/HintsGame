@@ -17,6 +17,11 @@ function formatDateToYMD_Local(date) {
   return `${y}-${m}-${d}`;
 }
 
+function normalizeAnswer(str) {
+  // Remove common articles from the beginning of the string
+  return str.trim().toLowerCase().replace(/^(the|a|an)\s+/i, '');
+}
+
 function levenshteinDistance(a, b) {
   const matrix = [];
   for (let i = 0; i <= b.length; i++) {
@@ -150,10 +155,14 @@ export default function App() {
     const answerLower = answer.toLowerCase();
     const guessLower = guess.toLowerCase();
 
+    // Normalize both for comparison (removes articles like "the", "a", "an")
+    const normalizedGuess = normalizeAnswer(guess);
+    const normalizedAnswer = normalizeAnswer(answer);
+
     const newGuesses = [...guesses, guess];
 
-    // Exact match
-    if (guessLower === answerLower) {
+    // Exact match (with normalization to ignore articles)
+    if (guessLower === answerLower || normalizedGuess === normalizedAnswer) {
       setGuesses(newGuesses);
       setMessage(
         `🎉 Correct! You got it in ${newGuesses.length} guess${newGuesses.length > 1 ? "es" : ""
@@ -169,9 +178,9 @@ export default function App() {
       return;
     }
 
-    // Partial/close match
-    const guessWords = guessLower.split(" ");
-    const answerWords = answerLower.split(" ");
+    // Partial/close match (use normalized versions)
+    const guessWords = normalizedGuess.split(" ");
+    const answerWords = normalizedAnswer.split(" ");
     const isClose = guessWords.every((word) =>
       answerWords.some((ansWord) => levenshteinDistance(word, ansWord) <= 1)
     );
