@@ -61,6 +61,7 @@ export default function App() {
   const [showIncorrectPrompt, setShowIncorrectPrompt] = useState(false);
   const [justRevealed, setJustRevealed] = useState(-1);
   const [gameStarted, setGameStarted] = useState(false);
+  const [animatingClue, setAnimatingClue] = useState(-1);
 
   useEffect(() => {
     fetch(process.env.PUBLIC_URL + "/puzzles.json")
@@ -101,6 +102,16 @@ export default function App() {
       setStreak(0);
     }
   }, []);
+
+  useEffect(() => {
+    if (justRevealed >= 0) {
+      // Start with opacity 0, then animate to 1
+      setAnimatingClue(-1);
+      setTimeout(() => {
+        setAnimatingClue(justRevealed);
+      }, 50);
+    }
+  }, [justRevealed]);
 
   if (!puzzle)
     return (
@@ -269,9 +280,11 @@ export default function App() {
       {!gameStarted ? (
         <button
           onClick={() => {
-            setGameStarted(true);
             setJustRevealed(0);
-            setCluesRevealed(1);
+            setTimeout(() => {
+              setGameStarted(true);
+              setCluesRevealed(1);
+            }, 0);
           }}
           style={{ ...styles.button, fontSize: 20, padding: "15px 40px", marginTop: 20 }}
         >
@@ -297,9 +310,8 @@ export default function App() {
                   style={{
                     marginLeft: 10,
                     minHeight: "1em",
-                    opacity: i < cluesRevealed ? 1 : 0,
-                    transition:
-                      i === justRevealed ? "opacity 1.5s ease-in" : "none",
+                    opacity: i < cluesRevealed && i <= animatingClue ? 1 : 0,
+                    transition: "opacity 1.5s ease-in",
                   }}
                 >
                   {i < cluesRevealed ? puzzle.clues[i] : ""}
