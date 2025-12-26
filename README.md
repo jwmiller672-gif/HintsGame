@@ -2,19 +2,22 @@
 
 This guide is designed to help you manage the `GuessItGame` application without needing deep technical knowledge.
 
-## 🚀 How to Redeploy the Application
+## 🚀 Deployment (Private Repository)
 
-If you have made changes to the code and want to update the live website, follow these steps:
+Since you want to keep your code private, we recommend using **Netlify** or **Vercel** instead of GitHub Pages.
 
-1.  Open your **Terminal**. On the top bar click "Terminal" -> "New Terminal".
-2.  Make sure you are in the project folder (`guessit`).
-3.  Run the following command and press **Enter**:
+### Setting up Netlify (Recommended)
 
-```bash
-npm run deploy
-```
+1.  **Push your code to GitHub** (Make sure your repo is set to **Private** in GitHub settings).
+2.  Sign up/Log in to [Netlify](https://www.netlify.com/).
+3.  Click **Add new site** > **Import an existing project**.
+4.  Choose **GitHub** and select your `GuessItGame` (or `TRIO`) repository.
+5.  Netlify will automatically detect the settings:
+    *   **Build Command:** `npm run build`
+    *   **Publish directory:** `build`
+6.  Click **Deploy site**.
 
-This script will automatically build the latest version of your app and publish it to the website. It may take a minute or two. When it's done, you should see a "Published" message.
+Now, every time you send me a change and you "push" it to GitHub, Netlify will automatically update your game!
 
 ## 💾 How to Save Your Changes (Commit & Push)
 
