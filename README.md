@@ -6,7 +6,7 @@ This guide is designed to help you manage the `GuessItGame` application without 
 
 If you have made changes to the code and want to update the live website, follow these steps:
 
-1.  Open your **Terminal**.
+1.  Open your **Terminal**. On the top bar click "Terminal" -> "New Terminal".
 2.  Make sure you are in the project folder (`guessit`).
 3.  Run the following command and press **Enter**:
 

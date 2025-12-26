@@ -19,7 +19,13 @@ function formatDateToYMD_Local(date) {
 
 function normalizeAnswer(str) {
   // Remove common articles from the beginning of the string
-  return str.trim().toLowerCase().replace(/^(the|a|an)\s+/i, '');
+  // Also normalize accents/diacritics (e.g., "Pokémon" becomes "Pokemon")
+  return str
+    .trim()
+    .toLowerCase()
+    .normalize('NFD') // Decompose accented characters into base + combining marks
+    .replace(/[\u0300-\u036f]/g, '') // Remove combining diacritical marks
+    .replace(/^(the|a|an)\s+/i, '');
 }
 
 function levenshteinDistance(a, b) {
