@@ -259,21 +259,23 @@ export default function App() {
     const starsEmpty = "☆".repeat(3 - stars);
     const starString = starsFilled + starsEmpty;
 
-    const shareText = `TRIA: The Daily Trivia Game\n${starString}\nI got ${stars}/3 stars! Can you beat me?\n${window.location.href}`;
+    const baseShareText = `TRIO: The Daily Trivia Game\n${starString}\nI got ${stars}/3 stars! Can you beat me?`;
+    const shareUrl = window.location.href;
+    const fullShareText = `${baseShareText}\n${shareUrl}`;
 
     if (navigator.share && isMobile()) {
       navigator
         .share({
-          title: "TRIA",
-          text: shareText,
-          url: window.location.href,
+          title: "TRIO",
+          text: baseShareText,
+          url: shareUrl,
         })
         .catch(() => { });
     } else if (isMobile()) {
-      const smsBody = encodeURIComponent(shareText);
+      const smsBody = encodeURIComponent(fullShareText);
       window.location.href = `sms:?&body=${smsBody}`;
     } else {
-      navigator.clipboard.writeText(shareText).then(() => {
+      navigator.clipboard.writeText(fullShareText).then(() => {
         alert("Share text copied to clipboard! You can now paste it anywhere.");
       });
     }
@@ -281,7 +283,7 @@ export default function App() {
 
   return (
     <div style={styles.container}>
-      <h1 style={{ ...styles.title, color: "#1565c0" }}>TRIA</h1>
+      <h1 style={{ ...styles.title, color: "#1565c0" }}>TRIO</h1>
       <h2 style={{ ...styles.subtitle, color: "#2c3e50" }}>
         The Daily Trivia Game
       </h2>
