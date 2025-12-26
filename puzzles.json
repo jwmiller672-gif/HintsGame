@@ -1,8 +1,7 @@
 [
   {
     "date": "2025-12-23",
-    "weekday": "Tuesday",
-    "category": "Genius Ideas",
+    "theme": "Genius Ideas",
     "answer": "Velcro",
     "clues": [
       "A Swiss engineer developed this after examining plant seeds under a microscope in 1941.",
@@ -12,8 +11,7 @@
   },
   {
     "date": "2025-12-24",
-    "weekday": "Wednesday",
-    "category": "Famous People",
+    "theme": "Famous People",
     "answer": "Cleopatra",
     "clues": [
       "This ruler's intelligence and linguistic abilities were as renowned as their appearance.",
@@ -23,8 +21,7 @@
   },
   {
     "date": "2025-12-25",
-    "weekday": "Thursday",
-    "category": "Pop Culture",
+    "theme": "Pop Culture",
     "answer": "Pokemon",
     "clues": [
       "Satoshi Tajiri created this franchise inspired by his childhood hobby of collecting insects.",
@@ -34,8 +31,7 @@
   },
   {
     "date": "2025-12-26",
-    "weekday": "Friday",
-    "category": "Food & Fun",
+    "theme": "Food & Fun",
     "answer": "Fondue",
     "clues": [
       "This dish originated as a way for Alpine villagers to use hardened cheese and stale bread during winter.",
@@ -45,8 +41,7 @@
   },
   {
     "date": "2025-12-27",
-    "weekday": "Saturday",
-    "category": "Sports & Games",
+    "theme": "Sports & Games",
     "answer": "Fencing",
     "clues": [
       "Competitors in this sport are called fencers and matches are called bouts.",
@@ -56,8 +51,7 @@
   },
   {
     "date": "2025-12-28",
-    "weekday": "Sunday",
-    "category": "Wildcard",
+    "theme": "Wildcard",
     "answer": "Hieroglyphics",
     "clues": [
       "Jean-François Champollion spent years decoding this using a trilingual stone.",
@@ -67,8 +61,7 @@
   },
   {
     "date": "2025-12-29",
-    "weekday": "Monday",
-    "category": "Around the World",
+    "theme": "Around the World",
     "answer": "Petra",
     "clues": [
       "This site remained unknown to the Western world until a Swiss explorer rediscovered it in 1812.",
@@ -78,8 +71,7 @@
   },
   {
     "date": "2025-12-30",
-    "weekday": "Tuesday",
-    "category": "Genius Ideas",
+    "theme": "Genius Ideas",
     "answer": "Penicillin",
     "clues": [
       "This discovery came from observing mold contamination that created bacteria-free zones in laboratory cultures.",
@@ -89,8 +81,7 @@
   },
   {
     "date": "2025-12-31",
-    "weekday": "Wednesday",
-    "category": "Famous People",
+    "theme": "Famous People",
     "answer": "Galileo",
     "clues": [
       "This mathematician was placed under house arrest for the final years of their life.",
@@ -100,8 +91,7 @@
   },
   {
     "date": "2026-01-01",
-    "weekday": "Thursday",
-    "category": "Pop Culture",
+    "theme": "Pop Culture",
     "answer": "The Beatles",
     "clues": [
       "This group's original drummer was replaced before they achieved international fame.",
@@ -111,8 +101,7 @@
   },
   {
     "date": "2026-01-02",
-    "weekday": "Friday",
-    "category": "Food & Fun",
+    "theme": "Food & Fun",
     "answer": "Paella",
     "clues": [
       "Traditionally, field workers in Valencia cooked this over wood fires during lunch breaks.",
@@ -122,8 +111,7 @@
   },
   {
     "date": "2026-01-03",
-    "weekday": "Saturday",
-    "category": "Sports & Games",
+    "theme": "Sports & Games",
     "answer": "Badminton",
     "clues": [
       "British officers stationed in India brought an early version of this game back to England in the 1870s.",
@@ -133,8 +121,7 @@
   },
   {
     "date": "2026-01-04",
-    "weekday": "Sunday",
-    "category": "Wildcard",
+    "theme": "Wildcard",
     "answer": "Aurora Borealis",
     "clues": [
       "Galileo coined the current scientific name for this phenomenon in 1619.",
@@ -144,8 +131,7 @@
   },
   {
     "date": "2026-01-05",
-    "weekday": "Monday",
-    "category": "Around the World",
+    "theme": "Around the World",
     "answer": "Angkor Wat",
     "clues": [
       "This structure took approximately 30 years to construct during the reign of King Suryavarman II.",
@@ -155,8 +141,7 @@
   },
   {
     "date": "2026-01-06",
-    "weekday": "Tuesday",
-    "category": "Genius Ideas",
+    "theme": "Genius Ideas",
     "answer": "Braille",
     "clues": [
       "This system was adapted from a military code designed for nighttime battlefield communication.",
@@ -166,8 +151,7 @@
   },
   {
     "date": "2026-01-07",
-    "weekday": "Wednesday",
-    "category": "Famous People",
+    "theme": "Famous People",
     "answer": "Frida Kahlo",
     "clues": [
       "This artist contracted polio at age six, affecting one leg permanently.",
@@ -177,8 +161,7 @@
   },
   {
     "date": "2026-01-08",
-    "weekday": "Thursday",
-    "category": "Pop Culture",
+    "theme": "Pop Culture",
     "answer": "Friends",
     "clues": [
       "The working title for this show during development was 'Insomnia Cafe.'",
@@ -188,8 +171,7 @@
   },
   {
     "date": "2026-01-09",
-    "weekday": "Friday",
-    "category": "Food & Fun",
+    "theme": "Food & Fun",
     "answer": "Sushi",
     "clues": [
       "This dish evolved from an ancient method of preserving fish by fermenting it with rice.",
@@ -199,8 +181,7 @@
   },
   {
     "date": "2026-01-10",
-    "weekday": "Saturday",
-    "category": "Sports & Games",
+    "theme": "Sports & Games",
     "answer": "Curling",
     "clues": [
       "This sport originated in medieval Scotland on frozen ponds and lochs.",
@@ -210,8 +191,7 @@
   },
   {
     "date": "2026-01-11",
-    "weekday": "Sunday",
-    "category": "Wildcard",
+    "theme": "Wildcard",
     "answer": "Stonehenge",
     "clues": [
       "Some of the stones in this monument were transported over 150 miles from Wales.",
@@ -221,8 +201,7 @@
   },
   {
     "date": "2026-01-12",
-    "weekday": "Monday",
-    "category": "Around the World",
+    "theme": "Around the World",
     "answer": "Galapagos",
     "clues": [
       "The Bishop of Panama coined the Spanish name for this place, meaning 'saddle,' referring to tortoise shells.",
@@ -232,8 +211,7 @@
   },
   {
     "date": "2026-01-13",
-    "weekday": "Tuesday",
-    "category": "Genius Ideas",
+    "theme": "Genius Ideas",
     "answer": "Transistor",
     "clues": [
       "This device replaced vacuum tubes and made electronics exponentially smaller and more efficient.",
@@ -243,8 +221,7 @@
   },
   {
     "date": "2026-01-14",
-    "weekday": "Wednesday",
-    "category": "Famous People",
+    "theme": "Famous People",
     "answer": "Rosa Parks",
     "clues": [
       "This activist had been trained in civil disobedience techniques at the Highlander Folk School.",
@@ -254,8 +231,7 @@
   },
   {
     "date": "2026-01-15",
-    "weekday": "Thursday",
-    "category": "Pop Culture",
+    "theme": "Pop Culture",
     "answer": "Harry Potter",
     "clues": [
       "J.K. Rowling conceived the main character during a delayed train journey from Manchester to London.",
@@ -265,8 +241,7 @@
   },
   {
     "date": "2026-01-16",
-    "weekday": "Friday",
-    "category": "Food & Fun",
+    "theme": "Food & Fun",
     "answer": "Croissant",
     "clues": [
       "Legend claims this pastry was created to celebrate a military victory over Ottoman forces.",
@@ -276,8 +251,7 @@
   },
   {
     "date": "2026-01-17",
-    "weekday": "Saturday",
-    "category": "Sports & Games",
+    "theme": "Sports & Games",
     "answer": "Polo",
     "clues": [
       "Persian manuscripts from 600 BCE contain the earliest known references to this sport.",
@@ -287,8 +261,7 @@
   },
   {
     "date": "2026-01-18",
-    "weekday": "Sunday",
-    "category": "Wildcard",
+    "theme": "Wildcard",
     "answer": "Rorschach",
     "clues": [
       "Hermann analyzed how patients perceived standardized ambiguous stimuli to understand their personality structure.",
@@ -298,8 +271,7 @@
   },
   {
     "date": "2026-01-19",
-    "weekday": "Monday",
-    "category": "Around the World",
+    "theme": "Around the World",
     "answer": "Santorini",
     "clues": [
       "Some archaeologists believe this location inspired Plato's legend of Atlantis.",
@@ -309,8 +281,7 @@
   },
   {
     "date": "2026-01-20",
-    "weekday": "Tuesday",
-    "category": "Genius Ideas",
+    "theme": "Genius Ideas",
     "answer": "GPS",
     "clues": [
       "This system became fully operational in 1995 after decades of development and satellite launches.",
@@ -320,123 +291,12 @@
   },
   {
     "date": "2026-01-21",
-    "weekday": "Wednesday",
-    "category": "Famous People",
+    "theme": "Famous People",
     "answer": "Nelson Mandela",
     "clues": [
       "This leader was imprisoned on Robben Island alongside other political activists.",
       "They became their country's first Black president in 1994.",
       "They won the Nobel Peace Prize for their work toward reconciliation."
-    ]
-  },
-  {
-    "date": "2026-01-22",
-    "weekday": "Thursday",
-    "category": "Pop Culture",
-    "answer": "Star Wars",
-    "clues": [
-      "George Lucas created this space opera franchise.",
-      "It features a mystical power called 'The Force'.",
-      "The first film was released in 1977."
-    ]
-  },
-  {
-    "date": "2026-01-23",
-    "weekday": "Friday",
-    "category": "Food & Fun",
-    "answer": "Pizza",
-    "clues": [
-      "Originating in Naples, Italy, this dish is popular worldwide.",
-      "It typically consists of a round, flattened dough topped with tomatoes, cheese, and various other ingredients.",
-      "Margherita is a classic variety with basil, mozzarella, and tomato."
-    ]
-  },
-  {
-    "date": "2026-01-24",
-    "weekday": "Saturday",
-    "category": "Sports & Games",
-    "answer": "Basketball",
-    "clues": [
-      "Invented by James Naismith in 1891.",
-      "Players aim to shoot a ball through a hoop elevated 10 feet high.",
-      "It is played by two teams of five players on a rectangular court."
-    ]
-  },
-  {
-    "date": "2026-01-25",
-    "weekday": "Sunday",
-    "category": "Wildcard",
-    "answer": "Fibonacci Sequence",
-    "clues": [
-      "This mathematical pattern appears frequently in nature, from flower petals to spiral galaxies.",
-      "Each number in the sequence is the sum of the two preceding numbers.",
-      "It begins: 0, 1, 1, 2, 3, 5, 8, 13..."
-    ]
-  },
-  {
-    "date": "2026-01-26",
-    "weekday": "Monday",
-    "category": "Around the World",
-    "answer": "Machu Picchu",
-    "clues": [
-      "This site was built in the 15th century but abandoned during the Spanish conquest.",
-      "American historian Hiram Bingham brought it to international attention in 1911.",
-      "It's an ancient Incan citadel perched high in the Andes Mountains of Peru."
-    ]
-  },
-  {
-    "date": "2026-01-27",
-    "weekday": "Tuesday",
-    "category": "Genius Ideas",
-    "answer": "Pasteurization",
-    "clues": [
-      "This process was developed to prevent wine and beer from spoiling during storage.",
-      "Louis Pasteur invented it in the 1860s.",
-      "It involves heating liquids to kill harmful bacteria without boiling."
-    ]
-  },
-  {
-    "date": "2026-01-28",
-    "weekday": "Wednesday",
-    "category": "Famous People",
-    "answer": "Marie Curie",
-    "clues": [
-      "This scientist was the first person to win Nobel Prizes in two different sciences.",
-      "They discovered the elements polonium and radium.",
-      "They pioneered research on radioactivity, a term they coined."
-    ]
-  },
-  {
-    "date": "2026-01-29",
-    "weekday": "Thursday",
-    "category": "Pop Culture",
-    "answer": "Minecraft",
-    "clues": [
-      "Swedish programmer Markus Persson created this game and released it in 2011.",
-      "Players build and explore blocky, procedurally-generated 3D worlds.",
-      "It's the best-selling video game of all time."
-    ]
-  },
-  {
-    "date": "2026-01-30",
-    "weekday": "Friday",
-    "category": "Food & Fun",
-    "answer": "Ramen",
-    "clues": [
-      "This dish was introduced to Japan from China in the late 19th century.",
-      "Instant versions were invented by Momofuku Ando in 1958.",
-      "It consists of wheat noodles served in a savory broth with various toppings."
-    ]
-  },
-  {
-    "date": "2026-01-31",
-    "weekday": "Saturday",
-    "category": "Sports & Games",
-    "answer": "Chess",
-    "clues": [
-      "This strategy game originated in India around the 6th century.",
-      "Each player begins with 16 pieces including a king, queen, rooks, knights, bishops, and pawns.",
-      "The objective is to checkmate your opponent's king."
     ]
   }
 ]
