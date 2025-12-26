@@ -79,10 +79,7 @@ export default function App() {
       .then((res) => res.json())
       .then((data) => {
         const todayStr = formatDateToYMD_Local(new Date());
-        const todayPuzzle = data.find(
-          (p) =>
-            p.date === todayStr && p.category === WEEKDAY_CATEGORIES[p.weekday]
-        );
+        const todayPuzzle = data.find((p) => p.date === todayStr);
         if (todayPuzzle) {
           setPuzzle(todayPuzzle);
         } else {
@@ -256,12 +253,12 @@ export default function App() {
     const starsEmpty = "☆".repeat(3 - stars);
     const starString = starsFilled + starsEmpty;
 
-    const shareText = `Guess It: The Daily Guessing Game\n${starString}\nI got ${stars}/3 stars! Can you beat me?\n${window.location.href}`;
+    const shareText = `TRIA: The Daily Trivia Game\n${starString}\nI got ${stars}/3 stars! Can you beat me?\n${window.location.href}`;
 
     if (navigator.share && isMobile()) {
       navigator
         .share({
-          title: "Guess It",
+          title: "TRIA",
           text: shareText,
           url: window.location.href,
         })
@@ -278,16 +275,16 @@ export default function App() {
 
   return (
     <div style={styles.container}>
-      <h1 style={{ ...styles.title, color: "#1565c0" }}>Guess It</h1>
+      <h1 style={{ ...styles.title, color: "#1565c0" }}>TRIA</h1>
       <h2 style={{ ...styles.subtitle, color: "#2c3e50" }}>
-        The Daily Guessing Game
+        The Daily Trivia Game
       </h2>
       <p style={{ ...styles.instructions, color: "#546e7a" }}>
         Reveal the clues and guess the correct answer. If you guess incorrectly,
         the next clue is revealed.
       </p>
       <h3 style={{ ...styles.todayTheme, color: "#2c3e50" }}>
-        Today's Theme: {puzzle.category}
+        Today's Theme: {puzzle.theme}
       </h3>
 
       {!gameStarted ? (
