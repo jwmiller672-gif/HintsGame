@@ -75,8 +75,13 @@ export default function App() {
   const [animatingClue, setAnimatingClue] = useState(-1);
 
   useEffect(() => {
-    fetch(process.env.PUBLIC_URL + "/puzzles.json")
-      .then((res) => res.json())
+    fetch(process.env.PUBLIC_URL + "/puzzles.json?t=" + new Date().getTime())
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
       .then((data) => {
         const todayStr = formatDateToYMD_Local(new Date());
         const todayPuzzle = data.find((p) => p.date === todayStr);
@@ -86,8 +91,9 @@ export default function App() {
           setMessage("No puzzle found for today. Please check back tomorrow!");
         }
       })
-      .catch(() => {
-        setMessage("Failed to load puzzles.");
+      .catch((err) => {
+        console.error("Load error:", err);
+        setMessage(`Failed to load puzzles: ${err.message}`);
       });
 
     const lastWinDate = localStorage.getItem("lastWinDate");
