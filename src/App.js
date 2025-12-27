@@ -73,6 +73,7 @@ export default function App() {
   const [justRevealed, setJustRevealed] = useState(-1);
   const [gameStarted, setGameStarted] = useState(false);
   const [animatingClue, setAnimatingClue] = useState(-1);
+  const [puzzleNumber, setPuzzleNumber] = useState(0);
 
   useEffect(() => {
     fetch(process.env.PUBLIC_URL + "/puzzles.json?t=" + new Date().getTime())
@@ -84,9 +85,10 @@ export default function App() {
       })
       .then((data) => {
         const todayStr = formatDateToYMD_Local(new Date());
-        const todayPuzzle = data.find((p) => p.date === todayStr);
-        if (todayPuzzle) {
-          setPuzzle(todayPuzzle);
+        const todayIndex = data.findIndex((p) => p.date === todayStr);
+        if (todayIndex !== -1) {
+          setPuzzle(data[todayIndex]);
+          setPuzzleNumber(todayIndex + 1);
         } else {
           setMessage("No puzzle found for today. Please check back tomorrow!");
         }
@@ -259,7 +261,19 @@ export default function App() {
     const starsEmpty = "☆".repeat(3 - stars);
     const starString = starsFilled + starsEmpty;
 
-    const baseShareText = `TRIO: The Daily Trivia Game\n${starString}\nI got ${stars}/3 stars! Can you beat me?`;
+    let resultMessage = "";
+
+    if (won) {
+      if (stars === 3) {
+        resultMessage = "I got a TRIO 🥳";
+      } else {
+        resultMessage = `I got it in ${cluesRevealed} clues! Can you do better?`;
+      }
+    } else {
+      resultMessage = "Stumped me today! Can you get it?";
+    }
+
+    const baseShareText = `TRIO Trivia #${puzzleNumber}\n${starString}\n${resultMessage}`;
     const shareUrl = window.location.href;
     const fullShareText = `${baseShareText}\n${shareUrl}`;
 
