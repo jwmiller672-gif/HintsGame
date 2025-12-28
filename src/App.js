@@ -265,7 +265,7 @@ export default function App() {
 
     if (won) {
       if (stars === 3) {
-        resultMessage = "I got a TRIO 🥳";
+        resultMessage = "I got a TRIO 🥳! You try!";
       } else {
         resultMessage = `I got it in ${cluesRevealed} clues! Can you do better?`;
       }
