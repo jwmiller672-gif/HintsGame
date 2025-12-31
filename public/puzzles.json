@@ -3,7 +3,7 @@
     "date": "2025-12-23",
     "theme": "Genius Ideas",
     "answer": "Velcro",
-    "clues": [
+    "hints": [
       "This invention was patented in 1955 after years of rejected applications.",
       "It consists of two strips with hooks and loops that bond when pressed together.",
       "Its name comes from combining the French words for velvet and hook."
@@ -13,7 +13,7 @@
     "date": "2025-12-24",
     "theme": "Famous People",
     "answer": "Cleopatra",
-    "clues": [
+    "hints": [
       "This ruler's intelligence and linguistic abilities were as renowned as their appearance.",
       "They were the last active pharaoh of ancient Egypt.",
       "Their romantic relationships with Julius Caesar and Mark Antony are legendary."
@@ -23,7 +23,7 @@
     "date": "2025-12-25",
     "theme": "Pop Culture",
     "answer": "Pokémon",
-    "clues": [
+    "hints": [
       "This franchise was created by Satoshi Tajiri, inspired by his childhood hobby of collecting insects.",
       "Its slogan encourages you to catch them all.",
       "Pikachu is its most recognizable character."
@@ -33,7 +33,7 @@
     "date": "2025-12-26",
     "theme": "Food & Fun",
     "answer": "Fondue",
-    "clues": [
+    "hints": [
       "This dish originated as a way for Alpine villagers to use hardened cheese and stale bread during winter.",
       "The Swiss version typically features melted cheese or chocolate.",
       "Long forks are traditionally used to prevent double-dipping."
@@ -43,7 +43,7 @@
     "date": "2025-12-27",
     "theme": "Sports & Games",
     "answer": "Fencing",
-    "clues": [
+    "hints": [
       "This sport uses electronic scoring systems to detect valid touches during bouts.",
       "Competitors wear protective masks and specialized weapons.",
       "The three weapon types are foil, épée, and sabre."
@@ -53,8 +53,8 @@
     "date": "2025-12-28",
     "theme": "Wildcard",
     "answer": "Hieroglyphics",
-    "clues": [
-      "This writing system was deciphered by Jean-François Champollion using a trilingual stone.",
+    "hints": [
+      "This writing system was deciphered by Jean-François Champollion.",
       "The Rosetta Stone was crucial to understanding it.",
       "It was used extensively in ancient Egyptian tombs and temples."
     ]
@@ -63,7 +63,7 @@
     "date": "2025-12-29",
     "theme": "Around the World",
     "answer": "Petra",
-    "clues": [
+    "hints": [
       "This place features elaborate facades carved directly into sandstone cliff faces.",
       "It was the capital of an ancient Nabataean kingdom.",
       "Its Treasury building appeared in Indiana Jones and the Last Crusade."
@@ -73,7 +73,7 @@
     "date": "2025-12-30",
     "theme": "Genius Ideas",
     "answer": "Penicillin",
-    "clues": [
+    "hints": [
       "This discovery came from observing contamination in laboratory cultures that created bacteria-free zones.",
       "Fleming noticed it killed bacteria in 1928.",
       "It became the world's first widely used antibiotic."
@@ -83,7 +83,7 @@
     "date": "2025-12-31",
     "theme": "Famous People",
     "answer": "Galileo",
-    "clues": [
+    "hints": [
       "This person was placed under house arrest for the final years of their life.",
       "They made significant improvements to the telescope.",
       "They discovered four moons orbiting Jupiter."
@@ -93,7 +93,7 @@
     "date": "2026-01-01",
     "theme": "Pop Culture",
     "answer": "The Beatles",
-    "clues": [
+    "hints": [
       "This band recorded most of their albums at EMI Studios on Abbey Road.",
       "They triggered a cultural phenomenon called mania named after them.",
       "Their members were John, Paul, George, and Ringo."
@@ -103,7 +103,7 @@
     "date": "2026-01-02",
     "theme": "Food & Fun",
     "answer": "Paella",
-    "clues": [
+    "hints": [
       "This dish was traditionally cooked by field workers in Valencia over wood fires during lunch breaks.",
       "The Valencian version traditionally includes rabbit and beans.",
       "Saffron gives it its distinctive golden color."
@@ -113,7 +113,7 @@
     "date": "2026-01-03",
     "theme": "Sports & Games",
     "answer": "Badminton",
-    "clues": [
+    "hints": [
       "This sport was brought to England by British officers stationed in India during the 1870s.",
       "Players hit a feathered object over a net.",
       "The shuttlecock can travel over 200 miles per hour during smashes."
@@ -123,7 +123,7 @@
     "date": "2026-01-04",
     "theme": "Wildcard",
     "answer": "Aurora Borealis",
-    "clues": [
+    "hints": [
       "This phenomenon was given its scientific name by Galileo in 1619.",
       "It appears as dancing ribbons of light in polar regions.",
       "It's also known as the Northern Lights."
@@ -133,7 +133,7 @@
     "date": "2026-01-05",
     "theme": "Around the World",
     "answer": "Angkor Wat",
-    "clues": [
+    "hints": [
       "This structure was originally built as a Hindu temple before becoming Buddhist.",
       "It's the largest religious monument in the world by area.",
       "It appears on Cambodia's national flag."
@@ -143,7 +143,7 @@
     "date": "2026-01-06",
     "theme": "Genius Ideas",
     "answer": "Braille",
-    "clues": [
+    "hints": [
       "This system uses raised patterns that can be read through touch alone.",
       "It was invented by a blind French teenager.",
       "Each character consists of up to six raised dots arranged in a grid."
@@ -153,7 +153,7 @@
     "date": "2026-01-07",
     "theme": "Famous People",
     "answer": "Frida Kahlo",
-    "clues": [
+    "hints": [
       "This artist contracted polio at age six, affecting one leg permanently.",
       "A bus accident in their youth profoundly affected their life and art.",
       "Their distinctive unibrow became an iconic part of their image."
@@ -163,7 +163,7 @@
     "date": "2026-01-08",
     "theme": "Pop Culture",
     "answer": "Friends",
-    "clues": [
+    "hints": [
       "This show was filmed in front of a live studio audience at Warner Bros. Studios in Burbank.",
       "It follows six people living in Manhattan apartments.",
       "Central Perk is their favorite coffee shop hangout."
@@ -173,7 +173,7 @@
     "date": "2026-01-09",
     "theme": "Food & Fun",
     "answer": "Sushi",
-    "clues": [
+    "hints": [
       "This dish evolved from an ancient method of preserving fish by fermenting it with rice.",
       "Itamae refers to the specialized chefs who prepare it.",
       "Common varieties include nigiri, maki, and sashimi."
@@ -183,7 +183,7 @@
     "date": "2026-01-10",
     "theme": "Sports & Games",
     "answer": "Curling",
-    "clues": [
+    "hints": [
       "This sport originated in medieval Scotland on frozen ponds and lochs.",
       "Team members sweep the ice to control speed and direction.",
       "It's sometimes called chess on ice."
@@ -193,7 +193,7 @@
     "date": "2026-01-11",
     "theme": "Wildcard",
     "answer": "Stonehenge",
-    "clues": [
+    "hints": [
       "This monument consists of massive standing stones arranged in concentric circles.",
       "Its purpose remains debated among archaeologists.",
       "It's located on Salisbury Plain in England."
@@ -203,7 +203,7 @@
     "date": "2026-01-12",
     "theme": "Around the World",
     "answer": "Galapagos",
-    "clues": [
+    "hints": [
       "This place consists of volcanic islands formed by a hotspot beneath the ocean floor.",
       "It's home to species found nowhere else, including giant tortoises.",
       "Charles Darwin visited these Ecuadorian islands in 1835."
@@ -213,7 +213,7 @@
     "date": "2026-01-13",
     "theme": "Genius Ideas",
     "answer": "Transistor",
-    "clues": [
+    "hints": [
       "This device allows electronic signals to be amplified or switched rapidly.",
       "Its invention at Bell Labs earned three scientists the Nobel Prize.",
       "Modern computer chips contain billions of these miniaturized components."
@@ -223,7 +223,7 @@
     "date": "2026-01-14",
     "theme": "Famous People",
     "answer": "Rosa Parks",
-    "clues": [
+    "hints": [
       "This person had been trained in civil disobedience techniques at the Highlander Folk School.",
       "They refused to give up their seat on a Montgomery bus in 1955.",
       "Their courage helped catalyze the American civil rights movement."
@@ -233,7 +233,7 @@
     "date": "2026-01-15",
     "theme": "Pop Culture",
     "answer": "Harry Potter",
-    "clues": [
+    "hints": [
       "This series features a hidden magical world accessible through specific locations.",
       "The protagonist attends a school for witchcraft and wizardry.",
       "The main antagonist is a dark wizard named Voldemort."
@@ -243,7 +243,7 @@
     "date": "2026-01-16",
     "theme": "Food & Fun",
     "answer": "Croissant",
-    "clues": [
+    "hints": [
       "This pastry's crescent shape allegedly celebrates a military victory over Ottoman forces.",
       "Its dough is folded repeatedly with butter to create flaky layers.",
       "It's an iconic French bakery item."
@@ -253,7 +253,7 @@
     "date": "2026-01-17",
     "theme": "Sports & Games",
     "answer": "Polo",
-    "clues": [
+    "hints": [
       "This sport appears in Persian manuscripts from 600 BCE, making it one of the world's oldest.",
       "Players use mallets while mounted on animals.",
       "It's often called the sport of kings."
@@ -263,7 +263,7 @@
     "date": "2026-01-18",
     "theme": "Wildcard",
     "answer": "Rorschach",
-    "clues": [
+    "hints": [
       "This tool presents ambiguous images to reveal aspects of personality and thought patterns.",
       "Psychologists show patients these ambiguous images and record their responses.",
       "It was developed by Swiss psychiatrist Hermann in 1921 using inkblots."
@@ -273,7 +273,7 @@
     "date": "2026-01-19",
     "theme": "Around the World",
     "answer": "Santorini",
-    "clues": [
+    "hints": [
       "This place is believed by some archaeologists to have inspired Plato's legend of Atlantis.",
       "A massive volcanic eruption around 1600 BCE shaped its current crescent form.",
       "It's known for white buildings with blue domes overlooking a caldera."
@@ -283,7 +283,7 @@
     "date": "2026-01-20",
     "theme": "Genius Ideas",
     "answer": "GPS",
-    "clues": [
+    "hints": [
       "This system requires at least 24 satellites orbiting Earth to function properly.",
       "It was initially developed for military applications.",
       "Your smartphone uses it to pinpoint your location anywhere on Earth."
@@ -293,7 +293,7 @@
     "date": "2026-01-21",
     "theme": "Famous People",
     "answer": "Nelson Mandela",
-    "clues": [
+    "hints": [
       "This leader was imprisoned on Robben Island for 27 years alongside other political activists.",
       "They became their country's first Black president in 1994.",
       "They won the Nobel Peace Prize for their work toward reconciliation."
@@ -303,7 +303,7 @@
     "date": "2026-01-22",
     "theme": "Pop Culture",
     "answer": "The Simpsons",
-    "clues": [
+    "hints": [
       "This show started as shorts on The Tracey Ullman Show in 1987.",
       "It features a family living in the fictional town of Springfield.",
       "Homer, Marge, Bart, Lisa, and Maggie are its main characters."
@@ -313,7 +313,7 @@
     "date": "2026-01-23",
     "theme": "Food & Fun",
     "answer": "Ramen",
-    "clues": [
+    "hints": [
       "This dish was originally brought to Japan from China in the 19th century.",
       "Instant versions were invented by Momofuku Ando in 1958.",
       "It consists of wheat noodles served in a savory broth."
@@ -323,7 +323,7 @@
     "date": "2026-01-24",
     "theme": "Sports & Games",
     "answer": "Bocce",
-    "clues": [
+    "hints": [
       "This game was played by ancient Romans using stone balls.",
       "Players throw larger balls trying to get closest to a smaller target ball.",
       "It's the third most popular sport in Italy after soccer and cycling."
@@ -333,7 +333,7 @@
     "date": "2026-01-25",
     "theme": "Wildcard",
     "answer": "Fibonacci",
-    "clues": [
+    "hints": [
       "This mathematical pattern was studied extensively in medieval Europe after being introduced from India.",
       "In this sequence, each number is the sum of the two preceding numbers.",
       "It's named after an Italian mathematician who popularized it in Europe: 0, 1, 1, 2, 3, 5, 8..."
@@ -343,7 +343,7 @@
     "date": "2026-01-26",
     "theme": "Around the World",
     "answer": "Machu Picchu",
-    "clues": [
+    "hints": [
       "This site was built around 1450 at nearly 8,000 feet elevation.",
       "It was abandoned during the Spanish conquest but never found by conquistadors.",
       "Hiram Bingham popularized it after his 1911 expedition to Peru."
@@ -353,7 +353,7 @@
     "date": "2026-01-27",
     "theme": "Genius Ideas",
     "answer": "Vaccination",
-    "clues": [
+    "hints": [
       "This technique uses weakened or inactive forms of pathogens to provide immunity.",
       "It trains the immune system to recognize and fight specific pathogens.",
       "Smallpox was eradicated worldwide through this method."
@@ -363,7 +363,7 @@
     "date": "2026-01-28",
     "theme": "Famous People",
     "answer": "Shakespeare",
-    "clues": [
+    "hints": [
       "This person's body of work includes 37 plays and 154 sonnets.",
       "They invented over 1,700 words still used in English today.",
       "Famous works include Hamlet, Romeo and Juliet, and Macbeth."
@@ -373,7 +373,7 @@
     "date": "2026-01-29",
     "theme": "Pop Culture",
     "answer": "Marvel",
-    "clues": [
+    "hints": [
       "This company was founded in 1939 as Timely Publications.",
       "Its cinematic universe has grossed over $29 billion worldwide.",
       "Spider-Man, Iron Man, and the X-Men are among its characters."
@@ -383,7 +383,7 @@
     "date": "2026-01-30",
     "theme": "Food & Fun",
     "answer": "Hummus",
-    "clues": [
+    "hints": [
       "This dip has historical records suggesting it was consumed in Egypt during the 13th century.",
       "Its main ingredient is a legume that's been cultivated for over 7,000 years.",
       "It's made from chickpeas, tahini, lemon juice, and garlic."
@@ -393,7 +393,7 @@
     "date": "2026-01-31",
     "theme": "Sports & Games",
     "answer": "Lacrosse",
-    "clues": [
+    "hints": [
       "This sport was played by Indigenous peoples in North America for centuries before European contact.",
       "Early matches could involve hundreds of players and last for days.",
       "Players use netted sticks to catch and throw a small rubber ball."
@@ -403,7 +403,7 @@
     "date": "2026-02-01",
     "theme": "Wildcard",
     "answer": "Ecosystem",
-    "clues": [
+    "hints": [
       "This term was coined by British ecologist Arthur Tansley in 1935.",
       "It describes interactions between living organisms and their physical environment.",
       "Coral reefs, rainforests, and tundras are all examples of these ecological systems."
@@ -413,7 +413,7 @@
     "date": "2026-02-02",
     "theme": "Around the World",
     "answer": "Taj Mahal",
-    "clues": [
+    "hints": [
       "This structure took over 20 years and 20,000 workers to complete.",
       "Its construction required over 20,000 workers and 1,000 elephants.",
       "This white marble mausoleum is in Agra, India."
@@ -423,7 +423,7 @@
     "date": "2026-02-03",
     "theme": "Genius Ideas",
     "answer": "Printing Press",
-    "clues": [
+    "hints": [
       "This invention used interchangeable metal pieces to reproduce text rapidly and consistently.",
       "The Gutenberg Bible was one of its first major productions in the 1450s.",
       "It made books affordable and accessible, fueling the spread of literacy and ideas."
@@ -433,7 +433,7 @@
     "date": "2026-02-04",
     "theme": "Famous People",
     "answer": "Amelia Earhart",
-    "clues": [
+    "hints": [
       "This person was the first woman to fly solo across the Atlantic Ocean.",
       "They disappeared mysteriously during a 1937 circumnavigation attempt.",
       "They received the Distinguished Flying Cross for their achievements."
@@ -443,7 +443,7 @@
     "date": "2026-02-05",
     "theme": "Pop Culture",
     "answer": "Game of Thrones",
-    "clues": [
+    "hints": [
       "This show is based on George R.R. Martin's A Song of Ice and Fire novels.",
       "It aired for eight seasons from 2011 to 2019.",
       "The Iron Throne is its most iconic symbol."
@@ -453,7 +453,7 @@
     "date": "2026-02-06",
     "theme": "Food & Fun",
     "answer": "Baklava",
-    "clues": [
+    "hints": [
       "This pastry's origins are debated among several Middle Eastern and Mediterranean countries.",
       "It features thin pastry layers interspersed with chopped nuts.",
       "A sweet syrup or honey is poured over it after baking."
@@ -463,7 +463,7 @@
     "date": "2026-02-07",
     "theme": "Sports & Games",
     "answer": "Archery",
-    "clues": [
+    "hints": [
       "This sport was essential for hunting and warfare for thousands of years before becoming recreational.",
       "It became an Olympic sport in 1900 but was dropped and readded in 1972.",
       "Competitors shoot arrows at circular targets from set distances."
@@ -473,7 +473,7 @@
     "date": "2026-02-08",
     "theme": "Wildcard",
     "answer": "Photosynthesis",
-    "clues": [
+    "hints": [
       "This process was discovered by Jan Ingenhousz in 1779, who found plants need light for it.",
       "It converts carbon dioxide and water into glucose and oxygen.",
       "This is how plants create their own food using sunlight and chlorophyll."
@@ -483,7 +483,7 @@
     "date": "2026-02-09",
     "theme": "Around the World",
     "answer": "Venice",
-    "clues": [
+    "hints": [
       "This city was built on 118 small islands separated by canals.",
       "It was a major maritime power during the Middle Ages and Renaissance.",
       "Gondolas are its iconic mode of water transportation."
@@ -493,7 +493,7 @@
     "date": "2026-02-10",
     "theme": "Genius Ideas",
     "answer": "Antibiotics",
-    "clues": [
+    "hints": [
       "This class of medicine targets bacterial infections but is ineffective against viruses.",
       "The first one was discovered accidentally from mold contamination.",
       "They revolutionized medicine by treating previously fatal bacterial infections."
@@ -503,7 +503,7 @@
     "date": "2026-02-11",
     "theme": "Famous People",
     "answer": "Beethoven",
-    "clues": [
+    "hints": [
       "This composer was born in Bonn and later moved to Vienna to study.",
       "They bridged the Classical and Romantic periods in music.",
       "Their Ninth Symphony includes the famous Ode to Joy."
@@ -513,7 +513,7 @@
     "date": "2026-02-12",
     "theme": "Pop Culture",
     "answer": "Fortnite",
-    "clues": [
+    "hints": [
       "This game's distinctive aesthetic features a cartoon-like art style with vibrant colors.",
       "Players compete to be the last person standing on a shrinking map.",
       "Its distinctive building mechanics set it apart from competitors."
@@ -523,7 +523,7 @@
     "date": "2026-02-13",
     "theme": "Food & Fun",
     "answer": "Dim Sum",
-    "clues": [
+    "hints": [
       "This tradition originated in teahouses along the Silk Road.",
       "It literally translates to 'touch the heart' in Chinese.",
       "Small plates of dumplings, buns, and other dishes are served."
@@ -533,7 +533,7 @@
     "date": "2026-02-14",
     "theme": "Sports & Games",
     "answer": "Darts",
-    "clues": [
+    "hints": [
       "This game may have originated when medieval soldiers threw short arrows at barrel bottoms.",
       "The modern board design was patented by Brian Gamlin in 1896.",
       "Players aim for a circular board divided into 20 numbered sections."
@@ -543,7 +543,7 @@
     "date": "2026-02-15",
     "theme": "Wildcard",
     "answer": "Black Hole",
-    "clues": [
+    "hints": [
       "This phenomenon was theorized by John Michell in 1783, who called them 'dark stars.'",
       "Their gravitational pull is so strong that not even light can escape.",
       "The first image of one was captured in 2019 by the Event Horizon Telescope."
@@ -553,7 +553,7 @@
     "date": "2026-02-16",
     "theme": "Around the World",
     "answer": "Serengeti",
-    "clues": [
+    "hints": [
       "This place experiences annual migrations of over a million wildebeest.",
       "It hosts the world's largest terrestrial mammal migration annually.",
       "It spans northern Tanzania and southern Kenya."
@@ -563,7 +563,7 @@
     "date": "2026-02-17",
     "theme": "Genius Ideas",
     "answer": "Refrigeration",
-    "clues": [
+    "hints": [
       "This technology was first demonstrated by William Cullen in 1748 using ether evaporation.",
       "It transformed food storage and distribution globally.",
       "Modern versions use vapor-compression cycles to remove heat."
@@ -573,7 +573,7 @@
     "date": "2026-02-18",
     "theme": "Famous People",
     "answer": "Florence Nightingale",
-    "clues": [
+    "hints": [
       "This person is considered the founder of modern nursing.",
       "They tended to wounded soldiers during the Crimean War.",
       "They were known as 'The Lady with the Lamp.'"
@@ -583,7 +583,7 @@
     "date": "2026-02-19",
     "theme": "Pop Culture",
     "answer": "TikTok",
-    "clues": [
+    "hints": [
       "This platform was launched internationally by ByteDance in 2018.",
       "It merged with Musical.ly to expand its user base.",
       "Its algorithm is known for highly personalized content recommendations."
@@ -593,7 +593,7 @@
     "date": "2026-02-20",
     "theme": "Food & Fun",
     "answer": "Crème Brûlée",
-    "clues": [
+    "hints": [
       "This dessert's earliest printed recipe appeared in a 1691 cookbook.",
       "A kitchen torch is used to caramelize its sugar top layer.",
       "It's a classic French custard dessert with a hard caramel crust."
@@ -603,7 +603,7 @@
     "date": "2026-02-21",
     "theme": "Sports & Games",
     "answer": "Billiards",
-    "clues": [
+    "hints": [
       "This game evolved from lawn games played by European nobility in the 15th century.",
       "Players use a long stick to strike balls on a cloth-covered table.",
       "Common variations include pool, snooker, and carom."
@@ -613,7 +613,7 @@
     "date": "2026-02-22",
     "theme": "Wildcard",
     "answer": "DNA",
-    "clues": [
+    "hints": [
       "This molecule was first isolated by Friedrich Miescher in 1869 from white blood cells.",
       "Watson and Crick discovered its double helix structure in 1953.",
       "It carries genetic instructions for all known living organisms."
@@ -623,7 +623,7 @@
     "date": "2026-02-23",
     "theme": "Around the World",
     "answer": "Sahara",
-    "clues": [
+    "hints": [
       "This place's name comes from the Arabic word for 'desert.'",
       "It's roughly the same size as the United States.",
       "It's the world's largest hot desert, spanning North Africa."
@@ -633,7 +633,7 @@
     "date": "2026-02-24",
     "theme": "Genius Ideas",
     "answer": "Insulin",
-    "clues": [
+    "hints": [
       "This treatment was discovered in 1921 through experiments on dogs at a Canadian university.",
       "It transformed diabetes from a fatal diagnosis to a manageable condition.",
       "This hormone regulates blood sugar levels in the body."
@@ -643,7 +643,7 @@
     "date": "2026-02-25",
     "theme": "Famous People",
     "answer": "Martin Luther King",
-    "clues": [
+    "hints": [
       "This leader was assassinated in Memphis, Tennessee, in 1968.",
       "They delivered the famous 'I Have a Dream' speech in 1963.",
       "They received the Nobel Peace Prize at age 35."
@@ -653,7 +653,7 @@
     "date": "2026-02-26",
     "theme": "Pop Culture",
     "answer": "Minecraft",
-    "clues": [
+    "hints": [
       "This game was created by Markus Persson and released in 2011.",
       "Players explore and build in a blocky, procedurally generated world.",
       "It's the best-selling video game of all time."
@@ -663,7 +663,7 @@
     "date": "2026-02-27",
     "theme": "Food & Fun",
     "answer": "Tacos",
-    "clues": [
+    "hints": [
       "This dish's name comes from Mexican silver miners in the 18th century.",
       "They consist of folded or rolled tortillas filled with various ingredients.",
       "Common varieties include carnitas, al pastor, and fish."
@@ -673,7 +673,7 @@
     "date": "2026-02-28",
     "theme": "Sports & Games",
     "answer": "Bowling",
-    "clues": [
+    "hints": [
       "This sport has ancient origins, with versions found in Egyptian tombs from 3200 BCE.",
       "Players roll a heavy ball down a lane to knock down pins.",
       "A perfect score is 300 points."
@@ -683,7 +683,7 @@
     "date": "2026-03-01",
     "theme": "Wildcard",
     "answer": "Metamorphosis",
-    "clues": [
+    "hints": [
       "This biological process allows organisms to adapt to different ecological niches at different life stages.",
       "It involves distinct life stages with dramatic physical transformations.",
       "Caterpillars turning into butterflies is a famous example of this biological process."
@@ -693,7 +693,7 @@
     "date": "2026-03-02",
     "theme": "Around the World",
     "answer": "Great Wall",
-    "clues": [
+    "hints": [
       "This structure consists of multiple fortification systems built over centuries.",
       "It stretches over 13,000 miles across northern China.",
       "It was built to protect against invasions from the north."
@@ -703,7 +703,7 @@
     "date": "2026-03-03",
     "theme": "Genius Ideas",
     "answer": "X-Ray",
-    "clues": [
+    "hints": [
       "This technology was discovered accidentally in 1895 while experimenting with cathode rays.",
       "Röntgen won the first Nobel Prize in Physics for this discovery in 1901.",
       "It allows doctors to see bones and tissues inside the human body without surgery."
@@ -713,7 +713,7 @@
     "date": "2026-03-04",
     "theme": "Famous People",
     "answer": "Pablo Picasso",
-    "clues": [
+    "hints": [
       "This artist co-founded the Cubist movement in the early 20th century.",
       "They created over 50,000 artworks during their 91-year life.",
       "Their painting Guernica depicts the horrors of war."
@@ -723,7 +723,7 @@
     "date": "2026-03-05",
     "theme": "Pop Culture",
     "answer": "Instagram",
-    "clues": [
+    "hints": [
       "This platform's original icon was a retro camera with rainbow stripes.",
       "It was acquired by Facebook for $1 billion in 2012.",
       "Users share photos and videos, often with filters applied."
@@ -733,7 +733,7 @@
     "date": "2026-03-06",
     "theme": "Food & Fun",
     "answer": "Baguette",
-    "clues": [
+    "hints": [
       "This bread became a symbol of French culture in the early 20th century.",
       "French law dictates it can only contain four ingredients: flour, water, yeast, and salt.",
       "Its name means 'stick' or 'wand' in French."
@@ -743,7 +743,7 @@
     "date": "2026-03-07",
     "theme": "Sports & Games",
     "answer": "Rugby",
-    "clues": [
+    "hints": [
       "This sport allegedly originated when William Webb Ellis picked up a ball and ran with it in 1823.",
       "Players can pass the ball backward but not forward.",
       "Two main versions exist: union and league."
@@ -753,7 +753,7 @@
     "date": "2026-03-08",
     "theme": "Wildcard",
     "answer": "Gravity",
-    "clues": [
+    "hints": [
       "This force was mathematically described by Isaac Newton in 1687.",
       "Einstein later redefined it as the curvature of spacetime.",
       "It keeps planets in orbit around the sun."
@@ -763,7 +763,7 @@
     "date": "2026-03-09",
     "theme": "Around the World",
     "answer": "Amazon Rainforest",
-    "clues": [
+    "hints": [
       "This ecosystem is home to approximately 10% of all species on Earth.",
       "It spans nine South American countries, with most in Brazil.",
       "It contains approximately 390 billion individual trees."
@@ -773,7 +773,7 @@
     "date": "2026-03-10",
     "theme": "Genius Ideas",
     "answer": "Internet",
-    "clues": [
+    "hints": [
       "This network was initially developed by the U.S. military in the late 1960s.",
       "Tim Berners-Lee invented the World Wide Web to navigate it in 1989.",
       "It connects billions of devices worldwide through interconnected networks."
@@ -783,7 +783,7 @@
     "date": "2026-03-11",
     "theme": "Famous People",
     "answer": "Mozart",
-    "clues": [
+    "hints": [
       "This composer's father was also a musician who trained them extensively.",
       "They wrote over 600 works before dying at age 35.",
       "Famous compositions include Eine Kleine Nachtmusik and The Magic Flute."

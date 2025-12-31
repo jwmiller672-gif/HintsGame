@@ -60,7 +60,7 @@ function isMobile() {
 
 export default function App() {
   const [puzzle, setPuzzle] = useState(null);
-  const [cluesRevealed, setCluesRevealed] = useState(0);
+  const [hintsRevealed, setHintsRevealed] = useState(0);
   const [guesses, setGuesses] = useState([]);
   const [input, setInput] = useState("");
   const [message, setMessage] = useState("");
@@ -72,7 +72,7 @@ export default function App() {
   const [showIncorrectPrompt, setShowIncorrectPrompt] = useState(false);
   const [justRevealed, setJustRevealed] = useState(-1);
   const [gameStarted, setGameStarted] = useState(false);
-  const [animatingClue, setAnimatingClue] = useState(-1);
+  const [animatingHint, setAnimatingHint] = useState(-1);
   const [puzzleNumber, setPuzzleNumber] = useState(0);
 
   useEffect(() => {
@@ -122,9 +122,9 @@ export default function App() {
   useEffect(() => {
     if (justRevealed >= 0) {
       // Start with opacity 0, then animate to 1
-      setAnimatingClue(-1);
+      setAnimatingHint(-1);
       setTimeout(() => {
-        setAnimatingClue(justRevealed);
+        setAnimatingHint(justRevealed);
       }, 50);
     }
   }, [justRevealed]);
@@ -136,12 +136,12 @@ export default function App() {
       </div>
     );
 
-  const canGuess = guessCount < cluesRevealed && !gameOver;
+  const canGuess = guessCount < hintsRevealed && !gameOver;
 
-  function revealClue(keepMessage = false) {
-    if (cluesRevealed < puzzle.clues.length) {
-      setJustRevealed(cluesRevealed);
-      setCluesRevealed(cluesRevealed + 1);
+  function revealHint(keepMessage = false) {
+    if (hintsRevealed < puzzle.hints.length) {
+      setJustRevealed(hintsRevealed);
+      setHintsRevealed(hintsRevealed + 1);
       if (!keepMessage) {
         setMessage("");
         setShowIncorrectPrompt(false);
@@ -152,9 +152,9 @@ export default function App() {
 
   function calculateStars() {
     if (!won) return 0;
-    // Award stars based on how many clues were revealed when they won
-    // 1 clue = 3 stars, 2 clues = 2 stars, 3 clues = 1 star
-    return 4 - cluesRevealed;
+    // Award stars based on how many hints were revealed when they won
+    // 1 hint = 3 stars, 2 hints = 2 stars, 3 hints = 1 star
+    return 4 - hintsRevealed;
   }
 
   function submitGuess(e) {
@@ -210,9 +210,9 @@ export default function App() {
     setMessage("❌ Incorrect guess, try again!");
     setShowIncorrectPrompt(true);
 
-    // Auto reveal next clue but keep incorrect message
-    if (cluesRevealed < puzzle.clues.length) {
-      revealClue(true);
+    // Auto reveal next hint but keep incorrect message
+    if (hintsRevealed < puzzle.hints.length) {
+      revealHint(true);
     } else {
       setGameOver(true);
       updateStreak(false);
@@ -265,22 +265,22 @@ export default function App() {
 
     if (won) {
       if (stars === 3) {
-        resultMessage = "I got a TRIO 🥳! You try!";
+        resultMessage = "I got it on the first hint 🥳! You try!";
       } else {
-        resultMessage = `I got it in ${cluesRevealed} clues! Can you do better?`;
+        resultMessage = `I got it in ${hintsRevealed} hints! Can you do better?`;
       }
     } else {
       resultMessage = "Stumped me today! Can you get it?";
     }
 
-    const baseShareText = `TRIO Trivia #${puzzleNumber}\n${starString}\n${resultMessage}`;
+    const baseShareText = `Hints #${puzzleNumber}\n${starString}\n${resultMessage}`;
     const shareUrl = window.location.href;
     const fullShareText = `${baseShareText}\n${shareUrl}`;
 
     if (navigator.share && isMobile()) {
       navigator
         .share({
-          title: "TRIO",
+          title: "Hints",
           text: baseShareText,
           url: shareUrl,
         })
@@ -297,13 +297,13 @@ export default function App() {
 
   return (
     <div style={styles.container}>
-      <h1 style={{ ...styles.title, color: "#1565c0" }}>TRIO</h1>
+      <h1 style={{ ...styles.title, color: "#1565c0" }}>Hints</h1>
       <h2 style={{ ...styles.subtitle, color: "#2c3e50" }}>
-        The Daily Trivia Game
+        The Daily Guessing Game
       </h2>
       <p style={{ ...styles.instructions, color: "#546e7a" }}>
-        Reveal the clues and guess the correct answer. If you guess incorrectly,
-        the next clue is revealed.
+        Reveal the hints and guess the correct answer. If you guess incorrectly,
+        the next hint is revealed.
       </p>
       <h3 style={{ ...styles.todayTheme, color: "#2c3e50" }}>
         Today's Theme: {puzzle.theme}
@@ -315,7 +315,7 @@ export default function App() {
             setJustRevealed(0);
             setTimeout(() => {
               setGameStarted(true);
-              setCluesRevealed(1);
+              setHintsRevealed(1);
             }, 0);
           }}
           style={{ ...styles.button, fontSize: 20, padding: "15px 40px", marginTop: 20 }}
@@ -324,37 +324,37 @@ export default function App() {
         </button>
       ) : (
         <>
-          <div style={styles.cluesContainer}>
-            {Array.from({ length: puzzle.clues.length }).map((_, i) => (
+          <div style={styles.hintsContainer}>
+            {Array.from({ length: puzzle.hints.length }).map((_, i) => (
               <div
                 key={i}
                 style={{
-                  ...styles.clue,
-                  backgroundColor: i < cluesRevealed ? "#d4edda" : "#f8f9fa",
+                  ...styles.hint,
+                  backgroundColor: i < hintsRevealed ? "#d4edda" : "#f8f9fa",
                   color: "#2c3e50",
                   userSelect: "none",
                   display: "flex",
                   alignItems: "center",
                 }}
               >
-                <strong style={{ minWidth: 60 }}>Clue {i + 1}:</strong>
+                <strong style={{ minWidth: 60 }}>Hint {i + 1}:</strong>
                 <span
                   style={{
                     marginLeft: 10,
                     minHeight: "1em",
-                    opacity: i < cluesRevealed && i <= animatingClue ? 1 : 0,
+                    opacity: i < hintsRevealed && i <= animatingHint ? 1 : 0,
                     transition: "opacity 1.5s ease-in",
                   }}
                 >
-                  {i < cluesRevealed ? puzzle.clues[i] : ""}
+                  {i < hintsRevealed ? puzzle.hints[i] : ""}
                 </span>
               </div>
             ))}
           </div>
 
-          {!gameOver && cluesRevealed < puzzle.clues.length && (
-            <button onClick={revealClue} style={styles.button}>
-              Reveal Next Clue
+          {!gameOver && hintsRevealed < puzzle.hints.length && (
+            <button onClick={revealHint} style={styles.button}>
+              Reveal Next Hint
             </button>
           )}
 
@@ -454,11 +454,11 @@ const styles = {
     marginBottom: 20,
     fontWeight: "bold",
   },
-  cluesContainer: {
+  hintsContainer: {
     marginBottom: 20,
     textAlign: "left",
   },
-  clue: {
+  hint: {
     padding: "12px 16px",
     borderRadius: 10,
     marginBottom: 10,

@@ -1,6 +1,6 @@
 {
-    "short_name": "TRIO",
-    "name": "TRIO: The Daily Trivia Game",
+    "short_name": "Hints",
+    "name": "Hints: The Daily Trivia Game",
     "icons": [],
     "start_url": ".",
     "display": "standalone",
