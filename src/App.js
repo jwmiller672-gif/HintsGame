@@ -17,6 +17,21 @@ function formatDateToYMD_Local(date) {
   return `${y}-${m}-${d}`;
 }
 
+function getTimeUntilTomorrow() {
+  const now = new Date();
+  const tomorrow = new Date(now);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  tomorrow.setHours(0, 0, 0, 0);
+  return tomorrow - now;
+}
+
+function formatDuration(ms) {
+  const hours = Math.floor(ms / (1000 * 60 * 60));
+  const minutes = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((ms % (1000 * 60)) / 1000);
+  return `${hours}h ${minutes}m ${seconds}s`;
+}
+
 function normalizeAnswer(str) {
   // Remove common articles from the beginning of the string
   // Also normalize accents/diacritics (e.g., "Pokémon" becomes "Pokemon")
@@ -74,6 +89,14 @@ export default function App() {
   const [gameStarted, setGameStarted] = useState(false);
   const [animatingHint, setAnimatingHint] = useState(-1);
   const [puzzleNumber, setPuzzleNumber] = useState(0);
+  const [timeUntilTomorrow, setTimeUntilTomorrow] = useState(getTimeUntilTomorrow());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeUntilTomorrow(getTimeUntilTomorrow());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   useEffect(() => {
     fetch(process.env.PUBLIC_URL + "/puzzles.json?t=" + new Date().getTime())
@@ -334,25 +357,7 @@ export default function App() {
     window.open(xUrl, '_blank');
   }
 
-  function shareToThreads() {
-    if (!gameOver) return;
-    const { fullShareText } = getShareDetails();
-    const threadsUrl = `https://www.threads.net/intent/post?text=${encodeURIComponent(fullShareText)}`;
-    window.open(threadsUrl, '_blank');
-  }
 
-  function shareToInstagramStory() {
-    if (!gameOver) return;
-    const { fullShareText } = getShareDetails();
-    navigator.clipboard.writeText(fullShareText).then(() => {
-      if (isMobile()) {
-        window.location.href = "instagram://story-camera";
-      } else {
-        alert("Results copied! Open Instagram to paste in your story.");
-        window.open("https://www.instagram.com", "_blank");
-      }
-    });
-  }
 
   return (
     <div style={styles.container}>
@@ -453,85 +458,137 @@ export default function App() {
             {guesses.length > 0 ? guesses.join(", ") : "None yet"}
           </div>
 
-          {message && (
-            <p style={{ ...styles.message, color: won ? "#2e7d32" : "#c62828" }}>
-              {message}
-            </p>
-          )}
-          {gameOver && !won && (
-            <div style={{ ...styles.funFact, color: "#c62828" }}>
-              Better luck next time! Try again tomorrow.
-            </div>
-          )}
 
           {gameOver && (
-            <div style={styles.answerBox}>
-              <div style={styles.answerLabel}>The Answer</div>
-              <div style={styles.answerValue}>{puzzle.answer}</div>
-            </div>
-          )}
+            <div style={styles.gameOverContainer}>
+              <div style={styles.answerBox}>
+                <div style={styles.answerLabel}>The Answer</div>
+                <div style={styles.answerValue}>{puzzle.answer}</div>
+              </div>
 
-          {showShare && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'center', marginTop: 15 }}>
-              <button
-                onClick={shareResults}
-                style={{ ...styles.button, backgroundColor: "#34C759", width: '100%', maxWidth: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
-                aria-label="Share via text"
-              >
-                Share Results on
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
-                </svg>
-              </button>
-              <button
-                onClick={shareToX}
-                style={{ ...styles.button, backgroundColor: "black", width: '100%', maxWidth: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
-                aria-label="Share on X"
-              >
-                Share Results on 𝕏
-              </button>
-              <button
-                onClick={shareToThreads}
-                style={{ ...styles.button, backgroundColor: "black", width: '100%', maxWidth: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
-                aria-label="Share on Threads"
-              >
-                Share Results on
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12.925 10.233c-.93 0-1.57.5-1.57 1.22 0 .765.705 1.277 1.74 1.277.795 0 1.455-.405 1.455-1.232 0-.812-.707-1.265-1.625-1.265Zm5.095-7.771C15.42 1.18 12.253.57 9.01.51 4.186.51.109 3.83.109 9.493c0 5.372 3.888 8.74 9.083 8.74 3.23 0 5.842-1.445 6.736-4.085h-1.76c-.592 1.56-2.406 2.492-4.94 2.492-3.942 0-7.045-2.535-7.045-7.146 0-4.93 3.084-7.476 7.397-7.476 3.776 0 5.871 1.96 5.871 5.143 0 2.634-1.555 4.207-4.024 4.207-1.701 0-2.75-.892-2.75-2.366 0-1.78 1.42-2.91 3.73-2.91 1.102 0 2.17.353 2.17.353v-.905c0-1.693-1.464-2.693-3.66-2.693-1.974 0-3.49.93-3.89 2.525h-1.77c.467-3.004 2.847-4.12 5.73-4.12 3.776 0 5.488 1.692 5.488 4.623v6.41c0 .248.038.49.114.738h2.05c-.217-.806-.268-1.619-.268-2.438V2.462Z" />
-                </svg>
-              </button>
-              <button
-                onClick={shareToInstagramStory}
-                style={{ ...styles.button, background: "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)", width: '100%', maxWidth: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
-                aria-label="Share on Instagram Story"
-              >
-                Share Results on
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M19,5A1,1 0 0,1 20,6A1,1 0 0,1 19,7A1,1 0 0,1 18,6A1,1 0 0,1 19,5Z" />
-                </svg>
-              </button>
+              <div style={styles.scoreSummary}>
+                <div style={styles.scoreItem}>
+                  <div style={styles.scoreLabel}>Streak</div>
+                  <div style={styles.scoreValue}>{streak} 🔥</div>
+                </div>
+                <div style={styles.scoreItem}>
+                  <div style={styles.scoreLabel}>Hints Used</div>
+                  <div style={styles.scoreValue}>{won ? hintsRevealed : "X"} 💡</div>
+                </div>
+              </div>
+
+              {!won && (
+                <div style={{ ...styles.funFact, color: "#c62828", marginBottom: 20 }}>
+                  Better luck next time!
+                </div>
+              )}
+
+              {showShare && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', alignItems: 'center', width: '100%' }}>
+                  <button
+                    onClick={shareResults}
+                    style={{ ...styles.button, ...styles.mobileButton, backgroundColor: "#34C759" }}
+                    aria-label="Share via text"
+                  >
+                    Share Results on <span style={{ fontSize: '1.2em' }}>💬</span>
+                  </button>
+                  <button
+                    onClick={shareToX}
+                    style={{ ...styles.button, ...styles.mobileButton, backgroundColor: "black" }}
+                    aria-label="Share on X"
+                  >
+                    Share Results on 𝕏
+                  </button>
+                </div>
+              )}
+
+              <div style={styles.nextPuzzleTimer}>
+                <div style={{ fontWeight: 'bold', marginBottom: 5 }}>Play again tomorrow!</div>
+                <div style={{ fontSize: '0.9em', color: '#666' }}>Next puzzle in: {formatDuration(timeUntilTomorrow)}</div>
+              </div>
             </div>
           )}
         </>
       )}
 
-      <div style={{ marginTop: 20, fontWeight: "600", fontSize: 18, color: "#2c3e50" }}>
-        🔥 Streak: {streak} day{streak !== 1 ? "s" : ""}
-      </div>
+      {!gameStarted && (
+        <div style={{ marginTop: 20, fontWeight: "600", fontSize: 18, color: "#2c3e50" }}>
+          🔥 Streak: {streak} day{streak !== 1 ? "s" : ""}
+        </div>
+      )}
     </div>
+
   );
 }
 
 const styles = {
   container: {
-    maxWidth: 500,
-    margin: "40px auto",
+    maxWidth: 600,
+    width: "90%",
+    margin: "20px auto",
     fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
     textAlign: "center",
-    padding: "40px 30px",
+    padding: "30px 20px",
     backgroundColor: "#ffffff",
-    borderRadius: 16,
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.07), 0 10px 20px rgba(0, 0, 0, 0.05)",
+    borderRadius: 24,
+    boxShadow: "0 10px 40px rgba(0,0,0,0.1)",
+  },
+  gameOverContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '20px',
+    marginTop: '20px',
+    animation: 'fadeIn 0.5s ease-out',
+  },
+  scoreSummary: {
+    display: 'flex',
+    gap: '20px',
+    justifyContent: 'center',
+    width: '100%',
+    marginBottom: '10px',
+  },
+  scoreItem: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    backgroundColor: '#f8f9fa',
+    padding: '10px 20px',
+    borderRadius: '12px',
+    minWidth: '80px',
+  },
+  scoreLabel: {
+    fontSize: '12px',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
+    color: '#666',
+    marginBottom: '4px',
+    fontWeight: 'bold',
+  },
+  scoreValue: {
+    fontSize: '20px',
+    fontWeight: '800',
+    color: '#2c3e50',
+  },
+  mobileButton: {
+    width: '100%',
+    padding: '16px',
+    fontSize: '18px',
+    borderRadius: '12px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '10px',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+    border: 'none',
+  },
+  nextPuzzleTimer: {
+    marginTop: 20,
+    padding: 15,
+    backgroundColor: '#e3f2fd',
+    borderRadius: 12,
+    color: '#1565c0',
+    width: '100%',
   },
   title: {
     fontSize: 36,
