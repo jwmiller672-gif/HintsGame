@@ -89,6 +89,8 @@ export default function App() {
         if (todayIndex !== -1) {
           setPuzzle(data[todayIndex]);
           setPuzzleNumber(todayIndex + 1);
+
+
         } else {
           setMessage("No puzzle found for today. Please check back tomorrow!");
         }
@@ -98,21 +100,27 @@ export default function App() {
         setMessage(`Failed to load puzzles: ${err.message}`);
       });
 
+    // Initialize streak
     const lastWinDate = localStorage.getItem("lastWinDate");
     const savedStreak = parseInt(localStorage.getItem("streak") || "0", 10);
     const todayStr = formatDateToYMD_Local(new Date());
 
     if (lastWinDate) {
       const lastDate = new Date(lastWinDate);
-      const today = new Date();
+      const today = new Date(todayStr); // Use normalized date string
       const diffTime = today.getTime() - lastDate.getTime();
       const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-      if (diffDays === 1) {
+
+      if (diffDays === 0) {
+        // User already played today, keep current streak
+        setStreak(savedStreak);
+      } else if (diffDays === 1) {
+        // User played yesterday, keep streak (will increment if they win today)
         setStreak(savedStreak);
       } else if (diffDays > 1) {
+        // User missed a day, reset streak
+        localStorage.setItem("streak", "0");
         setStreak(0);
-      } else if (diffDays === 0) {
-        setStreak(savedStreak);
       }
     } else {
       setStreak(0);
@@ -176,12 +184,11 @@ export default function App() {
     if (guessLower === answerLower || normalizedGuess === normalizedAnswer) {
       setGuesses(newGuesses);
       setMessage(
-        `🎉 Correct! You got it in ${newGuesses.length} guess${newGuesses.length > 1 ? "es" : ""
-        }!`
+        `🎉 Correct! You got it in ${hintsRevealed} hint${hintsRevealed !== 1 ? "s" : ""}!`
       );
       setGameOver(true);
       setWon(true);
-      updateStreak(true);
+      updateStreak(true, newGuesses, hintsRevealed);
       setShowShare(true);
       setGuessCount(guessCount + 1);
       setInput("");
@@ -215,47 +222,65 @@ export default function App() {
       revealHint(true);
     } else {
       setGameOver(true);
-      updateStreak(false);
+      updateStreak(false, newGuesses, hintsRevealed);
       setShowShare(true);
-      setMessage(`❌ Out of guesses! The answer was: ${puzzle.answer}`);
+      setMessage("❌ Out of guesses!");
       setShowIncorrectPrompt(false);
     }
 
     setInput("");
   }
 
-  function updateStreak(wonToday) {
+  function updateStreak(wonToday, currentGuesses, currentHints) {
     const todayStr = formatDateToYMD_Local(new Date());
+    const lastPlayedDate = localStorage.getItem("lastPlayedDate");
+
+    // If already played today (whether win or loss), don't update streak
+    if (lastPlayedDate === todayStr) {
+      return;
+    }
+
+    // Mark today as played
+    localStorage.setItem("lastPlayedDate", todayStr);
+
     const lastWinDate = localStorage.getItem("lastWinDate");
     let currentStreak = parseInt(localStorage.getItem("streak") || "0", 10);
 
     if (wonToday) {
       if (lastWinDate) {
         const lastDate = new Date(lastWinDate);
-        const today = new Date();
+        const today = new Date(todayStr);
         const diffTime = today.getTime() - lastDate.getTime();
         const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
         if (diffDays === 1) {
+          // Consecutive day, increment streak
           currentStreak += 1;
         } else if (diffDays > 1) {
+          // Missed days, reset to 1
           currentStreak = 1;
+        } else if (diffDays === 0) {
+          // Should be caught by lastPlayedDate check, but safe fallback
+          return;
         }
       } else {
+        // First time playing
         currentStreak = 1;
       }
+
       localStorage.setItem("streak", currentStreak.toString());
       localStorage.setItem("lastWinDate", todayStr);
       setStreak(currentStreak);
     } else {
+      // Lost on first attempt of the day - break streak
       localStorage.setItem("streak", "0");
       setStreak(0);
-      localStorage.removeItem("lastWinDate");
+      // We don't remove lastWinDate so we can still calculate days since last win if needed,
+      // but the streak count itself is reset to 0.
     }
   }
 
-  function shareResults() {
-    if (!gameOver) return;
-
+  function getShareDetails() {
     const stars = calculateStars();
     const starsFilled = "⭐️".repeat(stars);
     const starsEmpty = "☆".repeat(3 - stars);
@@ -277,6 +302,13 @@ export default function App() {
     const shareUrl = window.location.href;
     const fullShareText = `${baseShareText}\n${shareUrl}`;
 
+    return { baseShareText, fullShareText, shareUrl };
+  }
+
+  function shareResults() {
+    if (!gameOver) return;
+    const { baseShareText, fullShareText, shareUrl } = getShareDetails();
+
     if (navigator.share && isMobile()) {
       navigator
         .share({
@@ -293,6 +325,33 @@ export default function App() {
         alert("Share text copied to clipboard! You can now paste it anywhere.");
       });
     }
+  }
+
+  function shareToX() {
+    if (!gameOver) return;
+    const { fullShareText } = getShareDetails();
+    const xUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(fullShareText)}`;
+    window.open(xUrl, '_blank');
+  }
+
+  function shareToThreads() {
+    if (!gameOver) return;
+    const { fullShareText } = getShareDetails();
+    const threadsUrl = `https://www.threads.net/intent/post?text=${encodeURIComponent(fullShareText)}`;
+    window.open(threadsUrl, '_blank');
+  }
+
+  function shareToInstagramStory() {
+    if (!gameOver) return;
+    const { fullShareText } = getShareDetails();
+    navigator.clipboard.writeText(fullShareText).then(() => {
+      if (isMobile()) {
+        window.location.href = "instagram://story-camera";
+      } else {
+        alert("Results copied! Open Instagram to paste in your story.");
+        window.open("https://www.instagram.com", "_blank");
+      }
+    });
   }
 
   return (
@@ -330,7 +389,7 @@ export default function App() {
                 key={i}
                 style={{
                   ...styles.hint,
-                  backgroundColor: i < hintsRevealed ? "#d4edda" : "#f8f9fa",
+                  backgroundColor: i < hintsRevealed || gameOver ? "#d4edda" : "#f8f9fa",
                   color: "#2c3e50",
                   userSelect: "none",
                   display: "flex",
@@ -342,11 +401,11 @@ export default function App() {
                   style={{
                     marginLeft: 10,
                     minHeight: "1em",
-                    opacity: i < hintsRevealed && i <= animatingHint ? 1 : 0,
+                    opacity: (i < hintsRevealed && i <= animatingHint) || gameOver ? 1 : 0,
                     transition: "opacity 1.5s ease-in",
                   }}
                 >
-                  {i < hintsRevealed ? puzzle.hints[i] : ""}
+                  {i < hintsRevealed || gameOver ? puzzle.hints[i] : ""}
                 </span>
               </div>
             ))}
@@ -405,21 +464,60 @@ export default function App() {
             </div>
           )}
 
-          <div style={{ marginTop: 15, fontWeight: "600", fontSize: 18 }}>
-            🔥 Streak: {streak} day{streak !== 1 ? "s" : ""}
-          </div>
+          {gameOver && (
+            <div style={styles.answerBox}>
+              <div style={styles.answerLabel}>The Answer</div>
+              <div style={styles.answerValue}>{puzzle.answer}</div>
+            </div>
+          )}
 
           {showShare && (
-            <button
-              onClick={shareResults}
-              style={{ ...styles.button, marginTop: 15 }}
-              aria-label="Share your results"
-            >
-              Share Results! 🎉
-            </button>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'center', marginTop: 15 }}>
+              <button
+                onClick={shareResults}
+                style={{ ...styles.button, backgroundColor: "#34C759", width: '100%', maxWidth: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                aria-label="Share via text"
+              >
+                Share Results on
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                </svg>
+              </button>
+              <button
+                onClick={shareToX}
+                style={{ ...styles.button, backgroundColor: "black", width: '100%', maxWidth: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                aria-label="Share on X"
+              >
+                Share Results on 𝕏
+              </button>
+              <button
+                onClick={shareToThreads}
+                style={{ ...styles.button, backgroundColor: "black", width: '100%', maxWidth: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                aria-label="Share on Threads"
+              >
+                Share Results on
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.925 10.233c-.93 0-1.57.5-1.57 1.22 0 .765.705 1.277 1.74 1.277.795 0 1.455-.405 1.455-1.232 0-.812-.707-1.265-1.625-1.265Zm5.095-7.771C15.42 1.18 12.253.57 9.01.51 4.186.51.109 3.83.109 9.493c0 5.372 3.888 8.74 9.083 8.74 3.23 0 5.842-1.445 6.736-4.085h-1.76c-.592 1.56-2.406 2.492-4.94 2.492-3.942 0-7.045-2.535-7.045-7.146 0-4.93 3.084-7.476 7.397-7.476 3.776 0 5.871 1.96 5.871 5.143 0 2.634-1.555 4.207-4.024 4.207-1.701 0-2.75-.892-2.75-2.366 0-1.78 1.42-2.91 3.73-2.91 1.102 0 2.17.353 2.17.353v-.905c0-1.693-1.464-2.693-3.66-2.693-1.974 0-3.49.93-3.89 2.525h-1.77c.467-3.004 2.847-4.12 5.73-4.12 3.776 0 5.488 1.692 5.488 4.623v6.41c0 .248.038.49.114.738h2.05c-.217-.806-.268-1.619-.268-2.438V2.462Z" />
+                </svg>
+              </button>
+              <button
+                onClick={shareToInstagramStory}
+                style={{ ...styles.button, background: "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)", width: '100%', maxWidth: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
+                aria-label="Share on Instagram Story"
+              >
+                Share Results on
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M19,5A1,1 0 0,1 20,6A1,1 0 0,1 19,7A1,1 0 0,1 18,6A1,1 0 0,1 19,5Z" />
+                </svg>
+              </button>
+            </div>
           )}
         </>
       )}
+
+      <div style={{ marginTop: 20, fontWeight: "600", fontSize: 18, color: "#2c3e50" }}>
+        🔥 Streak: {streak} day{streak !== 1 ? "s" : ""}
+      </div>
     </div>
   );
 }
@@ -512,5 +610,25 @@ const styles = {
   loading: {
     fontSize: 18,
     color: "#666",
+  },
+  answerBox: {
+    margin: "20px 0",
+    padding: "15px",
+    backgroundColor: "#f1f8e9",
+    borderRadius: 8,
+    border: "2px solid #81c784",
+  },
+  answerLabel: {
+    fontSize: 14,
+    color: "#558b2f",
+    textTransform: "uppercase",
+    letterSpacing: "1px",
+    marginBottom: 5,
+    fontWeight: "bold",
+  },
+  answerValue: {
+    fontSize: 28,
+    color: "#2e7d32",
+    fontWeight: "800",
   },
 };
