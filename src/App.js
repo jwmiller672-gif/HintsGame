@@ -90,6 +90,9 @@ export default function App() {
   const [animatingHint, setAnimatingHint] = useState(-1);
   const [puzzleNumber, setPuzzleNumber] = useState(0);
   const [timeUntilTomorrow, setTimeUntilTomorrow] = useState(getTimeUntilTomorrow());
+  const [resultVisible, setResultVisible] = useState(false);
+  const [showOverlay, setShowOverlay] = useState(false);
+  const [overlayDismissed, setOverlayDismissed] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -160,6 +163,13 @@ export default function App() {
     }
   }, [justRevealed]);
 
+  useEffect(() => {
+    if (gameOver) {
+      setTimeout(() => setResultVisible(true), 50);
+      setTimeout(() => setShowOverlay(true), 2000);
+    }
+  }, [gameOver]);
+
   if (!puzzle)
     return (
       <div style={styles.container}>
@@ -222,11 +232,20 @@ export default function App() {
     // Partial/close match (use normalized versions)
     const guessWords = normalizedGuess.split(" ");
     const answerWords = normalizedAnswer.split(" ");
-    const isClose = guessWords.every((word) =>
-      answerWords.some((ansWord) => levenshteinDistance(word, ansWord) <= 1)
+
+    // Check word-by-word with slightly looser tolerance for longer words
+    const isWordClose = guessWords.every((word) =>
+      answerWords.some((ansWord) => {
+        const allowedEdits = ansWord.length > 4 ? 2 : 1;
+        return levenshteinDistance(word, ansWord) <= allowedEdits;
+      })
     );
 
-    if (isClose) {
+    // Also check the entire string for overall closeness (handles spacing issues etc)
+    const totalDist = levenshteinDistance(normalizedGuess, normalizedAnswer);
+    const isOverallClose = totalDist <= 2 || (normalizedAnswer.length > 6 && totalDist <= 3);
+
+    if (isWordClose || isOverallClose) {
       setMessage(
         "Almost there! Check your spelling or adjust your guess and try again."
       );
@@ -449,8 +468,10 @@ export default function App() {
             </form>
           )}
 
-          {showIncorrectPrompt && !gameOver && (
-            <p style={{ color: "red", fontWeight: "bold", marginTop: 10 }}></p>
+          {message && !gameOver && (
+            <p style={{ color: showIncorrectPrompt ? "red" : "#f57c00", fontWeight: "bold", marginTop: 10 }}>
+              {message}
+            </p>
           )}
 
           <div style={styles.guesses}>
@@ -461,54 +482,111 @@ export default function App() {
 
           {gameOver && (
             <div style={styles.gameOverContainer}>
-              <div style={styles.answerBox}>
+              <div style={{
+                ...styles.answerBox,
+                opacity: resultVisible ? 1 : 0,
+                transition: 'opacity 1.5s ease-in'
+              }}>
                 <div style={styles.answerLabel}>The Answer</div>
                 <div style={styles.answerValue}>{puzzle.answer}</div>
               </div>
 
-              <div style={styles.scoreSummary}>
-                <div style={styles.scoreItem}>
-                  <div style={styles.scoreLabel}>Streak</div>
-                  <div style={styles.scoreValue}>{streak} 🔥</div>
-                </div>
-                <div style={styles.scoreItem}>
-                  <div style={styles.scoreLabel}>Hints Used</div>
-                  <div style={styles.scoreValue}>{won ? hintsRevealed : "X"} 💡</div>
-                </div>
-              </div>
 
-              {!won && (
-                <div style={{ ...styles.funFact, color: "#c62828", marginBottom: 20 }}>
-                  Better luck next time!
-                </div>
+
+
+
+              {overlayDismissed && (
+                <button
+                  onClick={() => setShowOverlay(true)}
+                  style={{
+                    ...styles.button,
+                    marginTop: 10,
+                    backgroundColor: "#607d8b"
+                  }}
+                >
+                  View Results 📊
+                </button>
               )}
-
-              {showShare && (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', alignItems: 'center', width: '100%' }}>
-                  <button
-                    onClick={shareResults}
-                    style={{ ...styles.button, ...styles.mobileButton, backgroundColor: "#34C759" }}
-                    aria-label="Share via text"
-                  >
-                    Share Results on <span style={{ fontSize: '1.2em' }}>💬</span>
-                  </button>
-                  <button
-                    onClick={shareToX}
-                    style={{ ...styles.button, ...styles.mobileButton, backgroundColor: "black" }}
-                    aria-label="Share on X"
-                  >
-                    Share Results on 𝕏
-                  </button>
-                </div>
-              )}
-
-              <div style={styles.nextPuzzleTimer}>
-                <div style={{ fontWeight: 'bold', marginBottom: 5 }}>Play again tomorrow!</div>
-                <div style={{ fontSize: '0.9em', color: '#666' }}>Next puzzle in: {formatDuration(timeUntilTomorrow)}</div>
-              </div>
             </div>
           )}
         </>
+      )}
+
+      {showOverlay && (
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(255, 255, 255, 0.98)',
+          borderRadius: 24,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '20px',
+          animation: 'fadeIn 0.5s ease-in',
+          zIndex: 10
+        }}>
+          <button
+            onClick={() => {
+              setShowOverlay(false);
+              setOverlayDismissed(true);
+            }}
+            style={{
+              position: 'absolute',
+              top: 15,
+              right: 15,
+              background: 'none',
+              border: 'none',
+              fontSize: 24,
+              cursor: 'pointer',
+              color: '#666'
+            }}
+          >
+            ✕
+          </button>
+
+          <div style={{
+            fontSize: 24,
+            fontWeight: 'bold',
+            color: won ? '#1565c0' : '#c62828',
+            marginBottom: 20,
+            textAlign: 'center'
+          }}>
+            {won ? `Congrats! You got it in ${hintsRevealed} hint${hintsRevealed !== 1 ? 's' : ''}!` : "You got stumped!"}
+          </div>
+
+          <div style={{ ...styles.scoreSummary, marginBottom: 30 }}>
+            <div style={styles.scoreItem}>
+              <div style={styles.scoreLabel}>Streak</div>
+              <div style={styles.scoreValue}>{streak} 🔥</div>
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', alignItems: 'center', width: '100%', maxWidth: '300px' }}>
+            <button
+              onClick={shareResults}
+              style={{ ...styles.button, ...styles.mobileButton, backgroundColor: "#1565c0" }}
+              aria-label="Share via text"
+            >
+              Share Results on <span style={{ fontSize: '1.2em' }}>💬</span>
+            </button>
+            <button
+              onClick={shareToX}
+              style={{ ...styles.button, ...styles.mobileButton, backgroundColor: "black" }}
+              aria-label="Share on X"
+            >
+              Share Results on 𝕏
+            </button>
+          </div>
+
+          <div style={{ ...styles.nextPuzzleTimer, backgroundColor: '#f5f5f5', marginTop: 30 }}>
+            <div style={{ fontWeight: 'bold', marginBottom: 5 }}>Play again tomorrow!</div>
+            <div style={{ fontSize: '0.9em', color: '#666' }}>Next puzzle in: {formatDuration(timeUntilTomorrow)}</div>
+          </div>
+        </div>
       )}
 
       {!gameStarted && (
@@ -532,12 +610,14 @@ const styles = {
     backgroundColor: "#ffffff",
     borderRadius: 24,
     boxShadow: "0 10px 40px rgba(0,0,0,0.1)",
+    position: 'relative',
+    overflow: 'hidden',
   },
   gameOverContainer: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    gap: '20px',
+    gap: '15px',
     marginTop: '20px',
     animation: 'fadeIn 0.5s ease-out',
   },
@@ -573,22 +653,27 @@ const styles = {
   mobileButton: {
     width: '100%',
     padding: '16px',
-    fontSize: '18px',
+    fontSize: '20px',
+    fontWeight: 'bold',
     borderRadius: '12px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     gap: '10px',
-    boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+    boxShadow: '0 6px 16px rgba(0,0,0,0.15)',
     border: 'none',
+    transform: 'scale(1.02)',
+    transition: 'transform 0.2s',
   },
   nextPuzzleTimer: {
     marginTop: 20,
-    padding: 15,
+    padding: 20,
     backgroundColor: '#e3f2fd',
-    borderRadius: 12,
-    color: '#1565c0',
+    borderRadius: 16,
+    color: '#0d47a1',
     width: '100%',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+    border: '1px solid #bbdefb',
   },
   title: {
     fontSize: 36,
@@ -669,11 +754,12 @@ const styles = {
     color: "#666",
   },
   answerBox: {
-    margin: "20px 0",
+    margin: "0",
     padding: "15px",
     backgroundColor: "#f1f8e9",
     borderRadius: 8,
     border: "2px solid #81c784",
+    width: "100%",
   },
   answerLabel: {
     fontSize: 14,
