@@ -11,7 +11,7 @@ def duplicate_check_hook(pairs):
         result[key] = value
     return result
 
-allowed_keys = {"date", "theme", "answer", "clues"}
+allowed_keys = {"date", "theme", "answer", "hints"}
 
 try:
     with open('public/puzzles.json', 'r') as f:
