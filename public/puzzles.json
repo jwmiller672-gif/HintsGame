@@ -1,442 +1,682 @@
 [
   {
-    "date": "2026-02-20",
-    "theme": "Genius Ideas",
-    "answer": "Velcro",
-    "hints": [
-      "This invention was patented in 1955 after years of rejected applications.",
-      "It consists of two strips with hooks and loops that bond when pressed together.",
-      "Its name comes from combining the French words for velvet and hook."
-    ]
-  },
-  {
-    "date": "2026-02-21",
-    "theme": "Famous People",
-    "answer": "Cleopatra",
-    "hints": [
-      "This ruler's intelligence and linguistic abilities were as renowned as their appearance.",
-      "They were the last active pharaoh of ancient Egypt.",
-      "Their romantic relationships with Julius Caesar and Mark Antony are legendary."
-    ]
-  },
-  {
-    "date": "2026-02-22",
-    "theme": "Pop Culture",
-    "answer": "Pok\u00e9mon",
-    "hints": [
-      "This franchise was created by Satoshi Tajiri, inspired by his childhood hobby of collecting insects.",
-      "Its slogan encourages you to catch them all.",
-      "Pikachu is its most recognizable character."
-    ]
-  },
-  {
-    "date": "2026-02-23",
-    "theme": "Food & Fun",
-    "answer": "Fondue",
-    "hints": [
-      "This dish originated as a way for Alpine villagers to use hardened cheese and stale bread during winter.",
-      "The Swiss version typically features melted cheese or chocolate.",
-      "Long forks are traditionally used to prevent double-dipping."
-    ]
-  },
-  {
-    "date": "2026-02-24",
-    "theme": "Sports & Games",
-    "answer": "Fencing",
-    "hints": [
-      "This sport uses electronic scoring systems to detect valid touches during bouts.",
-      "Competitors wear protective masks and specialized weapons.",
-      "The three weapon types are foil, \u00e9p\u00e9e, and sabre."
-    ]
-  },
-  {
-    "date": "2026-02-25",
-    "theme": "Wildcard",
-    "answer": "Hieroglyphics",
-    "hints": [
-      "This writing system was deciphered by Jean-Fran\u00e7ois Champollion.",
-      "The Rosetta Stone was crucial to understanding it.",
-      "It was used extensively in ancient Egyptian tombs and temples."
-    ]
-  },
-  {
-    "date": "2026-02-26",
-    "theme": "Around the World",
-    "answer": "Petra",
-    "hints": [
-      "This place features elaborate facades carved directly into sandstone cliff faces.",
-      "It was the capital of an ancient Nabataean kingdom.",
-      "Its Treasury building appeared in Indiana Jones and the Last Crusade."
-    ]
-  },
-  {
-    "date": "2026-02-27",
-    "theme": "Genius Ideas",
-    "answer": "Penicillin",
-    "hints": [
-      "This discovery came from observing contamination in laboratory cultures that created bacteria-free zones.",
-      "Fleming noticed it killed bacteria in 1928.",
-      "It became the world's first widely used antibiotic."
-    ]
-  },
-  {
     "date": "2026-02-28",
     "theme": "Famous People",
-    "answer": "Galileo",
+    "answer": "Charles Dickens",
     "hints": [
-      "This person was placed under house arrest for the final years of their life.",
-      "They made significant improvements to the telescope.",
-      "They discovered four moons orbiting Jupiter."
+      "This individual's early experiences in a blacking factory profoundly shaped their worldview and future creations.",
+      "They popularized the phrase 'Merry Christmas' and brought attention to the plight of the poor in Victorian society.",
+      "Their serialized novels introduced unforgettable characters like Ebenezer Scrooge and Oliver Twist."
     ]
   },
   {
     "date": "2026-03-01",
     "theme": "Pop Culture",
-    "answer": "The Beatles",
+    "answer": "The Matrix",
     "hints": [
-      "This band recorded most of their albums at EMI Studios on Abbey Road.",
-      "They triggered a cultural phenomenon called mania named after them.",
-      "Their members were John, Paul, George, and Ringo."
+      "This groundbreaking production revolutionized the use of complex visual effects in modern action sequences.",
+      "The narrative follows a mundane office worker who discovers his entire reality is actually a simulated construct.",
+      "Its protagonist must choose between learning the truth by taking a red pill or remaining in ignorance with a blue pill."
     ]
   },
   {
     "date": "2026-03-02",
     "theme": "Food & Fun",
-    "answer": "Paella",
+    "answer": "Croissant",
     "hints": [
-      "This dish was traditionally cooked by field workers in Valencia over wood fires during lunch breaks.",
-      "The Valencian version traditionally includes rabbit and beans.",
-      "Saffron gives it its distinctive golden color."
+      "Despite its strong association with a specific nation's culture, this staple item actually originated in Austria.",
+      "Its distinctive shape was inspired by the lunar phase on the flag of the Ottoman Empire.",
+      "This buttery, flaky pastry is a famous staple of French bakeries."
     ]
   },
   {
     "date": "2026-03-03",
     "theme": "Sports & Games",
-    "answer": "Badminton",
+    "answer": "Curling",
     "hints": [
-      "This sport was brought to England by British officers stationed in India during the 1870s.",
-      "Players hit a feathered object over a net.",
-      "The shuttlecock can travel over 200 miles per hour during smashes."
+      "This team competition originated on the frozen lochs and ponds of medieval Scotland.",
+      "Players wear specialized footwear, with one sliding shoe and one gripping shoe, to navigate the playing surface.",
+      "Competitors use flat brooms to vigorously sweep the ice, altering the path of a heavy granite stone."
     ]
   },
   {
     "date": "2026-03-04",
     "theme": "Wildcard",
-    "answer": "Aurora Borealis",
+    "answer": "Dark Matter",
     "hints": [
-      "This phenomenon was given its scientific name by Galileo in 1619.",
-      "It appears as dancing ribbons of light in polar regions.",
-      "It's also known as the Northern Lights."
+      "This mysterious presence constitutes a massive majority of the gravitational mass in the universe, despite being entirely invisible.",
+      "Physicists confidently infer its existence strictly because galaxies spin much too fast to be held together solely by observable material.",
+      "This entirely hypothetical, unseeable substance famously does not interact with light or typical electromagnetic fields whatsoever."
     ]
   },
   {
     "date": "2026-03-05",
     "theme": "Around the World",
-    "answer": "Angkor Wat",
+    "answer": "Stonehenge",
     "hints": [
-      "This structure was originally built as a Hindu temple before becoming Buddhist.",
-      "It's the largest religious monument in the world by area.",
-      "It appears on Cambodia's national flag."
+      "The true purpose of this ancient site remains heavily debated among modern archaeologists.",
+      "The massive materials used in its construction were transported hundreds of miles before modern machinery existed.",
+      "This prehistoric circular monument in Wiltshire, England famously aligns with the solstices."
     ]
   },
   {
     "date": "2026-03-06",
     "theme": "Genius Ideas",
-    "answer": "Morse Code",
+    "answer": "Microscope",
     "hints": [
-      "This communication method was developed in the 1830s.",
-      "It represents letters and numbers through combinations of short and long signals.",
-      "SOS is its most famous distress signal using three dots, three dashes, three dots."
+      "The earliest versions of this tool were created in the Netherlands during the late sixteenth century.",
+      "It drastically shifted the course of biology by revealing a previously invisible ecosystem.",
+      "Scientists use this instrument's magnified lenses to examine cells, bacteria, and other tiny structures."
     ]
   },
   {
     "date": "2026-03-07",
     "theme": "Famous People",
-    "answer": "Marco Polo",
+    "answer": "Marie Curie",
     "hints": [
-      "This person spent over two decades traveling through Asia in the 13th century.",
-      "They served in an Asian imperial court for many years.",
-      "Their travel accounts introduced Europeans to Central Asian and Chinese cultures."
+      "This individual dedicated their life to exploring the fundamental properties of matter.",
+      "They were the first person to win multiple Nobel Prizes across two different scientific disciplines.",
+      "Their groundbreaking research on radioactivity helped define our understanding of atomic physics, despite ultimately costing them their health."
     ]
   },
   {
     "date": "2026-03-08",
     "theme": "Pop Culture",
-    "answer": "Tetris",
+    "answer": "Star Wars",
     "hints": [
-      "This game involves arranging geometric pieces.",
-      "It was created by a Soviet programmer during the 1980s.",
-      "It's one of the best-selling video games of all time."
+      "This production spawned a massive merchandising empire that transformed the entertainment industry.",
+      "The narrative follows a young protagonist learning to harness a mystical energy field in a galactic conflict.",
+      "It features iconic villains like Darth Vader and a diverse cast of alien species from a galaxy far, far away."
     ]
   },
   {
     "date": "2026-03-09",
     "theme": "Food & Fun",
-    "answer": "Gazpacho",
+    "answer": "Sushi",
     "hints": [
-      "This dish is traditionally served cold during hot weather.",
-      "It originated in the Andalusian region of southern Spain.",
-      "It's a chilled tomato-based soup with vegetables."
+      "This culinary tradition evolved from an ancient method of preserving fresh ingredients for long journeys.",
+      "It emphasizes strict preparation rules regarding the temperature and seasoning of short grain rice.",
+      "Diners often consume these bite-sized rolls of raw fish wrapped in dried seaweed."
     ]
   },
   {
     "date": "2026-03-10",
     "theme": "Sports & Games",
-    "answer": "Hopscotch",
+    "answer": "Slam Dunk",
     "hints": [
-      "This children's game has been played in various forms for centuries.",
-      "Players navigate through numbered sections by jumping on one foot.",
-      "A marker is tossed onto numbered squares drawn on the ground."
+      "This spectacular maneuver is virtually impossible for an average person to perform.",
+      "It became a massive crowd-pleasing spectacle popularized by exceptional athletes during the late twentieth century.",
+      "A player leaping high above the rim aggressively forces the ball straight down through the basketball hoop."
     ]
   },
   {
     "date": "2026-03-11",
     "theme": "Wildcard",
-    "answer": "Quicksand",
+    "answer": "Paperclip",
     "hints": [
-      "This phenomenon forms when water saturates certain material.",
-      "It becomes more dangerous when people struggle or make sudden movements.",
-      "Despite myths, humans cannot be completely swallowed by this mixture."
+      "This incredibly simple invention essentially solved the common problem of organizing loose materials without damaging them.",
+      "The elegant design consists entirely of a single piece of steel wire bent into a specific looping shape.",
+      "Office workers universally use this tiny metal object to hold sheets of paper temporarily together."
     ]
   },
   {
     "date": "2026-03-12",
     "theme": "Around the World",
-    "answer": "Alhambra",
+    "answer": "Eiffel Tower",
     "hints": [
-      "This fortified complex was constructed during the medieval period.",
-      "It features intricate Islamic geometric patterns and arabesques.",
-      "It's a palace and fortress in Granada, Spain."
+      "This prominent structure was initially heavily criticized by local artists as a monstrous addition to the skyline.",
+      "Designed primarily as the grand entrance to an international exhibition, it held the title of tallest human-made structure for decades.",
+      "The iconic iron lattice monument stands tall above the Champ de Mars in Paris."
     ]
   },
   {
     "date": "2026-03-13",
     "theme": "Genius Ideas",
-    "answer": "Concrete",
+    "answer": "Telephone",
     "hints": [
-      "This material has been used for thousands of years in construction.",
-      "It hardens through a chemical reaction with water.",
-      "Modern construction uses it mixed with steel reinforcement."
+      "This invention fundamentally altered human social behavior by effectively eliminating the barrier of geographic distance.",
+      "Early commercial networks required human operators to physically connect individual lines via massive switchboards.",
+      "Alexander Graham Bell famously secured the patent for this device designed to transmit vocal sounds over electrical wires."
     ]
   },
   {
     "date": "2026-03-14",
     "theme": "Famous People",
-    "answer": "Charles Darwin",
+    "answer": "Albert Einstein",
     "hints": [
-      "This person studied specimens collected during an extended sea voyage.",
-      "They proposed a theory explaining how species change over time.",
-      "Their book On the Origin of Species revolutionized biology."
+      "This person struggled with standard educational systems before fundamentally changing our modern perspective on the universe.",
+      "Their most famous equation demonstrated that mass and energy are essentially interchangeable forms of the same phenomenon.",
+      "The theoretical physicist revolutionized science with the general theory of relativity and his distinctly unkempt hair."
     ]
   },
   {
     "date": "2026-03-15",
     "theme": "Pop Culture",
-    "answer": "Scooby-Doo",
+    "answer": "Jurassic Park",
     "hints": [
-      "This animated series has spawned numerous spin-offs and films since its debut.",
-      "It follows the adventures of a group of teenagers and their pet.",
-      "This show features a Great Dane character who is afraid of ghosts."
+      "This cinematic success utilized cutting-edge computer graphics to bring spectacular prehistoric creatures back from extinction.",
+      "The plot centers on a disastrous island excursion where ambitious scientific hubris leads to catastrophic security failures.",
+      "Characters must flee from terrifying velociraptors and a massive Rex after a theme park loses power."
     ]
   },
   {
     "date": "2026-03-16",
     "theme": "Food & Fun",
-    "answer": "Risotto",
+    "answer": "Saffron",
     "hints": [
-      "This dish requires a specific cooking technique to achieve proper creaminess.",
-      "It originated in northern Italy during the Renaissance period.",
-      "It's made with short-grain rice cooked slowly with broth."
+      "This spice is famously known as the most expensive culinary ingredient in the world by solid weight.",
+      "It requires incredibly labor-intensive manual harvesting of vibrant red stigmas from specific autumn-blooming crocus flowers.",
+      "Chefs use these tiny crimson threads to impart a distinct golden-yellow hue and floral flavor to dishes like paella."
     ]
   },
   {
     "date": "2026-03-17",
     "theme": "Sports & Games",
-    "answer": "Shuffleboard",
+    "answer": "Triple Axel",
     "hints": [
-      "This activity requires players to propel objects across a playing surface.",
-      "It became popular on cruise ships in the 1920s.",
-      "Players push weighted pucks toward a triangular scoring area."
+      "This maneuver requires an immense combination of explosive power, precision, and highly advanced spatial awareness.",
+      "It is famously the only multi-rotational jump in its discipline that requires the athlete to launch from a forward-facing takeoff edge.",
+      "A figure skater launches into the air and completes three and a half rapid rotations before landing gracefully backwards on the ice."
     ]
   },
   {
     "date": "2026-03-18",
     "theme": "Wildcard",
-    "answer": "Constellation",
+    "answer": "Tardigrade",
     "hints": [
-      "These groupings have been recognized and named by cultures throughout history.",
-      "Different civilizations identified different versions of these in the night sky.",
-      "The International Astronomical Union recognizes 88 of these star patterns."
+      "This remarkably resilient organism is famous for effortlessly surviving conditions that would instantly kill almost any other known lifeform.",
+      "The microscopic creature can miraculously enter a state of suspended animation, surviving extreme radiation, boiling liquids, and the freezing vacuum of space.",
+      "Scientists colloquially refer to this incredibly tough, eight-legged micro-animal as a 'water bear'."
     ]
   },
   {
     "date": "2026-03-19",
     "theme": "Around the World",
-    "answer": "Kremlin",
+    "answer": "Machu Picchu",
     "hints": [
-      "This complex contains multiple palaces and cathedrals.",
-      "Its distinctive towers feature red stars installed in 1937.",
-      "It's the official residence of the Russian president in Moscow."
+      "This remote destination was hidden from foreign invaders and remained unknown to the outside world for centuries.",
+      "Constructed high in the Andes mountains, it features incredibly precise stone masonry created without the use of mortar.",
+      "The spectacular fifteenth-century citadel was famously built by the powerful Incan empire."
     ]
   },
   {
     "date": "2026-03-20",
     "theme": "Genius Ideas",
-    "answer": "Vulcanization",
+    "answer": "Penicillin",
     "hints": [
-      "This process transforms a natural material into something more durable.",
-      "It involves heating material with sulfur to create cross-links.",
-      "Charles Goodyear developed this method for treating rubber."
+      "This accidental discovery fundamentally revolutionized modern medicine and drastically extended global human life expectancies.",
+      "The breakthrough essentially occurred because a messy researcher foolishly left an unwashed petri dish exposed near an open window.",
+      "Alexander Fleming famously noticed that a specific blue-green mold was actively destroying surrounding colonies of staph bacteria."
     ]
   },
   {
     "date": "2026-03-21",
     "theme": "Famous People",
-    "answer": "Sigmund Freud",
+    "answer": "Cleopatra",
     "hints": [
-      "This physician founded a therapeutic approach based on talk therapy.",
-      "They developed theories about dreams and childhood experiences.",
-      "They introduced concepts like id, ego, and superego."
+      "This historical figure leveraged enormous personal wealth and strategic alliances to maintain their country's independence.",
+      "The remarkably well-educated leader captivated two of the most powerful men in the Roman Empire.",
+      "She was the last active ruler of the Ptolemaic Kingdom of Egypt."
     ]
   },
   {
     "date": "2026-03-22",
     "theme": "Pop Culture",
-    "answer": "Monopoly",
+    "answer": "Harry Potter",
     "hints": [
-      "This game became popular during the economic hardships of the 1930s.",
-      "Players move around a board collecting money from other players.",
-      "Boardwalk and Park Place are its most expensive properties."
+      "This cultural phenomenon grew from a simple train ride idea into a globally defining literary franchise.",
+      "The sprawling narrative tracks a young orphan discovering a hidden realm of magical abilities and dark legacies.",
+      "The boy wizard attends Hogwarts School and inevitably battles the sinister Lord Voldemort."
     ]
   },
   {
     "date": "2026-03-23",
     "theme": "Food & Fun",
-    "answer": "Crepe",
+    "answer": "Chocolate",
     "hints": [
-      "This food item can be prepared with sweet or savory flavors.",
-      "It originated in northwestern France centuries ago.",
-      "It is a thin pancake that is folded around its filling"
+      "This beloved substance was initially consumed as a bitter, frothy beverage by ancient Mesoamerican civilizations.",
+      "The lengthy production process involves fermenting, roasting, and heavily refining seeds extracted from large tropical pods.",
+      "It is now a universally adored sweet treat heavily associated with Valentine's Day and Halloween candies."
     ]
   },
   {
     "date": "2026-03-24",
     "theme": "Sports & Games",
-    "answer": "Wrestling",
+    "answer": "Serena Williams",
     "hints": [
-      "This sport is one of the oldest competitive activities in human history.",
-      "Competitors use grappling techniques to control their opponent.",
-      "It has both freestyle and Greco-Roman styles in the Olympics."
+      "This incredible athlete utterly dominated their chosen individual competition for over two decades.",
+      "They changed the physical expectations of their sport with a famously powerful serve and aggressive baseline play.",
+      "The legendary American champion famously won twenty-three Grand Slam women's singles titles."
     ]
   },
   {
     "date": "2026-03-25",
     "theme": "Wildcard",
-    "answer": "Hypnosis",
+    "answer": "Lullaby",
     "hints": [
-      "This process alters a person's state of consciousness.",
-      "Franz Mesmer was an early practitioner of this technique.",
-      "It is often used on volunteers during a magic show."
+      "This cultural tradition spans centuries and involves repetitive, calming sounds passed down through generations.",
+      "The simple, soothing melodies are specifically designed to successfully induce deep states of relaxation.",
+      "Tired parents gently sing this quiet musical composition to slowly put an infant to sleep."
     ]
   },
   {
     "date": "2026-03-26",
     "theme": "Around the World",
-    "answer": "Louvre",
+    "answer": "Taj Mahal",
     "hints": [
-      "This building served as a royal palace before its current purpose.",
-      "A glass pyramid entrance was added to it in 1989.",
-      "It is the world's largest art museum."
+      "This breathtaking compound was commissioned specifically as an eternal resting place following a devastating personal loss.",
+      "The incredibly symmetrical architecture changes color throughout the day depending on the angle of the sunlight hitting the facade.",
+      "The massive white marble mausoleum in Agra, India was built by a grieving Mughal emperor for his favorite wife."
     ]
   },
   {
     "date": "2026-03-27",
     "theme": "Genius Ideas",
-    "answer": "Barcode",
+    "answer": "Printing Press",
     "hints": [
-      "This system encodes information in a pattern that machines can read.",
-      "It was first used commercially in the mid-1970s.",
-      "Scanners read this system's patterns to retrieve product information."
+      "This robust machine democratized information and catalyzed major historical movements by drastically reducing the cost of knowledge.",
+      "It utilized movable metal type that could be rearranged quickly to efficiently produce multiple identical pages.",
+      "Johannes Gutenberg's revolutionary invention allowed books and newspapers to be mass-produced for the very first time."
     ]
   },
   {
     "date": "2026-03-28",
     "theme": "Famous People",
-    "answer": "Socrates",
+    "answer": "Abraham Lincoln",
     "hints": [
-      "This ancient Greek philosopher taught through dialogue and questioning.",
-      "They developed a method of inquiry to stimulate critical thinking.",
-      "They were sentenced to death by drinking hemlock in 399 BCE."
+      "This leader rose from humble frontier beginnings to steer a fractured nation through its bloodiest existential crisis.",
+      "They delivered a brief but profoundly immortal address dedicating a national cemetery following a horribly devastating battle.",
+      "The sixteenth President of the United States famously issued the Emancipation Proclamation during the Civil War."
     ]
   },
   {
     "date": "2026-03-29",
     "theme": "Pop Culture",
-    "answer": "Rubik's Cube",
+    "answer": "Batman",
     "hints": [
-      "This toy became a global phenomenon in the early 1980s.",
-      "It has over 43 quintillion possible configurations.",
-      "The goal is to align all colored squares on each face of this puzzle."
+      "This fictional persona relies entirely on immense wealth, exceptional intellect, and rigorous physical training rather than supernatural gifts.",
+      "The brooding vigilante patrols the shadowy streets of a crime-ridden metropolis operating from a hidden subterranean cave.",
+      "The iconic DC Comics hero dresses entirely as a nocturnal flying mammal to strike terror into villains like the Joker."
     ]
   },
   {
     "date": "2026-03-30",
     "theme": "Food & Fun",
-    "answer": "Jambalaya",
+    "answer": "Coffee",
     "hints": [
-      "This one-pot dish has Spanish and French colonial influences.",
-      "It combines rice with meat, vegetables, and Creole spices.",
-      "It's a signature dish of Louisiana Cajun cuisine."
+      "This vital global commodity fuels modern economies and heavily dictates morning routines across countless cultures.",
+      "The widespread beverage is carefully brewed by extracting flavor compounds from the roasted seeds of a tropical evergreen shrub.",
+      "People consume this dark, caffeinated drink primarily to boost energy and alertness."
     ]
   },
   {
     "date": "2026-03-31",
     "theme": "Sports & Games",
-    "answer": "Javelin",
+    "answer": "Bicycle Kick",
     "hints": [
-      "This object has been used for hunting and warfare for thousands of years.",
-      "Athletes throw it for distance in competitions.",
-      "It's a spear that competitors hurl after a running approach."
+      "This incredibly acrobatic maneuver requires spectacular timing and fearless physical commitment to execute successfully during a live match.",
+      "An athlete throws their torso abruptly backward into the air, striking a hovering object overhead with a rapid, scissoring leg motion.",
+      "A soccer player dramatically scores a goal by striking the ball mid-air while their body is completely upside down and airborne."
     ]
   },
   {
     "date": "2026-04-01",
     "theme": "Wildcard",
-    "answer": "Mummy",
+    "answer": "Gravity",
     "hints": [
-      "This preservation method has been practiced by multiple ancient cultures.",
-      "This process involves removing organs and drying the body.",
-      "Ancient Egyptians wrapped these preserved bodies in linen."
+      "This invisible force universally dictates the behavior of incredibly massive celestial bodies across vast cosmic distances.",
+      "It prevents an atmosphere from dissipating into the void and ensures that oceanic masses remain anchored to the planetary surface.",
+      "The fundamental physical law causes objects with mass to pull toward each other and keeps human feet planted safely on the ground."
     ]
   },
   {
     "date": "2026-04-02",
     "theme": "Around the World",
-    "answer": "Sistine Chapel",
+    "answer": "Terracotta Army",
     "hints": [
-      "This religious building was constructed in the late 15th century.",
-      "This building's ceiling was painted by Michelangelo between 1508 and 1512.",
-      "It's where papal conclaves elect new popes in Vatican City."
+      "This staggering collection was intentionally buried deep underground and remained entirely undisturbed and undiscovered for over two millennia.",
+      "Each individual statue in the massive installation features entirely unique facial expressions and realistically intricate uniform details.",
+      "Thousands of life-sized clay soldiers were remarkably constructed to protect the first Emperor of China in the afterlife."
     ]
   },
   {
     "date": "2026-04-03",
     "theme": "Genius Ideas",
-    "answer": "Stethoscope",
+    "answer": "Jet Engine",
     "hints": [
-      "This medical instrument was invented in the early 19th century.",
-      "It allows physicians to listen to internal sounds of the body.",
-      "Doctors use it to hear heartbeats, breathing, and other body sounds."
+      "This powerful propulsion system radically reshaped international logistics by pushing vehicles far beyond previously established speed barriers.",
+      "The fundamental mechanism essentially operates by continuously compressing incoming air, mixing it heavily with fuel, and igniting it for massive thrust.",
+      "Commercial airliners currently utilize these massive spinning turbines to rapidly soar through the stratosphere at near supersonic speeds."
     ]
   },
   {
     "date": "2026-04-04",
     "theme": "Famous People",
-    "answer": "Alexander Fleming",
+    "answer": "Isaac Newton",
     "hints": [
-      "This scientist made a breakthrough discovery by noticing unexpected changes in their experiments.",
-      "They observed that contamination had killed surrounding bacteria.",
-      "Their 1928 discovery of penicillin revolutionized medicine."
+      "This introverted individual made astonishingly brilliant mathematical breakthroughs while isolated during a devastating plague outbreak.",
+      "They practically invented calculus and fundamentally established the three core laws of classical mechanics.",
+      "The legendary physicist famously formulated the theory of universal gravitation after supposedly watching an apple fall from a tree."
+    ]
+  },
+  {
+    "date": "2026-04-05",
+    "theme": "Pop Culture",
+    "answer": "Pikachu",
+    "hints": [
+      "This beloved fictional creature has served as the universal mascot for the highest-grossing media franchise in human history.",
+      "The chubby, yellow companion character distinctly refuses to evolve or enter a confining red and white storage device.",
+      "The famous electric-type Pok\u00e9mon communicates entirely by repeating syllables of its own name and partners with Ash Ketchum."
+    ]
+  },
+  {
+    "date": "2026-04-06",
+    "theme": "Food & Fun",
+    "answer": "Kombucha",
+    "hints": [
+      "This beverage originated thousands of years ago in Northeast Asia and was traditionally prized for its purported health benefits.",
+      "The production process requires feeding a gelatinous symbiotic culture of bacteria and yeast with heavily sweetened tea.",
+      "Many health-conscious consumers drink this slightly effervescent, fermented liquid to support their digestive microbiome."
+    ]
+  },
+  {
+    "date": "2026-04-07",
+    "theme": "Sports & Games",
+    "answer": "Fencing",
+    "hints": [
+      "This highly technical discipline evolved directly from deadly historical dueling practices used by European aristocracy.",
+      "Competitors compete on a long, narrow strip and must adhere to incredibly complex rules regarding target areas and right-of-way.",
+      "Two combatants wearing protective mesh masks attempt to strike each other with rapid thrusts of thin bladed weapons."
+    ]
+  },
+  {
+    "date": "2026-04-08",
+    "theme": "Wildcard",
+    "answer": "Tsunami",
+    "hints": [
+      "This powerful force is capable of entirely reshaping coastal landscapes across thousands of miles.",
+      "The massive oceanic displacement is frequently triggered by deep underwater seismic activity.",
+      "A fast-moving wall of water surges inland and causes catastrophic flooding in populated harbor towns."
+    ]
+  },
+  {
+    "date": "2026-04-09",
+    "theme": "Around the World",
+    "answer": "Colosseum",
+    "hints": [
+      "This massive historical building served as a brutal public entertainment venue for an ancient empire.",
+      "The remarkable amphitheater once featured elaborate naval battles through a complex system of intentional flooding.",
+      "Gladiators fought incredibly violent spectacles before huge cheering crowds inside this ruins located in central Rome."
+    ]
+  },
+  {
+    "date": "2026-04-10",
+    "theme": "Genius Ideas",
+    "answer": "GPS",
+    "hints": [
+      "This complex network entirely replaced ancient navigational tools by providing incredibly precise, globally available positioning data.",
+      "The system functions by precisely measuring the microscopic orbital time delays of highly synchronized radio signals broadcast from space.",
+      "A modern smartphone uses this constellation of orbiting satellites to flawlessly determine your exact location on a digital map."
+    ]
+  },
+  {
+    "date": "2026-04-11",
+    "theme": "Famous People",
+    "answer": "Galileo Galilei",
+    "hints": [
+      "This insightful thinker faced immense institutional backlash for challenging the established cosmological views of their era.",
+      "They incredibly improved optical magnification tools to observe the irregular, cratered surface of the moon.",
+      "The Italian astronomer controversially proved that the Earth actively revolves around the Sun instead of being the center of the universe."
+    ]
+  },
+  {
+    "date": "2026-04-12",
+    "theme": "Pop Culture",
+    "answer": "Superman",
+    "hints": [
+      "This beloved figure established many of the fundamental tropes associated with modern costumed vigilantes.",
+      "The alien refugee gains unbelievable physical abilities simply by absorbing radiation from a yellow sun.",
+      "The famous DC Comics hero disguises himself as a mild-mannered reporter named Clark Kent."
+    ]
+  },
+  {
+    "date": "2026-04-13",
+    "theme": "Food & Fun",
+    "answer": "Caviar",
+    "hints": [
+      "This luxurious delicacy was once exclusively reserved for royalty but is now tightly regulated due to severe overfishing.",
+      "The highly perishable product requires incredibly precise harvesting and careful salt-curing to preserve its delicate texture.",
+      "High-end diners consume these unfertilized sturgeon roe eggs, often served delicately with a specialized mother-of-pearl spoon."
+    ]
+  },
+  {
+    "date": "2026-04-14",
+    "theme": "Sports & Games",
+    "answer": "Checkmate",
+    "hints": [
+      "This definitive outcome ends a quiet but intense competition of deep strategic foresight.",
+      "It signifies that an opponent has no remaining legal moves to escape an unavoidable attack.",
+      "A player declares this final word when permanently trapping the opposing king on a checkered board."
+    ]
+  },
+  {
+    "date": "2026-04-15",
+    "theme": "Wildcard",
+    "answer": "Black Hole",
+    "hints": [
+      "This extreme phenomenon warps the fundamental fabric of spacetime so intensely that the normal laws of physics seemingly break down entirely.",
+      "It typically forms strictly following the catastrophic gravitational collapse of an incredibly massive dying star.",
+      "This incredibly dense cosmic object features an event horizon with such massive gravity that absolutely nothing, not even light, can ever escape."
+    ]
+  },
+  {
+    "date": "2026-04-16",
+    "theme": "Around the World",
+    "answer": "Great Wall",
+    "hints": [
+      "This sprawling fortification was built over multiple centuries by successive dynasties aiming to deter northern nomadic invasions.",
+      "The extensive structure snakes dramatically through challenging mountainous terrain across a massive Asian territory.",
+      "It is incredibly famous as an exceptionally long brick and stone barrier originally constructed to protect early China."
+    ]
+  },
+  {
+    "date": "2026-04-17",
+    "theme": "Genius Ideas",
+    "answer": "Telescope",
+    "hints": [
+      "This optical invention drastically expanded our understanding of the universe by bringing distant objects visually closer.",
+      "Early versions utilized simple arrangements of curved glass lenses housed within an elongated tube.",
+      "Modern observatories use massive reflective mirrors in this device to study distant stars and galaxies."
+    ]
+  },
+  {
+    "date": "2026-04-18",
+    "theme": "Famous People",
+    "answer": "Winston Churchill",
+    "hints": [
+      "This prominent leader motivated an isolated nation through incredibly dark times using powerful, stirring oratory.",
+      "They famously promised nothing but 'blood, toil, tears and sweat' upon assuming supreme wartime executive authority.",
+      "The cigar-smoking British Prime Minister staunchly led the United Kingdom to victory during the Second World War."
+    ]
+  },
+  {
+    "date": "2026-04-19",
+    "theme": "Pop Culture",
+    "answer": "The Simpsons",
+    "hints": [
+      "This animated production redefined adult-oriented television comedy by introducing a heavily dysfunctional, brightly colored suburban family.",
+      "The wildly successful sitcom features a clumsy nuclear power plant worker and his mischievous spike-haired son.",
+      "The incredibly long-running cartoon stars characters named Homer, Marge, Bart, Lisa, and Maggie."
+    ]
+  },
+  {
+    "date": "2026-04-20",
+    "theme": "Food & Fun",
+    "answer": "Gelato",
+    "hints": [
+      "This frozen treat boasts a denser, more intensely flavored profile than its lighter, airier international counterparts.",
+      "The traditional recipe distinctly utilizes a much higher proportion of milk to cream and is churned at a significantly slower speed.",
+      "Tourists frequently enjoy this famously smooth, artisanal Italian dessert scooped from specialized chilled cases."
+    ]
+  },
+  {
+    "date": "2026-04-21",
+    "theme": "Sports & Games",
+    "answer": "Bobsled",
+    "hints": [
+      "This extreme activity demands profound teamwork to generate initial momentum before relying entirely on gravity and precise steering.",
+      "The incredibly dangerous runs feature heavily banked icy turns negotiated at speeds frequently exceeding eighty miles per hour.",
+      "A team intensely pushes and then rapidly jumps inside an aerodynamic cowling to careen down a winding frozen track."
+    ]
+  },
+  {
+    "date": "2026-04-22",
+    "theme": "Wildcard",
+    "answer": "Aurora Borealis",
+    "hints": [
+      "This breathtaking phenomenon is typically most visible near the magnetic poles during specific periods of intense solar activity.",
+      "The brilliant visual display is triggered exclusively when charged particles from a solar flare explosively collide with gases in the upper atmosphere.",
+      "Tourists frequently brave freezing temperatures to witness these majestic, shimmering green and purple lights dancing across the northern sky."
+    ]
+  },
+  {
+    "date": "2026-04-23",
+    "theme": "Around the World",
+    "answer": "Mount Everest",
+    "hints": [
+      "This legendary geographical feature poses incredibly severe physiological risks due to remarkably low oxygen levels at extreme altitudes.",
+      "The famous border between two Asian nations runs directly across the summit of this massively treacherous peak.",
+      "Many ambitious climbers train for years attempting to scale this towering Himalayan giant, the highest point on Earth."
+    ]
+  },
+  {
+    "date": "2026-04-24",
+    "theme": "Genius Ideas",
+    "answer": "Atomic Clock",
+    "hints": [
+      "This incredibly precise instrument fundamentally underpins the complex synchronization required by modern global telecommunications networks.",
+      "The mechanism completely ignores traditional mechanical oscillation, relying instead on the highly consistent electromagnetic frequencies of specific transition states.",
+      "Scientists use these highly specialized devices to measure time by tightly monitoring the incredibly rapid resonant frequencies of cesium atoms."
+    ]
+  },
+  {
+    "date": "2026-04-25",
+    "theme": "Famous People",
+    "answer": "Rosa Parks",
+    "hints": [
+      "This courageous individual sparked a massive societal shift simply by refusing to comply with unjust segregation laws.",
+      "Their quiet act of defiance directly led to a year-long community boycott of a major municipal transit system.",
+      "The legendary civil rights activist famously refused to surrender their bus seat to a white passenger in Montgomery, Alabama."
+    ]
+  },
+  {
+    "date": "2026-04-26",
+    "theme": "Pop Culture",
+    "answer": "The Avengers",
+    "hints": [
+      "This collaborative project successfully combined several disparate fictional narratives into one massive, record-breaking storyline.",
+      "The powerful team initially forms in response to an extraterrestrial invasion threatening the total destruction of New York City.",
+      "The Marvel superhero squad famously features Iron Man, Thor, Hulk, and Captain America fighting side-by-side."
+    ]
+  },
+  {
+    "date": "2026-04-27",
+    "theme": "Food & Fun",
+    "answer": "Ratatouille",
+    "hints": [
+      "This provincial vegetable dish evolved from a rustic stew designed to utilize the late summer harvest in southern Europe.",
+      "Cooking the ingredients separately before combining them is crucial to prevent the components from breaking down into mush.",
+      "The classic French preparation prominently features stewed eggplant, zucchini, bell peppers, and tomatoes."
+    ]
+  },
+  {
+    "date": "2026-04-28",
+    "theme": "Sports & Games",
+    "answer": "Capoeira",
+    "hints": [
+      "This flowing practice was historically disguised by marginalized populations to hide its combative nature from oppressive authorities.",
+      "The mesmerizing exchanges are heavily dictated by rhythmic musical accompaniment played on a distinctive single-stringed bow instrument.",
+      "This unique Afro-Brazilian martial art famously integrates complex acrobatic dance elements, sweeping kicks, and constant fluid movement."
+    ]
+  },
+  {
+    "date": "2026-04-29",
+    "theme": "Wildcard",
+    "answer": "Oxygen",
+    "hints": [
+      "This invisible substance is remarkably reactive and constitutes a significant portion of our planetary crust.",
+      "It strictly fuels the combustion process required by both roaring campfires and complex internal engines.",
+      "Humans constantly inhale this vital, life-sustaining element simply to survive."
+    ]
+  },
+  {
+    "date": "2026-04-30",
+    "theme": "Around the World",
+    "answer": "Grand Canyon",
+    "hints": [
+      "This breathtaking natural wonder reveals millions of years of distinct geological history through dramatically exposed stratifications.",
+      "The immense, winding chasm was slowly and persistently carved by the erosive forces of the Colorado River.",
+      "Tourists flock to this massively deep, intensely red rocky gorge located famously in the Arizona desert."
+    ]
+  },
+  {
+    "date": "2026-05-01",
+    "theme": "Genius Ideas",
+    "answer": "Microprocessor",
+    "hints": [
+      "This complex component exponentially accelerated global technological advancement by drastically miniaturizing enormous computation engines.",
+      "Its incredible manufacturing process requires painstakingly etching billions of microscopic transistors onto a tiny sliver of purified silicon.",
+      "This tiny computer chip acts as the primary central processing unit effectively powering modern laptops and smartphones."
+    ]
+  },
+  {
+    "date": "2026-05-02",
+    "theme": "Famous People",
+    "answer": "Nelson Mandela",
+    "hints": [
+      "This resilient leader miraculously transitioned from a convicted political prisoner into their nation's highest executive authority.",
+      "They spent twenty-seven incredibly difficult years isolated in prison resisting a brutally oppressive system of state-enforced racial segregation.",
+      "The profoundly anti-apartheid revolutionary ultimately became the exceedingly famous first Black president of South Africa."
+    ]
+  },
+  {
+    "date": "2026-05-03",
+    "theme": "Pop Culture",
+    "answer": "Godzilla",
+    "hints": [
+      "This cinematic icon originated as a direct allegorical response to the devastating horrors of atomic weaponry.",
+      "The massive amphibious reptilian menace regularly clashes with vast military forces and other equally massive mutated adversaries.",
+      "The gigantic radioactive monster famously destroys heavily populated Japanese cities using incredibly destructive atomic breath."
+    ]
+  },
+  {
+    "date": "2026-05-04",
+    "theme": "Food & Fun",
+    "answer": "Kimchi",
+    "hints": [
+      "This staple side dish was originally developed as a vital method for surviving harsh winters before modern refrigeration existed.",
+      "The pungent preparation traditionally involves burying large earthenware fermentation crocks underground to maintain a consistent temperature.",
+      "This traditional Korean recipe deeply ferments napa cabbage or radishes with a heavily spiced chili paste."
+    ]
+  },
+  {
+    "date": "2026-05-05",
+    "theme": "Sports & Games",
+    "answer": "Water Polo",
+    "hints": [
+      "This grueling competition demands exceptional treading stamina, as competitors are strictly forbidden from touching the bottom of the arena.",
+      "The physically aggressive gameplay frequently involves intensely brutal underwater holding and kicking occurring mostly out of sight of the referees.",
+      "Teams furiously swim and pass a floating ball with one hand attempting to hurl it into an opponent's netted aquatic goal."
+    ]
+  },
+  {
+    "date": "2026-05-06",
+    "theme": "Wildcard",
+    "answer": "Quasar",
+    "hints": [
+      "This incredibly distant phenomenon outshines entire galaxies, making it one of the brightest consistently observable objects in the known universe.",
+      "The incredibly massive energy output is generated entirely by the friction of superheated surrounding gas spiraling rapidly inward.",
+      "Astronomers describe this incredibly luminous celestial object as an extremely active galactic nucleus powered by a supermassive black hole."
     ]
   }
 ]
