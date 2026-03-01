@@ -380,7 +380,11 @@ export default function App() {
 
   return (
     <div style={styles.container}>
-      <h1 style={{ ...styles.title, color: "#1565c0" }}>Hints</h1>
+      <img
+        src={process.env.PUBLIC_URL + "/logo.png"}
+        alt="Hints Logo"
+        style={{ width: "160px", height: "auto", margin: "0 auto 15px", display: "block" }}
+      />
       <h2 style={{ ...styles.subtitle, color: "#2c3e50" }}>
         The Daily Guessing Game
       </h2>
