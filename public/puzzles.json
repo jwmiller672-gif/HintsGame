@@ -978,5 +978,305 @@
       "It grew out of a project originally funded by the U.S. military to keep communications running even if parts of a network failed.",
       "This global network relies on protocols like TCP/IP to let computers exchange data instantly across the world."
     ]
+  },
+  {
+    "date": "2026-09-18",
+    "theme": "Famous People",
+    "answer": "Ada Lovelace",
+    "hints": [
+      "This 19th-century thinker is celebrated for foreseeing the potential of machines long before the technology existed to build them.",
+      "The daughter of a famous Romantic poet, she worked closely with Charles Babbage on his mechanical calculating device.",
+      "She is often credited as the first person to publish an algorithm intended for a machine to carry out, making her a pioneer of programming."
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "theme": "Pop Culture",
+    "answer": "Super Mario",
+    "hints": [
+      "This character began as a nameless carpenter in a 1981 arcade cabinet before becoming one of the most recognizable figures in entertainment.",
+      "Clad in blue overalls and a red cap, this mustachioed hero jumps on enemies and collects coins across colorful worlds.",
+      "He rescues Princess Peach from the villain Bowser and is the flagship mascot of Nintendo."
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "theme": "Food & Fun",
+    "answer": "Paella",
+    "hints": [
+      "This dish is traditionally cooked outdoors over an open fire in a wide, shallow pan that shares its name.",
+      "Saffron gives its rice base a signature golden color, and versions vary by region with seafood, rabbit, or chicken.",
+      "It originated in the Valencia region of Spain and is often served straight from the pan at large gatherings."
+    ]
+  },
+  {
+    "date": "2026-09-21",
+    "theme": "Sports & Games",
+    "answer": "Hat Trick",
+    "hints": [
+      "This term describes a single player achieving the same feat three times in one game.",
+      "It is most closely associated with hockey and soccer, where fans may toss objects onto the field to celebrate it.",
+      "The phrase originated in cricket, when a bowler dismissed three batsmen with consecutive deliveries and was rewarded with headwear."
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "theme": "Wildcard",
+    "answer": "Photosynthesis",
+    "hints": [
+      "This process is the reason most life on the planet can exist, quietly powering ecosystems from the bottom up.",
+      "It converts sunlight, water, and carbon dioxide into chemical energy, releasing oxygen as a byproduct.",
+      "Green plants, algae, and some bacteria perform it using the pigment chlorophyll inside their cells."
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "theme": "Around the World",
+    "answer": "Santorini",
+    "hints": [
+      "This destination's dramatic landscape was shaped by one of the largest volcanic eruptions in recorded history.",
+      "Its villages of white cube-shaped houses and blue domes cling to steep cliffs overlooking a flooded crater.",
+      "This Greek island in the Aegean Sea is famous for its sunsets viewed from the town of Oia."
+    ]
+  },
+  {
+    "date": "2026-09-24",
+    "theme": "Genius Ideas",
+    "answer": "Refrigeration",
+    "hints": [
+      "This innovation dramatically changed how humanity stores food, transports goods, and settles in hot climates.",
+      "Before it became common in homes, people relied on harvested ice, cellars, and salting to keep perishables from spoiling.",
+      "It works by using a circulating chemical coolant to draw heat out of an enclosed space."
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "theme": "Famous People",
+    "answer": "Jane Goodall",
+    "hints": [
+      "This researcher transformed our understanding of the animal kingdom through decades of patient observation in the wild.",
+      "Working in Tanzania's Gombe forest, she discovered that chimpanzees make and use tools, blurring a supposed line between humans and animals.",
+      "This British primatologist and conservationist founded an institute bearing her name and became a UN Messenger of Peace."
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "theme": "Pop Culture",
+    "answer": "Barbie",
+    "hints": [
+      "This creation launched in 1959 and has since taken on hundreds of careers, from astronaut to president.",
+      "Sold by Mattel, this fashion doll has been both a cultural icon and a lightning rod for debates about body image.",
+      "A 2023 blockbuster film starring Margot Robbie brought the pink-clad character to a record-breaking global audience."
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "theme": "Food & Fun",
+    "answer": "Ramen",
+    "hints": [
+      "This dish was popularized in its instant, packaged form in 1958 and became a global pantry staple for students.",
+      "In its traditional restaurant version, wheat noodles sit in a rich broth topped with sliced pork, egg, and seaweed.",
+      "Regional Japanese styles include the miso version of Sapporo and the tonkotsu pork-bone broth of Fukuoka."
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "theme": "Sports & Games",
+    "answer": "Marathon",
+    "hints": [
+      "This event's name comes from an ancient Greek legend about a messenger who ran to deliver news of a battle.",
+      "The modern distance was standardized at just over 26 miles at the 1908 London Olympics.",
+      "Major annual races bearing this name are held in Boston, New York, London, Berlin, Chicago, and Tokyo."
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "theme": "Wildcard",
+    "answer": "Metamorphosis",
+    "hints": [
+      "This biological process involves a dramatic change in body structure as an organism matures.",
+      "In its most complete form, an animal enters a resting stage and its body is largely rebuilt from within.",
+      "A caterpillar becoming a butterfly and a tadpole becoming a frog are the classic examples."
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "theme": "Around the World",
+    "answer": "Niagara Falls",
+    "hints": [
+      "This natural feature straddles an international border and has drawn honeymooners and daredevils for over a century.",
+      "Roughly 3,000 tons of water per second plunge over its crestline, and boats carry tourists close to the base through the mist.",
+      "Located between Ontario and New York State, its Horseshoe section is the most powerful cascade in North America."
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "theme": "Genius Ideas",
+    "answer": "Anesthesia",
+    "hints": [
+      "This medical advance made possible procedures that were once unthinkable due to unbearable pain.",
+      "Its first public demonstration took place in 1846 in Boston, using ether to render a patient insensible during surgery.",
+      "Modern forms range from numbing a small area to placing a patient in a fully unconscious state monitored by a specialist."
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "theme": "Famous People",
+    "answer": "Harriet Tubman",
+    "hints": [
+      "After escaping bondage, this individual repeatedly returned to dangerous territory to lead others to freedom.",
+      "Nicknamed 'Moses,' she guided dozens of enslaved people north along the secret network known as the Underground Railroad.",
+      "She also served as a scout and spy for the Union Army and is slated to appear on the U.S. twenty-dollar bill."
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "theme": "Pop Culture",
+    "answer": "SpongeBob",
+    "hints": [
+      "This cheerful character lives in a pineapple and works as a fry cook in an underwater town.",
+      "Created by a marine science educator, the animated series debuted in 1999 and became a merchandising juggernaut.",
+      "This yellow, square sea creature works at the Krusty Krab alongside his grumpy neighbor Squidward."
+    ]
+  },
+  {
+    "date": "2026-10-04",
+    "theme": "Food & Fun",
+    "answer": "Hummus",
+    "hints": [
+      "This spread has been eaten across the eastern Mediterranean for centuries and is now a supermarket staple worldwide.",
+      "Its core ingredients are blended chickpeas, tahini, lemon juice, garlic, and olive oil.",
+      "It is typically scooped up with warm pita bread and dusted with paprika or drizzled with oil."
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "theme": "Sports & Games",
+    "answer": "Archery",
+    "hints": [
+      "This pursuit was essential for hunting and warfare for thousands of years before becoming a precision sport.",
+      "Competitors score points by launching projectiles at a target ringed with colored scoring zones from a set distance.",
+      "Olympic competition uses a recurve bow, with the gold center of the target worth ten points."
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "theme": "Wildcard",
+    "answer": "Mirage",
+    "hints": [
+      "This optical illusion has famously lured travelers toward relief that was never actually there.",
+      "It occurs when layers of air at different temperatures bend light, projecting a distorted image of the sky onto the ground.",
+      "In deserts, it often looks like a shimmering pool of water resting on the horizon."
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "theme": "Around the World",
+    "answer": "Amazon River",
+    "hints": [
+      "This waterway carries more flow than the next seven largest combined and has no bridges spanning its main course.",
+      "It begins in the Andes and crosses a continent, draining a basin that holds the world's largest tropical forest.",
+      "It empties into the Atlantic on the northern coast of Brazil after passing through Peru and Colombia."
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "theme": "Genius Ideas",
+    "answer": "Steam Engine",
+    "hints": [
+      "This invention converted heat into motion and became the driving force of the Industrial Revolution.",
+      "James Watt's improvements in the 1760s made it efficient enough to power factories, mines, and pumps.",
+      "Mounted on rails or ships, it transformed transportation until internal combustion and electricity replaced it."
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "theme": "Famous People",
+    "answer": "Mozart",
+    "hints": [
+      "This composer was performing for European royalty as a small child and toured the continent as a prodigy.",
+      "Over a short life of just 35 years, he produced more than 600 works across symphony, opera, and chamber music.",
+      "His operas include The Magic Flute and The Marriage of Figaro, and his final Requiem was left unfinished at his death in Vienna."
+    ]
+  },
+  {
+    "date": "2026-10-10",
+    "theme": "Pop Culture",
+    "answer": "Tetris",
+    "hints": [
+      "This creation emerged from a Soviet research institute in 1984 and became one of the best-selling games of all time.",
+      "Players rotate and arrange falling geometric shapes to complete solid horizontal lines that then vanish.",
+      "Its seven pieces, each made of four squares, are called tetrominoes, and its theme song is based on a Russian folk tune."
+    ]
+  },
+  {
+    "date": "2026-10-11",
+    "theme": "Food & Fun",
+    "answer": "Gnocchi",
+    "hints": [
+      "These small dumplings are a comfort-food staple of a Mediterranean country's northern regions.",
+      "Usually made from mashed potato and flour, they are rolled into little pillows and often pressed with fork tines.",
+      "Boiled until they float, they are served with butter and sage, tomato sauce, or a rich cheese sauce."
+    ]
+  },
+  {
+    "date": "2026-10-12",
+    "theme": "Sports & Games",
+    "answer": "Sumo",
+    "hints": [
+      "This centuries-old contest is steeped in ritual, including salt throwing and stomping to drive away evil spirits.",
+      "Two competitors try to force each other out of a circular ring or to touch the ground with anything but the soles of the feet.",
+      "Japan's national sport, its top-ranked champions hold the title of yokozuna."
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "theme": "Wildcard",
+    "answer": "Hibernation",
+    "hints": [
+      "This survival strategy lets certain animals endure months of scarcity by essentially shutting down.",
+      "Body temperature, heart rate, and breathing drop dramatically as the animal lives off stored fat reserves.",
+      "Ground squirrels and some bats are true practitioners, while bears enter a lighter version of this winter dormancy."
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "theme": "Around the World",
+    "answer": "Mount Fuji",
+    "hints": [
+      "This peak is considered sacred and has been the subject of art and pilgrimage for centuries.",
+      "A near-perfectly symmetrical volcano, its snow-capped cone appears in Hokusai's famous woodblock print series.",
+      "Standing about 12,400 feet, it is the highest point in Japan and last erupted in 1707."
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "theme": "Genius Ideas",
+    "answer": "Barcode",
+    "hints": [
+      "This everyday invention quietly revolutionized retail, logistics, and inventory tracking.",
+      "First used commercially on a pack of chewing gum in 1974, it encodes data in a pattern a scanner reads with light.",
+      "The familiar version is a row of parallel black lines of varying width printed on nearly every product package."
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "theme": "Famous People",
+    "answer": "Pablo Picasso",
+    "hints": [
+      "This prolific artist reinvented his style many times and helped shatter traditional ideas about representation.",
+      "Along with Georges Braque, he pioneered a movement that fractured subjects into geometric planes shown from multiple angles at once.",
+      "This Spanish painter's works include the anti-war mural Guernica and the early Cubist canvas Les Demoiselles d'Avignon."
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "theme": "Pop Culture",
+    "answer": "Ghostbusters",
+    "hints": [
+      "This creation follows a team of eccentric scientists who start an unusual small business in New York City.",
+      "Armed with proton packs and a converted hearse, they trap mischievous spirits haunting the city.",
+      "The 1984 comedy features a giant marshmallow man and a theme song that asks who you're gonna call."
+    ]
   }
 ]
