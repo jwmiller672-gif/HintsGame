@@ -1278,5 +1278,605 @@
       "Armed with proton packs and a converted hearse, they trap mischievous spirits haunting the city.",
       "The 1984 comedy features a giant marshmallow man and a theme song that asks who you're gonna call."
     ]
+  },
+  {
+    "date": "2026-10-18",
+    "theme": "Food & Fun",
+    "answer": "Dim Sum",
+    "hints": [
+      "This dining tradition involves small portions meant for sharing among a group.",
+      "Often served in bamboo steamers, this style of eating originated in southern Chinese teahouses.",
+      "Carts rolling through restaurants offer dumplings, buns, and rice rolls as part of this beloved brunch custom."
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "theme": "Sports & Games",
+    "answer": "Pole Vault",
+    "hints": [
+      "This pursuit rewards both speed and a leap of faith.",
+      "A flexible fiberglass implement helps athletes launch themselves over a raised bar in this discipline.",
+      "Competitors sprint down a runway before planting a long implement into a box to catapult themselves over a high bar."
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "theme": "Wildcard",
+    "answer": "Boomerang",
+    "hints": [
+      "This object seems to defy the normal rules of motion.",
+      "Thrown with a spin, this curved object is designed to return to its starting point.",
+      "Used historically by Aboriginal Australians for hunting, this curved wooden tool can loop back toward the thrower when thrown correctly."
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "theme": "Around the World",
+    "answer": "Galapagos Islands",
+    "hints": [
+      "This destination inspired one of the most important scientific theories in history.",
+      "Unique wildlife found nowhere else on Earth helped shape Charles Darwin's theory of evolution on this remote archipelago.",
+      "Located off the coast of Ecuador, this volcanic archipelago is home to giant tortoises and marine iguanas found nowhere else."
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "theme": "Genius Ideas",
+    "answer": "Gyroscope",
+    "hints": [
+      "This invention resists any change to its orientation once set in motion.",
+      "A rapidly spinning wheel maintains a stable axis regardless of outside forces in this device.",
+      "Used in compasses, spacecraft, and smartphones, this spinning device helps measure or maintain orientation and stability."
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "theme": "Famous People",
+    "answer": "Rosalind Franklin",
+    "hints": [
+      "This individual's critical contribution to science went largely unrecognized during their lifetime.",
+      "X-ray imaging techniques developed by this scientist revealed the double helix structure of a crucial molecule.",
+      "This chemist's X-ray diffraction images were essential to discovering the structure of DNA, though the Nobel Prize went to others."
+    ]
+  },
+  {
+    "date": "2026-10-24",
+    "theme": "Pop Culture",
+    "answer": "Minions",
+    "hints": [
+      "This creation speaks in a language that is pure nonsense yet somehow understandable.",
+      "Small yellow henchmen cause chaotic mischief while serving a supervillain in this animated franchise.",
+      "Featured in the Despicable Me films, these yellow, goggle-wearing sidekicks babble in their own gibberish language."
+    ]
+  },
+  {
+    "date": "2026-10-25",
+    "theme": "Food & Fun",
+    "answer": "Ceviche",
+    "hints": [
+      "This dish transforms raw ingredients using nothing but acid and time.",
+      "Citrus juice is the key technique that 'cooks' the seafood in this coastal preparation.",
+      "Popular throughout Peru and Ecuador, this chilled seafood dish is marinated in lime and mixed with onions and chili."
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "theme": "Sports & Games",
+    "answer": "Biathlon",
+    "hints": [
+      "This winter pursuit demands athletes master two completely different skills.",
+      "Competitors alternate between gliding across snow and taking aim at distant targets in this event.",
+      "Cross-country skiers must control their heart rate enough to hit tiny targets with a rifle in this Nordic combination sport."
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "theme": "Wildcard",
+    "answer": "Hourglass",
+    "hints": [
+      "This object has been used for centuries to track something that cannot be seen.",
+      "Fine grains fall steadily from one chamber to another inside this timekeeping device.",
+      "A narrow neck controls the flow of sand between two glass bulbs in this traditional timer."
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "theme": "Around the World",
+    "answer": "Victoria Falls",
+    "hints": [
+      "This destination produces a mist that can be seen from miles away.",
+      "Local communities call this thundering cascade 'the smoke that thunders' for the spray it generates.",
+      "Located on the border of Zambia and Zimbabwe, this massive curtain of water along the Zambezi River is over a mile wide."
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "theme": "Genius Ideas",
+    "answer": "Thermostat",
+    "hints": [
+      "This invention quietly works behind the scenes to keep things comfortable.",
+      "A small sensor triggers heating or cooling systems to switch on and off in this household device.",
+      "Mounted on a wall, this temperature-sensing device automatically regulates a building's heating and cooling systems."
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "theme": "Famous People",
+    "answer": "Katherine Johnson",
+    "hints": [
+      "This individual's calculations helped send others safely beyond the sky.",
+      "Working without modern computers, this mathematician verified trajectories critical to early American spaceflight.",
+      "This NASA mathematician's hand calculations verified the flight path for John Glenn's historic orbital mission."
+    ]
+  },
+  {
+    "date": "2026-10-31",
+    "theme": "Pop Culture",
+    "answer": "Transformers",
+    "hints": [
+      "This creation blurs the line between vehicle and living being.",
+      "Alien robots disguise themselves as everyday vehicles before shifting into battle mode in this franchise.",
+      "In this franchise, sentient alien robots like Optimus Prime can disguise themselves as cars, trucks, and other machines."
+    ]
+  },
+  {
+    "date": "2026-11-01",
+    "theme": "Food & Fun",
+    "answer": "Macaron",
+    "hints": [
+      "This delicate treat is known for its colorful shells and smooth texture.",
+      "Two crisp meringue-based disks sandwich a creamy filling in this French confection.",
+      "Associated with Parisian patisseries, this almond-flour cookie comes in pastel shades and flavors like pistachio and rose."
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "theme": "Sports & Games",
+    "answer": "Luge",
+    "hints": [
+      "This pursuit is one of the fastest non-motorized activities on ice.",
+      "Athletes lie flat on their backs, feet first, to race down a frozen track in this discipline.",
+      "Riders can reach speeds over 90 miles per hour on a small sled in this icy, feet-first racing event."
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "theme": "Wildcard",
+    "answer": "Volcano",
+    "hints": [
+      "This natural feature can lie dormant for centuries before making its presence known.",
+      "Molten rock rises from deep underground to erupt from this geological formation.",
+      "Ash, lava, and gas erupt violently from this mountain-like opening in the Earth's crust."
+    ]
+  },
+  {
+    "date": "2026-11-04",
+    "theme": "Around the World",
+    "answer": "Patagonia",
+    "hints": [
+      "This region is defined by dramatic extremes of wind and ice.",
+      "Jagged granite peaks and sprawling glaciers define the southern tip of this remote region.",
+      "Shared between Argentina and Chile, this windswept region at the southern end of South America is known for hiking destinations like Torres del Paine."
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "theme": "Genius Ideas",
+    "answer": "Stethoscope",
+    "hints": [
+      "This invention transformed how professionals listen to what's happening inside the body.",
+      "A tube connects to earpieces, letting a listener amplify faint internal sounds with this medical device.",
+      "Doctors press this tool against a patient's chest to listen closely to heartbeats and breathing sounds."
+    ]
+  },
+  {
+    "date": "2026-11-06",
+    "theme": "Famous People",
+    "answer": "Alan Turing",
+    "hints": [
+      "This individual's ideas laid the groundwork for machines that could think.",
+      "Breaking a seemingly unbreakable code helped shorten a major 20th-century conflict thanks to this mathematician's work.",
+      "This British mathematician cracked the Enigma code during World War II and later proposed a test for machine intelligence."
+    ]
+  },
+  {
+    "date": "2026-11-07",
+    "theme": "Pop Culture",
+    "answer": "Terminator",
+    "hints": [
+      "This creation comes from the future with a singular, relentless purpose.",
+      "A cyborg assassin sent back through time is reprogrammed to protect rather than kill in this franchise's sequel.",
+      "Arnold Schwarzenegger plays a relentless cyborg assassin sent from the future in this iconic science fiction franchise."
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "theme": "Food & Fun",
+    "answer": "Risotto",
+    "hints": [
+      "This dish requires constant stirring and patience to achieve its signature texture.",
+      "Arborio grains slowly absorb warm broth to create this creamy Italian specialty.",
+      "Often finished with butter and parmesan, this Northern Italian rice preparation is prized for its velvety consistency."
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "theme": "Sports & Games",
+    "answer": "Dressage",
+    "hints": [
+      "This discipline turns a simple walk into a form of artistry.",
+      "Precise, choreographed movements performed in near-silence define this equestrian pursuit.",
+      "Judges score the subtle communication between rider and horse as they perform a prescribed pattern of gaits in this classical riding discipline."
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "theme": "Wildcard",
+    "answer": "Glacier",
+    "hints": [
+      "This natural feature moves so slowly that its motion is nearly invisible to the eye.",
+      "Compacted snow accumulates over centuries to form this massive river of ice.",
+      "Carving valleys as it creeps downhill, this slow-moving ice mass can take centuries to travel just a few miles."
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "theme": "Around the World",
+    "answer": "Antarctica",
+    "hints": [
+      "This destination is defined entirely by ice and isolation.",
+      "No permanent population calls this frozen continent home, aside from rotating researchers.",
+      "Home to emperor penguins and covered almost entirely by ice sheets, this southernmost continent holds the record for coldest temperature on Earth."
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "theme": "Genius Ideas",
+    "answer": "Catapult",
+    "hints": [
+      "This invention hurls objects using stored mechanical energy rather than explosives.",
+      "A long arm snaps forward to launch projectiles over walls in this ancient siege device.",
+      "Used by ancient armies to breach fortifications, this mechanical device uses tension or torsion to fling heavy projectiles."
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "theme": "Famous People",
+    "answer": "Florence Nightingale",
+    "hints": [
+      "This individual transformed a chaotic, dangerous profession into a respected discipline.",
+      "Carrying a lamp through hospital wards at night, this caregiver dramatically improved sanitary conditions during wartime.",
+      "Known as the founder of modern nursing, this reformer improved hospital hygiene standards during the Crimean War."
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "theme": "Pop Culture",
+    "answer": "Frozen",
+    "hints": [
+      "This creation explores a bond between two royal sisters.",
+      "One sister's icy powers accidentally plunge an entire kingdom into eternal winter in this animated film.",
+      "In this Disney film, Elsa's icy powers trap the kingdom of Arendelle in eternal winter until her sister Anna intervenes."
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "theme": "Food & Fun",
+    "answer": "Kefir",
+    "hints": [
+      "This beverage is cultured using a unique blend of bacteria and yeast.",
+      "Tangy and effervescent, this fermented drink is often compared to a thinner, tart yogurt.",
+      "Originating in the Caucasus Mountains, this fermented milk drink is made using small clusters called grains."
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "theme": "Sports & Games",
+    "answer": "Curveball",
+    "hints": [
+      "This maneuver is designed to deceive in the split second before contact.",
+      "A sudden, sharp break in trajectory makes this pitch notoriously hard to predict.",
+      "Spin imparted by the fingers causes the baseball to dive and veer sideways just before it reaches home plate in this classic pitch."
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "theme": "Wildcard",
+    "answer": "Hologram",
+    "hints": [
+      "This creation plays tricks on your sense of depth.",
+      "Laser light is used to record interference patterns that produce this three-dimensional image.",
+      "Appearing to float in space, this three-dimensional projection is created using interfering beams of coherent light."
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "theme": "Around the World",
+    "answer": "Himalayas",
+    "hints": [
+      "This destination is home to the tallest points on the planet's surface.",
+      "Formed by the collision of two tectonic plates, this mountain range contains the highest peaks in the world.",
+      "Stretching across five countries, this massive mountain range includes the world's tallest peak and attracts climbers from around the globe."
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "theme": "Genius Ideas",
+    "answer": "Loom",
+    "hints": [
+      "This invention made it possible to produce patterned material far faster than by hand.",
+      "Threads are interlaced on a frame to create fabric using this device.",
+      "Warp and weft threads are woven together on this frame-based device to produce cloth."
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "theme": "Famous People",
+    "answer": "Benjamin Franklin",
+    "hints": [
+      "This individual's curiosity spanned science, diplomacy, and the printed word.",
+      "A famous kite experiment is often credited to this inventor's study of electricity.",
+      "This American statesman and inventor helped draft founding documents and is credited with inventing the lightning rod and bifocals."
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "theme": "Pop Culture",
+    "answer": "Wolverine",
+    "hints": [
+      "This creation features a hero whose body heals faster than almost anyone can hurt him.",
+      "Retractable metal claws and a short temper define this gruff superhero.",
+      "Known for his adamantium claws and rapid healing factor, this X-Men member is often portrayed by actor Hugh Jackman."
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "theme": "Food & Fun",
+    "answer": "Pierogi",
+    "hints": [
+      "This food is beloved comfort fare across Eastern Europe.",
+      "Dough is folded around a savory or sweet filling to create this type of dumpling.",
+      "Traditionally stuffed with potato, cheese, or sauerkraut, this Polish dumpling is often boiled, then pan-fried in butter."
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "theme": "Sports & Games",
+    "answer": "Powerlifting",
+    "hints": [
+      "This pursuit distills athletic strength into three precise movements.",
+      "Competitors attempt a single maximum effort in squat, bench, and deadlift movements in this strength sport.",
+      "Athletes chase personal records across three key barbell lifts, often wearing a supportive belt in this heavy discipline."
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "theme": "Wildcard",
+    "answer": "Avalanche",
+    "hints": [
+      "This event can be triggered by something as small as a single footstep.",
+      "Gravity suddenly pulls a huge mass of snow down a slope in this natural hazard.",
+      "Skiers and snowboarders fear this rapid, often deadly slide of snow, ice, and debris down a mountainside."
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "theme": "Around the World",
+    "answer": "Amalfi Coast",
+    "hints": [
+      "This destination is famous for its dramatic cliffside views.",
+      "Pastel-colored villages cling to steep cliffs above turquoise water along this scenic stretch of shoreline.",
+      "Located in southern Italy, this clifftop stretch near Naples includes towns like Positano and Ravello."
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "theme": "Genius Ideas",
+    "answer": "Abacus",
+    "hints": [
+      "This invention let people calculate long before electronic devices existed.",
+      "Sliding beads along rods allow users to perform arithmetic using this ancient counting device.",
+      "Still used in parts of Asia today, this bead-and-rod counting tool predates modern calculators by thousands of years."
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "theme": "Famous People",
+    "answer": "Jacques Cousteau",
+    "hints": [
+      "This individual brought the hidden world beneath the waves into people's living rooms.",
+      "Co-inventing an early breathing device allowed this explorer to film previously unseen depths of the ocean.",
+      "This French filmmaker co-invented the Aqua-Lung and produced documentaries exploring marine life aboard his ship, the Calypso."
+    ]
+  },
+  {
+    "date": "2026-11-28",
+    "theme": "Pop Culture",
+    "answer": "Gremlins",
+    "hints": [
+      "This creation warns against three very specific rules for caring for a strange pet.",
+      "Feeding a cute creature after midnight unleashes chaotic, mischievous creatures in this film.",
+      "In this 1984 film, a cuddly creature named Gizmo spawns mischievous monsters when the rules of care are broken."
+    ]
+  },
+  {
+    "date": "2026-11-29",
+    "theme": "Food & Fun",
+    "answer": "Shakshuka",
+    "hints": [
+      "This dish turns breakfast into a shared skillet experience.",
+      "Eggs are gently poached directly in a simmering sauce to create this one-pan meal.",
+      "Popular across North Africa and the Middle East, this dish features eggs cooked in a spiced tomato and pepper base."
+    ]
+  },
+  {
+    "date": "2026-11-30",
+    "theme": "Sports & Games",
+    "answer": "Shuttlecock",
+    "hints": [
+      "This item travels unusually slow through the air due to its unique shape.",
+      "A cone of feathers attached to a rounded base makes up this piece of sporting equipment.",
+      "Struck back and forth over a net with lightweight rackets, this feathered projectile is central to badminton."
+    ]
+  },
+  {
+    "date": "2026-12-01",
+    "theme": "Wildcard",
+    "answer": "Mosaic",
+    "hints": [
+      "This art form reveals its full picture only when viewed from a distance.",
+      "Thousands of small colored pieces are arranged together to form this type of artwork.",
+      "Ancient Romans decorated floors and walls with tiny fragments of glass, stone, or tile arranged into this decorative art form."
+    ]
+  },
+  {
+    "date": "2026-12-02",
+    "theme": "Around the World",
+    "answer": "Dead Sea",
+    "hints": [
+      "This destination allows visitors to float effortlessly on its surface.",
+      "Extremely high salt content makes swimming nearly impossible and floating nearly unavoidable at this body of water.",
+      "Bordering Jordan and Israel, this hypersaline lake sits at the lowest point of elevation on Earth's land surface."
+    ]
+  },
+  {
+    "date": "2026-12-03",
+    "theme": "Genius Ideas",
+    "answer": "Sextant",
+    "hints": [
+      "This invention helped travelers find their way using nothing but the stars.",
+      "Measuring the angle between a celestial body and the horizon allows navigators to determine location with this instrument.",
+      "Sailors historically used this hand-held optical instrument to calculate latitude by measuring the angle of the sun or stars."
+    ]
+  },
+  {
+    "date": "2026-12-04",
+    "theme": "Famous People",
+    "answer": "Grace Hopper",
+    "hints": [
+      "This individual helped machines understand something closer to everyday language.",
+      "Developing an early compiler, this programmer made it possible to write software instructions in plain English.",
+      "This computer scientist and Navy officer pioneered the COBOL programming language and popularized the term 'debugging.'"
+    ]
+  },
+  {
+    "date": "2026-12-05",
+    "theme": "Pop Culture",
+    "answer": "Chewbacca",
+    "hints": [
+      "This creation communicates only through growls and roars, yet everyone seems to understand him.",
+      "A tall, furry co-pilot serves as loyal companion to a roguish smuggler in this franchise.",
+      "This towering, furry Wookiee serves as co-pilot aboard the Millennium Falcon alongside Han Solo."
+    ]
+  },
+  {
+    "date": "2026-12-06",
+    "theme": "Food & Fun",
+    "answer": "Baguette",
+    "hints": [
+      "This food item is defined by its long, slender shape.",
+      "A crisp crust and airy crumb are the hallmarks of this classic loaf.",
+      "Carried under the arm throughout Paris, this crusty French bread must meet strict regulations to earn its traditional name."
+    ]
+  },
+  {
+    "date": "2026-12-07",
+    "theme": "Sports & Games",
+    "answer": "Grandmaster",
+    "hints": [
+      "This title represents the pinnacle of achievement within a classic strategy game.",
+      "Earned through years of tournament success, this title denotes mastery of chess at the highest level.",
+      "Fewer than two thousand people worldwide hold this elite title, awarded by the International Chess Federation for exceptional strategic skill."
+    ]
+  },
+  {
+    "date": "2026-12-08",
+    "theme": "Wildcard",
+    "answer": "Pendulum",
+    "hints": [
+      "This object has been used to both measure time and hypnotize an audience.",
+      "A weight swinging steadily from a fixed point powers this simple mechanical device.",
+      "Galileo supposedly studied the steady swing of this weighted object to help regulate the timing of early clocks."
+    ]
+  },
+  {
+    "date": "2026-12-09",
+    "theme": "Around the World",
+    "answer": "Socotra",
+    "hints": [
+      "This destination looks like it belongs on another planet.",
+      "Bizarre, umbrella-shaped trees found nowhere else on Earth define the landscape of this isolated island.",
+      "Located in the Arabian Sea off the coast of Yemen, this remote island is famous for its otherworldly dragon's blood trees."
+    ]
+  },
+  {
+    "date": "2026-12-10",
+    "theme": "Genius Ideas",
+    "answer": "Centrifuge",
+    "hints": [
+      "This invention separates things that would otherwise take far too long to settle naturally.",
+      "Rapid spinning forces denser materials to the outside in this laboratory device.",
+      "Blood samples are spun at high speed in this device to separate plasma from heavier cellular components."
+    ]
+  },
+  {
+    "date": "2026-12-11",
+    "theme": "Famous People",
+    "answer": "Marie Antoinette",
+    "hints": [
+      "This individual became a symbol of excess during a period of social upheaval.",
+      "A famous, though possibly apocryphal, quote about cake is often attributed to this royal figure.",
+      "This Austrian-born queen of France was executed by guillotine during the French Revolution."
+    ]
+  },
+  {
+    "date": "2026-12-12",
+    "theme": "Pop Culture",
+    "answer": "Yoda",
+    "hints": [
+      "This creation proves that wisdom has nothing to do with size.",
+      "Speaking in a distinctive inverted sentence structure, this tiny green mentor trains heroes in an ancient order.",
+      "This small, green Jedi Master trains Luke Skywalker on the swamp planet Dagobah."
+    ]
+  },
+  {
+    "date": "2026-12-13",
+    "theme": "Food & Fun",
+    "answer": "Fondue",
+    "hints": [
+      "This dish turns a meal into a communal dipping experience.",
+      "A pot kept warm over a small flame holds the melted base of this Swiss specialty.",
+      "Chunks of bread or vegetables are skewered and swirled through this melted cheese preparation."
+    ]
+  },
+  {
+    "date": "2026-12-14",
+    "theme": "Sports & Games",
+    "answer": "Freestyle",
+    "hints": [
+      "This category allows for maximum creative or physical expression within a competition.",
+      "In swimming, this stroke lets athletes choose their technique as long as certain rules are followed.",
+      "Often synonymous with the crawl stroke, this swimming event imposes the fewest technical restrictions of any competitive category."
+    ]
+  },
+  {
+    "date": "2026-12-15",
+    "theme": "Wildcard",
+    "answer": "Ventriloquism",
+    "hints": [
+      "This skill creates the illusion that words are coming from somewhere they are not.",
+      "A performer speaks without moving their lips to make an inanimate figure appear to talk in this act.",
+      "Often paired with a wooden puppet, this performance art tricks audiences into believing a dummy is speaking on its own."
+    ]
+  },
+  {
+    "date": "2026-12-16",
+    "theme": "Around the World",
+    "answer": "Zanzibar",
+    "hints": [
+      "This destination is steeped in centuries of spice trading history.",
+      "Fragrant cloves, cinnamon, and nutmeg once made this archipelago a vital stop along ancient trade routes.",
+      "Located off the coast of Tanzania, this archipelago's historic Stone Town blends Arab, Persian, and African influences."
+    ]
   }
 ]
