@@ -156,7 +156,7 @@
     "hints": [
       "This cinematic success utilized cutting-edge computer graphics to bring spectacular prehistoric creatures back from extinction.",
       "The plot centers on a disastrous island excursion where ambitious scientific hubris leads to catastrophic security failures.",
-      "Characters must flee from terrifying velociraptors and a massive Rex after a theme park loses power."
+      "Characters must flee from terrifying velociraptors and a massive Rex after a prehistoric attraction loses power."
     ]
   },
   {
@@ -1181,702 +1181,992 @@
   },
   {
     "date": "2026-10-08",
-    "theme": "Genius Ideas",
-    "answer": "Steam Engine",
-    "hints": [
-      "This invention converted heat into motion and became the driving force of the Industrial Revolution.",
-      "James Watt's improvements in the 1760s made it efficient enough to power factories, mines, and pumps.",
-      "Mounted on rails or ships, it transformed transportation until internal combustion and electricity replaced it."
+    "theme": "History",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Genghis Khan",
+        "hints": [
+          "This individual rose from a difficult early life to lead a vast alliance of people who had previously been rivals.",
+          "Under this leader's command, a highly mobile cavalry army conquered territory stretching across much of Asia in the 13th century.",
+          "This ruler united the Mongol tribes in 1206 and founded what became the largest contiguous land empire in history."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Pompeii",
+        "hints": [
+          "This place was once a thriving, ordinary community before being frozen in time by a sudden natural disaster.",
+          "Buried under volcanic ash in the first century, its streets, homes, and even some residents were remarkably preserved.",
+          "This ancient Roman town near Naples was destroyed by the eruption of Mount Vesuvius in 79 CE."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Magna Carta",
+        "hints": [
+          "This document is often described as a turning point in how rulers were expected to treat the people they governed.",
+          "Medieval barons forced a king to agree to it in order to limit his power and protect certain rights.",
+          "Sealed at Runnymede in 1215, this charter from King John became a foundation for later constitutional law."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-09",
-    "theme": "Famous People",
-    "answer": "Mozart",
-    "hints": [
-      "This composer was performing for European royalty as a small child and toured the continent as a prodigy.",
-      "Over a short life of just 35 years, he produced more than 600 works across symphony, opera, and chamber music.",
-      "His operas include The Magic Flute and The Marriage of Figaro, and his final Requiem was left unfinished at his death in Vienna."
+    "theme": "Pop Culture",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Michael Jackson",
+        "hints": [
+          "This performer became famous as a child and went on to shape the sound and look of popular entertainment for decades.",
+          "Known for a single sparkly glove, a signature backward-gliding dance move, and a landmark 1980s album that became the best-selling of all time.",
+          "This singer, nicknamed the King of Pop, recorded 'Billie Jean' and 'Thriller.'"
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Hollywood",
+        "hints": [
+          "This neighborhood's name is used around the world as shorthand for an entire glamorous industry.",
+          "Visitors walk along a famous sidewalk of stars and take photos beneath a giant white sign on a nearby hillside.",
+          "This Los Angeles district is the long-time home of the American film industry and its Walk of Fame."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Lightsaber",
+        "hints": [
+          "This fictional item is a status symbol for an order of characters and is instantly recognizable by its glow and sound.",
+          "It consists of a hilt that projects a column of colored energy, and different colors often signal different allegiances.",
+          "Jedi and Sith wield this glowing blade in the Star Wars films."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-10",
-    "theme": "Pop Culture",
-    "answer": "Tetris",
-    "hints": [
-      "This creation emerged from a Soviet research institute in 1984 and became one of the best-selling games of all time.",
-      "Players rotate and arrange falling geometric shapes to complete solid horizontal lines that then vanish.",
-      "Its seven pieces, each made of four squares, are called tetrominoes, and its theme song is based on a Russian folk tune."
+    "theme": "Science & Nature",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Charles Darwin",
+        "hints": [
+          "This individual spent years traveling the world and quietly gathering observations that would eventually overturn a widely held belief.",
+          "A voyage aboard HMS Beagle, including time in the Galapagos Islands, inspired this naturalist's most famous idea.",
+          "This English scientist published On the Origin of Species in 1859, introducing natural selection."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Yellowstone",
+        "hints": [
+          "This protected place sits on top of a vast source of underground heat.",
+          "It features geysers, hot springs, and bubbling mud pots, as well as free-roaming herds of large mammals.",
+          "Established in 1872 across Wyoming, Montana, and Idaho, it is widely considered the world's first national park."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Mitochondria",
+        "hints": [
+          "These tiny structures exist inside nearly every complex living cell and are essential to how an organism uses energy.",
+          "Often described with a famous catchphrase, they convert nutrients into a usable chemical fuel called ATP.",
+          "These organelles have their own small set of DNA, which is inherited almost entirely from one's mother."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-11",
-    "theme": "Food & Fun",
-    "answer": "Gnocchi",
-    "hints": [
-      "These small dumplings are a comfort-food staple of a Mediterranean country's northern regions.",
-      "Usually made from mashed potato and flour, they are rolled into little pillows and often pressed with fork tines.",
-      "Boiled until they float, they are served with butter and sage, tomato sauce, or a rich cheese sauce."
+    "theme": "Sports & Games",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Michael Jordan",
+        "hints": [
+          "This individual dominated a sport during an era that helped make it a global business.",
+          "After a brief detour into another sport, this player returned to lead their team to a second run of championships in the 1990s.",
+          "This Chicago Bulls guard won six NBA titles and starred in the film Space Jam."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Wimbledon",
+        "hints": [
+          "This place hosts an annual event steeped in tradition, including a strict dress code and a famous snack of fruit and cream.",
+          "Played on grass courts in southwest London, it is the oldest tournament in its sport.",
+          "Strawberries and cream are served at this tennis championship, the only Grand Slam still played on grass."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Offside",
+        "hints": [
+          "This rule is famously difficult to explain to newcomers and is the subject of endless debate among fans.",
+          "It limits where an attacking player may stand relative to the opposition when a teammate passes forward, in several team sports.",
+          "In soccer, a player is penalized for this when nearer the opponents' goal line than both the ball and the second-last defender at the moment of the pass."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-12",
-    "theme": "Sports & Games",
-    "answer": "Sumo",
-    "hints": [
-      "This centuries-old contest is steeped in ritual, including salt throwing and stomping to drive away evil spirits.",
-      "Two competitors try to force each other out of a circular ring or to touch the ground with anything but the soles of the feet.",
-      "Japan's national sport, its top-ranked champions hold the title of yokozuna."
+    "theme": "Arts & Music",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Beethoven",
+        "hints": [
+          "This individual's work bridged two major eras in classical music and changed what audiences expected from a composer.",
+          "While suffering progressive hearing loss, this composer continued writing some of the most celebrated symphonies ever created.",
+          "This German composer wrote the Ninth Symphony with its 'Ode to Joy' finale and the Moonlight Sonata."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Louvre",
+        "hints": [
+          "This place holds one of the most visited collections of human creativity anywhere in the world.",
+          "It began as a fortress and royal palace before being turned into a public museum during a revolution.",
+          "Home of the Mona Lisa, this Parisian museum is entered through a glass pyramid."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Violin",
+        "hints": [
+          "This instrument is central to orchestras and has a family of larger, deeper-sounding relatives.",
+          "Players hold it beneath the chin and draw a horsehair bow across four strings tuned in fifths.",
+          "Stradivari crafted the most prized examples of this smallest and highest-pitched member of the string family."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-13",
-    "theme": "Wildcard",
-    "answer": "Hibernation",
-    "hints": [
-      "This survival strategy lets certain animals endure months of scarcity by essentially shutting down.",
-      "Body temperature, heart rate, and breathing drop dramatically as the animal lives off stored fat reserves.",
-      "Ground squirrels and some bats are true practitioners, while bears enter a lighter version of this winter dormancy."
+    "theme": "Tech & Business",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Steve Jobs",
+        "hints": [
+          "This individual was known for obsessing over how products look and feel, not just how they work.",
+          "After being pushed out of the company they co-founded, this executive returned years later to lead a dramatic turnaround.",
+          "This co-founder of Apple introduced the iPhone in 2007 and also led Pixar."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Silicon Valley",
+        "hints": [
+          "This region became a magnet for ambitious people who wanted to turn ideas into companies.",
+          "Its name comes from the material used in the early chips made there, and it covers a stretch of towns south of a major bay.",
+          "Located in Northern California, this area is home to the headquarters of Google, Apple, and Meta."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Blockchain",
+        "hints": [
+          "This concept is a way of recording information so that it is extremely hard to change after the fact.",
+          "Data is grouped into linked units, and copies are shared across many computers so no single party controls the record.",
+          "This technology underlies Bitcoin, where it serves as a public ledger of transactions."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-14",
-    "theme": "Around the World",
-    "answer": "Mount Fuji",
-    "hints": [
-      "This peak is considered sacred and has been the subject of art and pilgrimage for centuries.",
-      "A near-perfectly symmetrical volcano, its snow-capped cone appears in Hokusai's famous woodblock print series.",
-      "Standing about 12,400 feet, it is the highest point in Japan and last erupted in 1707."
+    "theme": "Wildcard",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Bruce Lee",
+        "hints": [
+          "This individual blended physical skill with philosophy and became an icon far beyond a single field.",
+          "Born in San Francisco and raised in Hong Kong, this performer popularized a style of martial arts to a global audience.",
+          "This actor starred in Enter the Dragon and created his own approach called Jeet Kune Do."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Antarctica",
+        "hints": [
+          "This place has no permanent residents but has hosted people from dozens of countries for scientific work.",
+          "It is governed by an international treaty that sets it aside for peaceful research, and it holds most of the world's fresh water as ice.",
+          "This is Earth's southernmost continent, centered on the South Pole."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Sourdough",
+        "hints": [
+          "This food is made using a living mixture that people maintain for months or even years.",
+          "A fermented culture of wild yeast and bacteria gives it a distinctive tang and chewy crust.",
+          "This bread is famously associated with San Francisco and with a surge in home baking during 2020."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-15",
-    "theme": "Genius Ideas",
-    "answer": "Barcode",
-    "hints": [
-      "This everyday invention quietly revolutionized retail, logistics, and inventory tracking.",
-      "First used commercially on a pack of chewing gum in 1974, it encodes data in a pattern a scanner reads with light.",
-      "The familiar version is a row of parallel black lines of varying width printed on nearly every product package."
+    "theme": "History",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Napoleon",
+        "hints": [
+          "This individual rose rapidly through the ranks during a period of upheaval and ended up reshaping an entire continent.",
+          "After crowning themselves emperor, this leader's armies dominated Europe before a disastrous invasion of Russia.",
+          "This French emperor was defeated at Waterloo in 1815 and exiled to the island of Saint Helena."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Troy",
+        "hints": [
+          "This place is famous mostly because of stories about it, and historians long debated whether it really existed.",
+          "Legend says a long siege of this city ended when invaders hid inside a giant wooden gift.",
+          "Excavated in what is now Turkey, this city is the setting of Homer's Iliad."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Rosetta Stone",
+        "hints": [
+          "This object unlocked the ability to read a form of writing that had been a mystery for centuries.",
+          "It carries the same decree written in three scripts, which allowed scholars to compare them.",
+          "Discovered in Egypt in 1799, it helped Champollion decipher hieroglyphs."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-16",
-    "theme": "Famous People",
-    "answer": "Pablo Picasso",
-    "hints": [
-      "This prolific artist reinvented his style many times and helped shatter traditional ideas about representation.",
-      "Along with Georges Braque, he pioneered a movement that fractured subjects into geometric planes shown from multiple angles at once.",
-      "This Spanish painter's works include the anti-war mural Guernica and the early Cubist canvas Les Demoiselles d'Avignon."
+    "theme": "Pop Culture",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Taylor Swift",
+        "hints": [
+          "This performer has built a fan base known for decoding hidden meanings in their work.",
+          "A series of re-recorded albums was released to regain ownership of the master recordings.",
+          "This singer-songwriter's record-breaking 'Eras Tour' followed albums like 1989 and Folklore."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Hogwarts",
+        "hints": [
+          "This place exists only on the page and screen, yet fans around the world feel they know it intimately.",
+          "Students arrive on a scarlet steam train, are sorted into four groups, and live in a castle full of moving staircases.",
+          "This fictional school of witchcraft and wizardry is attended by Harry Potter."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Monopoly",
+        "hints": [
+          "This creation has ended countless family gatherings in arguments.",
+          "Players buy up properties, collect rent, and try to bankrupt each other, using tokens such as a top hat and a thimble.",
+          "This board game features Boardwalk, Park Place, and the phrase 'Do not pass Go.'"
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-17",
-    "theme": "Pop Culture",
-    "answer": "Ghostbusters",
-    "hints": [
-      "This creation follows a team of eccentric scientists who start an unusual small business in New York City.",
-      "Armed with proton packs and a converted hearse, they trap mischievous spirits haunting the city.",
-      "The 1984 comedy features a giant marshmallow man and a theme song that asks who you're gonna call."
+    "theme": "Science & Nature",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Rosalind Franklin",
+        "hints": [
+          "This individual's careful work with a specialized technique contributed to one of the biggest biological discoveries of the 20th century, though credit came late.",
+          "Using X-ray images, this chemist captured a key photograph that revealed the structure of a molecule of heredity.",
+          "This British scientist's 'Photo 51' helped Watson and Crick determine the double helix structure of DNA."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Mariana Trench",
+        "hints": [
+          "This place is the most extreme example of a hidden environment on this planet, far beyond the reach of sunlight.",
+          "Its deepest point lies nearly seven miles below the ocean's surface, and only a few crewed vehicles have ever reached it.",
+          "This crescent-shaped canyon in the western Pacific contains the Challenger Deep."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Octopus",
+        "hints": [
+          "This animal is regularly cited as evidence that intelligence can evolve in unexpected places.",
+          "It has a soft body with no bones, three hearts, and the ability to change its skin color and texture in an instant.",
+          "This eight-armed sea creature can squeeze through tiny gaps and squirts ink to escape predators."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-18",
-    "theme": "Food & Fun",
-    "answer": "Dim Sum",
-    "hints": [
-      "This dining tradition involves small portions meant for sharing among a group.",
-      "Often served in bamboo steamers, this style of eating originated in southern Chinese teahouses.",
-      "Carts rolling through restaurants offer dumplings, buns, and rice rolls as part of this beloved brunch custom."
+    "theme": "Sports & Games",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Muhammad Ali",
+        "hints": [
+          "This individual was as famous for their words as for their athletic ability.",
+          "After refusing military service for personal beliefs, this athlete was stripped of a title and barred from competing for years.",
+          "This heavyweight boxer, who called himself 'The Greatest,' won the 'Rumble in the Jungle' in 1974."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Wembley",
+        "hints": [
+          "This place has hosted some of the most-watched sporting events in its country's history.",
+          "A famous pair of towers once marked its entrance, and a giant arch now stands over the field.",
+          "This London stadium hosts England's national soccer team and the FA Cup final."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Triple Crown",
+        "hints": [
+          "This achievement is so rare that fans can go decades without seeing it happen.",
+          "To earn it, a competitor must win three particular major events within a single season.",
+          "In horse racing, it means winning the Kentucky Derby, the Preakness Stakes, and the Belmont Stakes."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-19",
-    "theme": "Sports & Games",
-    "answer": "Pole Vault",
-    "hints": [
-      "This pursuit rewards both speed and a leap of faith.",
-      "A flexible fiberglass implement helps athletes launch themselves over a raised bar in this discipline.",
-      "Competitors sprint down a runway before planting a long implement into a box to catapult themselves over a high bar."
+    "theme": "Arts & Music",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Maya Angelou",
+        "hints": [
+          "This individual used words to describe resilience and became a voice for a generation.",
+          "Her first autobiography, about growing up in the segregated South, became a landmark of American literature.",
+          "This author wrote 'I Know Why the Caged Bird Sings' and recited a poem at a presidential inauguration."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Broadway",
+        "hints": [
+          "This place is a stretch of road known worldwide because of what happens inside its buildings every night.",
+          "Its theaters stage the biggest productions in live entertainment, and an annual awards ceremony honors its best shows.",
+          "This New York theater district is home to Hamilton and The Lion King."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Impressionism",
+        "hints": [
+          "This movement began as a rebellion against strict rules about how a finished work should look.",
+          "Its artists painted outdoors in quick brushstrokes to capture changing light rather than precise detail.",
+          "Monet's 'Water Lilies' and Renoir's dance scenes belong to this 19th-century French art movement."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-20",
-    "theme": "Wildcard",
-    "answer": "Boomerang",
-    "hints": [
-      "This object seems to defy the normal rules of motion.",
-      "Thrown with a spin, this curved object is designed to return to its starting point.",
-      "Used historically by Aboriginal Australians for hunting, this curved wooden tool can loop back toward the thrower when thrown correctly."
+    "theme": "Tech & Business",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Bill Gates",
+        "hints": [
+          "This individual built a business that put a particular kind of machine on desks around the world.",
+          "After stepping back from running that company, this entrepreneur devoted most of their wealth to a large global health foundation.",
+          "This co-founder of Microsoft dropped out of Harvard to start the company with Paul Allen."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Wall Street",
+        "hints": [
+          "This place's name is used as shorthand for an entire industry, even by people who have never visited.",
+          "A bronze bull stands nearby, and a famous bell opens and closes each trading day.",
+          "This narrow thoroughfare in lower Manhattan is home to the New York Stock Exchange."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Algorithm",
+        "hints": [
+          "This concept is a set of steps, and it quietly influences what people see, buy, and read every day.",
+          "Named after a medieval Persian mathematician, it is a step-by-step procedure for solving a problem.",
+          "Search engines and social media feeds use these to rank and recommend content."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-21",
-    "theme": "Around the World",
-    "answer": "Galapagos Islands",
-    "hints": [
-      "This destination inspired one of the most important scientific theories in history.",
-      "Unique wildlife found nowhere else on Earth helped shape Charles Darwin's theory of evolution on this remote archipelago.",
-      "Located off the coast of Ecuador, this volcanic archipelago is home to giant tortoises and marine iguanas found nowhere else."
+    "theme": "Wildcard",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Anne Frank",
+        "hints": [
+          "This individual's private words became a window into history, read by millions around the world.",
+          "This young writer documented two years in hiding during the Second World War.",
+          "This teenager's diary, found after the war, described life in a secret Amsterdam annex."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Vatican City",
+        "hints": [
+          "This place is the smallest of its kind in the world, with a population of only a few hundred.",
+          "It is surrounded entirely by a much larger capital and has its own postal service, flag, and guard of colorful uniformed soldiers.",
+          "This independent enclave within Rome is the seat of the Catholic Church and home to St. Peter's Basilica."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Boomerang",
+        "hints": [
+          "This simple object is associated with an ancient tradition and is famous for coming back.",
+          "Carved from wood and shaped like a bent wing, it was used by Indigenous peoples for hunting and sport.",
+          "When thrown correctly, this Australian tool curves through the air and returns to the thrower."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-22",
-    "theme": "Genius Ideas",
-    "answer": "Gyroscope",
-    "hints": [
-      "This invention resists any change to its orientation once set in motion.",
-      "A rapidly spinning wheel maintains a stable axis regardless of outside forces in this device.",
-      "Used in compasses, spacecraft, and smartphones, this spinning device helps measure or maintain orientation and stability."
+    "theme": "History",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Julius Caesar",
+        "hints": [
+          "This individual's rise to power ended a long-standing system of government in a famous ancient state.",
+          "A famous warning to beware a particular day in March was reportedly given to this ruler before their death.",
+          "This Roman dictator was assassinated on the Ides of March in 44 BCE after crossing the Rubicon."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Alcatraz",
+        "hints": [
+          "This place was chosen because of how hard it was to leave.",
+          "Once a military fort, it later held famous criminals in a federal prison on a rocky island.",
+          "Al Capone was once held at this island prison in San Francisco Bay."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Berlin Wall",
+        "hints": [
+          "This structure physically divided a population for nearly three decades.",
+          "Built almost overnight in 1961, it separated two halves of a city during the Cold War.",
+          "Its fall in 1989 symbolized the end of the Cold War and the reunification of Germany."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-23",
-    "theme": "Famous People",
-    "answer": "Rosalind Franklin",
-    "hints": [
-      "This individual's critical contribution to science went largely unrecognized during their lifetime.",
-      "X-ray imaging techniques developed by this scientist revealed the double helix structure of a crucial molecule.",
-      "This chemist's X-ray diffraction images were essential to discovering the structure of DNA, though the Nobel Prize went to others."
+    "theme": "Pop Culture",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Darth Vader",
+        "hints": [
+          "This character is among the most recognizable villains in film history, defined by their appearance and sound.",
+          "Once a promising hero, this figure fell to the dark side and wears a black mask with a mechanical breathing sound.",
+          "This Sith Lord, formerly Anakin Skywalker, tells Luke Skywalker 'I am your father.'"
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Disneyland",
+        "hints": [
+          "This place is a destination built entirely around imagination, and many families treat a visit as a milestone.",
+          "A fairy-tale castle sits at its center, and costumed characters walk through themed lands.",
+          "Opened in 1955 in Anaheim, California, this was the first theme park built by the creator of Mickey Mouse."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Emoji",
+        "hints": [
+          "This creation is a tiny image that can replace entire sentences in a message.",
+          "Originating in Japan in the late 1990s, these small pictograms are now part of nearly every keyboard.",
+          "A yellow smiley, a heart, and a face with tears of joy are among the most used of these."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-24",
-    "theme": "Pop Culture",
-    "answer": "Minions",
-    "hints": [
-      "This creation speaks in a language that is pure nonsense yet somehow understandable.",
-      "Small yellow henchmen cause chaotic mischief while serving a supervillain in this animated franchise.",
-      "Featured in the Despicable Me films, these yellow, goggle-wearing sidekicks babble in their own gibberish language."
+    "theme": "Science & Nature",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Neil Armstrong",
+        "hints": [
+          "This individual's career took them from test pilot to the history books.",
+          "A famous sentence spoken by this astronaut contrasted a small step with a giant leap.",
+          "This Apollo 11 commander was the first person to walk on the Moon."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Kilimanjaro",
+        "hints": [
+          "This place is a popular challenge for hikers who want to reach a high altitude without technical climbing.",
+          "It is a dormant volcano with three cones, and snow still caps its summit despite sitting near the equator.",
+          "This is the highest mountain in Africa, rising above the plains of Tanzania."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Coral Reef",
+        "hints": [
+          "This ecosystem is built slowly by countless small animals over thousands of years.",
+          "It occupies less than one percent of the ocean floor yet supports roughly a quarter of marine species.",
+          "Australia's Great Barrier is the largest example of this colorful underwater structure."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-25",
-    "theme": "Food & Fun",
-    "answer": "Ceviche",
-    "hints": [
-      "This dish transforms raw ingredients using nothing but acid and time.",
-      "Citrus juice is the key technique that 'cooks' the seafood in this coastal preparation.",
-      "Popular throughout Peru and Ecuador, this chilled seafood dish is marinated in lime and mixed with onions and chili."
+    "theme": "Sports & Games",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Usain Bolt",
+        "hints": [
+          "This individual set marks that many observers believed would stand for generations.",
+          "Hailing from Jamaica, this athlete won the same sprint events at three consecutive Olympic Games.",
+          "This sprinter holds the world records in the 100 and 200 meters and is famous for a signature victory pose."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Yankee Stadium",
+        "hints": [
+          "This place has been the backdrop for some of the most famous moments in its sport's history.",
+          "Known as the House That Ruth Built, it has been home to more championships than any other team's park.",
+          "This ballpark in the Bronx is the home of the New York baseball team in pinstripes."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Pole Vault",
+        "hints": [
+          "This event requires an athlete to clear a high bar using a flexible piece of equipment.",
+          "Competitors sprint down a runway, plant a long flexible shaft, and launch themselves over a horizontal bar.",
+          "Sergey Bubka and Mondo Duplantis are record setters in this Olympic track and field event."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-26",
-    "theme": "Sports & Games",
-    "answer": "Biathlon",
-    "hints": [
-      "This winter pursuit demands athletes master two completely different skills.",
-      "Competitors alternate between gliding across snow and taking aim at distant targets in this event.",
-      "Cross-country skiers must control their heart rate enough to hit tiny targets with a rifle in this Nordic combination sport."
+    "theme": "Arts & Music",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Salvador Dali",
+        "hints": [
+          "This individual cultivated an eccentric public image that was as famous as their work.",
+          "Melting clocks and dreamlike landscapes are hallmarks of this artist's most famous painting.",
+          "This Spanish surrealist painted 'The Persistence of Memory' and sported a dramatic upturned mustache."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Carnegie Hall",
+        "hints": [
+          "This place is the subject of a well-known joke about how to reach it.",
+          "The punchline of that joke is 'practice,' because performers dream of appearing on its stage.",
+          "This concert venue in New York has hosted the Beatles and Tchaikovsky."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Sonnet",
+        "hints": [
+          "This form is defined by its strict structure, and writers have used it for centuries to express love and loss.",
+          "It usually has fourteen lines with a set rhyme scheme, often turning in the final couplet.",
+          "Shakespeare wrote 154 of these poems, and Petrarch popularized the Italian version."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-27",
-    "theme": "Wildcard",
-    "answer": "Hourglass",
-    "hints": [
-      "This object has been used for centuries to track something that cannot be seen.",
-      "Fine grains fall steadily from one chamber to another inside this timekeeping device.",
-      "A narrow neck controls the flow of sand between two glass bulbs in this traditional timer."
+    "theme": "Tech & Business",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Henry Ford",
+        "hints": [
+          "This individual changed how ordinary products are built, making them affordable for the working public.",
+          "A moving assembly line introduced by this businessperson cut the time to build a car dramatically.",
+          "This founder of an American automaker introduced the Model T in 1908."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Shenzhen",
+        "hints": [
+          "This place went from a small fishing area to a major economic center within a few decades.",
+          "Designated a special economic zone in 1980, it is nicknamed the hardware capital of the world.",
+          "This southern Chinese metropolis next to Hong Kong is home to Huawei and Tencent."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Spreadsheet",
+        "hints": [
+          "This tool turned a tedious pen-and-paper task into something nearly anyone can do on a computer.",
+          "Rows and columns of cells hold numbers and formulas that update automatically when inputs change.",
+          "VisiCalc was the first popular program of this kind, and Excel later became the dominant one."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-28",
-    "theme": "Around the World",
-    "answer": "Victoria Falls",
-    "hints": [
-      "This destination produces a mist that can be seen from miles away.",
-      "Local communities call this thundering cascade 'the smoke that thunders' for the spray it generates.",
-      "Located on the border of Zambia and Zimbabwe, this massive curtain of water along the Zambezi River is over a mile wide."
+    "theme": "Wildcard",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Mother Teresa",
+        "hints": [
+          "This individual dedicated their life to caring for people society had overlooked.",
+          "Born in what is now North Macedonia, this nun founded a religious order that opened homes for the dying.",
+          "This Nobel Peace Prize winner served in Kolkata, India, and was declared a saint in 2016."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Venice",
+        "hints": [
+          "This place was built on a foundation that many engineers once thought impossible.",
+          "Its main streets are made of water, and residents travel by boat rather than car.",
+          "This Italian lagoon community is famous for its gondolas, canals, and Grand Canal."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Rainbow",
+        "hints": [
+          "This phenomenon appears only when specific conditions line up, and it cannot be touched or approached.",
+          "Sunlight is bent and separated inside water droplets, producing a spread of colors in a curved band.",
+          "Red is on the outer edge and violet is on the inner edge of this arc after a rainstorm."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-29",
-    "theme": "Genius Ideas",
-    "answer": "Thermostat",
-    "hints": [
-      "This invention quietly works behind the scenes to keep things comfortable.",
-      "A small sensor triggers heating or cooling systems to switch on and off in this household device.",
-      "Mounted on a wall, this temperature-sensing device automatically regulates a building's heating and cooling systems."
+    "theme": "History",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Queen Victoria",
+        "hints": [
+          "This individual's long reign gave their name to an entire era.",
+          "Taking the throne at eighteen, this monarch ruled over an empire on which the sun was said never to set.",
+          "This British sovereign reigned from 1837 to 1901 and mourned her husband Prince Albert for decades."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Pearl Harbor",
+        "hints": [
+          "This place's name became part of a national turning point in 1941.",
+          "A surprise military attack here drew a previously neutral country into a global conflict.",
+          "Japan bombed this naval base in Hawaii on December 7, 1941."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Moon Landing",
+        "hints": [
+          "This event was watched by an audience of hundreds of millions and settled a major international rivalry.",
+          "A broadcast from a lunar surface carried a famous sentence from a person who had traveled nearly a quarter-million miles.",
+          "In July 1969, Apollo 11 completed this historic achievement."
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-30",
-    "theme": "Famous People",
-    "answer": "Katherine Johnson",
-    "hints": [
-      "This individual's calculations helped send others safely beyond the sky.",
-      "Working without modern computers, this mathematician verified trajectories critical to early American spaceflight.",
-      "This NASA mathematician's hand calculations verified the flight path for John Glenn's historic orbital mission."
+    "theme": "Pop Culture",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Mickey Mouse",
+        "hints": [
+          "This character has been a symbol of an entertainment empire for nearly a century.",
+          "First appearing in a 1928 short called Steamboat Willie, this cartoon figure wears red shorts and big white gloves.",
+          "This animated rodent with round ears is the mascot of Walt Disney."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Atlantis",
+        "hints": [
+          "This place has captured imaginations even though there is no reliable evidence it ever existed.",
+          "First described by an ancient Greek philosopher, it was said to be an advanced island society that vanished.",
+          "This legendary lost island civilization supposedly sank beneath the sea in a single day and night."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Karaoke",
+        "hints": [
+          "This pastime lets ordinary people take the spotlight, whether or not they can carry a tune.",
+          "Players sing along to instrumental versions of popular songs while lyrics scroll across a screen.",
+          "Invented in Japan in the 1970s, its name combines words meaning 'empty' and 'orchestra.'"
+        ]
+      }
     ]
   },
   {
     "date": "2026-10-31",
-    "theme": "Pop Culture",
-    "answer": "Transformers",
-    "hints": [
-      "This creation blurs the line between vehicle and living being.",
-      "Alien robots disguise themselves as everyday vehicles before shifting into battle mode in this franchise.",
-      "In this franchise, sentient alien robots like Optimus Prime can disguise themselves as cars, trucks, and other machines."
+    "theme": "Science & Nature",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Stephen Hawking",
+        "hints": [
+          "This individual made complex ideas about the universe accessible to millions of general readers.",
+          "Despite a progressive motor neuron disease, this physicist spent decades as a professor at Cambridge.",
+          "This author of 'A Brief History of Time' theorized that black holes emit radiation."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Mars",
+        "hints": [
+          "This place is the leading candidate for humanity's first visit beyond its home neighborhood.",
+          "Its surface is rust-colored, and robotic rovers have been exploring its dusty plains and canyons for decades.",
+          "This is the fourth planet from the Sun, home to the solar system's tallest volcano, Olympus Mons."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Lightning",
+        "hints": [
+          "This phenomenon occurs when a great imbalance builds up and is suddenly released.",
+          "It can heat the air around it to temperatures several times hotter than the surface of the Sun.",
+          "A flash of this precedes thunder, and a rod invented by Benjamin Franklin protects buildings from it."
+        ]
+      }
     ]
   },
   {
     "date": "2026-11-01",
-    "theme": "Food & Fun",
-    "answer": "Macaron",
-    "hints": [
-      "This delicate treat is known for its colorful shells and smooth texture.",
-      "Two crisp meringue-based disks sandwich a creamy filling in this French confection.",
-      "Associated with Parisian patisseries, this almond-flour cookie comes in pastel shades and flavors like pistachio and rose."
+    "theme": "Sports & Games",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Simone Biles",
+        "hints": [
+          "This individual has pushed their sport's difficulty so far that judges have had to create new rules.",
+          "Several skills in artistic gymnastics now bear the name of this American champion.",
+          "This gymnast, who has won more world medals than anyone, has a vault named after them."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Augusta National",
+        "hints": [
+          "This place is known for its beauty and for strict traditions, including who is allowed to join and watch.",
+          "Each spring, its azalea-lined course hosts a tournament where the winner receives a green jacket.",
+          "This Georgia club hosts the Masters golf tournament."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Crossword",
+        "hints": [
+          "This puzzle is a staple of morning newspapers and is solved by filling in a grid with answers.",
+          "Clues run in two directions across interlocking squares, and its first modern version appeared in 1913.",
+          "This word puzzle, famously featured in The New York Times, has black squares separating across and down entries."
+        ]
+      }
     ]
   },
   {
     "date": "2026-11-02",
-    "theme": "Sports & Games",
-    "answer": "Luge",
-    "hints": [
-      "This pursuit is one of the fastest non-motorized activities on ice.",
-      "Athletes lie flat on their backs, feet first, to race down a frozen track in this discipline.",
-      "Riders can reach speeds over 90 miles per hour on a small sled in this icy, feet-first racing event."
+    "theme": "Arts & Music",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Louis Armstrong",
+        "hints": [
+          "This individual's style of performing helped define an entire American genre.",
+          "A gravelly voice and virtuosic trumpet playing made this New Orleans native a global ambassador for jazz.",
+          "This musician, nicknamed 'Satchmo,' sang 'What a Wonderful World.'"
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Abbey Road",
+        "hints": [
+          "This place is linked to some of the most influential recordings ever made, despite its modest appearance.",
+          "A recording studio here in London was the setting for a famous band's final recorded album.",
+          "The Beatles walked across this London crosswalk on the cover of their 1969 album of the same name."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Saxophone",
+        "hints": [
+          "This instrument was invented by a single person who wanted to bridge two families of instruments.",
+          "Made of brass but classified as a woodwind, it uses a single reed on a curved neck.",
+          "A Belgian inventor patented this jazz staple in 1846."
+        ]
+      }
     ]
   },
   {
     "date": "2026-11-03",
-    "theme": "Wildcard",
-    "answer": "Volcano",
-    "hints": [
-      "This natural feature can lie dormant for centuries before making its presence known.",
-      "Molten rock rises from deep underground to erupt from this geological formation.",
-      "Ash, lava, and gas erupt violently from this mountain-like opening in the Earth's crust."
+    "theme": "Tech & Business",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Grace Hopper",
+        "hints": [
+          "This individual's work made it possible for ordinary people to communicate with machines in plain language.",
+          "A naval officer, this computer scientist developed the first compiler and championed English-like programming.",
+          "This rear admiral helped create COBOL and is credited with popularizing the term 'debugging' after a moth was found in a computer."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Detroit",
+        "hints": [
+          "This place's nickname references the product that made it prosperous, and its decline became a national story.",
+          "Once the center of American manufacturing, it was the birthplace of a record label with a famous sound.",
+          "This Michigan city is known as the Motor City and for Motown."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Smartphone",
+        "hints": [
+          "This device has quietly replaced a dozen other tools in most people's pockets.",
+          "It combines a phone, camera, music player, and internet browser in one handheld touchscreen.",
+          "The iPhone launched in 2007 and popularized this type of device."
+        ]
+      }
     ]
   },
   {
     "date": "2026-11-04",
-    "theme": "Around the World",
-    "answer": "Patagonia",
-    "hints": [
-      "This region is defined by dramatic extremes of wind and ice.",
-      "Jagged granite peaks and sprawling glaciers define the southern tip of this remote region.",
-      "Shared between Argentina and Chile, this windswept region at the southern end of South America is known for hiking destinations like Torres del Paine."
+    "theme": "Wildcard",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Bob Ross",
+        "hints": [
+          "This individual taught millions of people to relax and believe that mistakes were part of the process.",
+          "A soft voice, a huge curly hairdo, and a habit of talking about 'happy little trees' defined this television painter.",
+          "This host of 'The Joy of Painting' created landscapes in about thirty minutes."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Amsterdam",
+        "hints": [
+          "This place is known for traveling by bicycle and for homes built along waterways.",
+          "Its narrow canal houses lean forward, and it is home to a museum for a painter famous for sunflowers.",
+          "This Dutch capital is home to the Rijksmuseum and its famous tulip markets."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Hourglass",
+        "hints": [
+          "This object measures something intangible using only gravity.",
+          "Two bulbs of transparent material are connected by a narrow neck, and fine particles trickle from the upper to the lower.",
+          "A traditional timer of this kind often measures one minute or three minutes using sand."
+        ]
+      }
     ]
   },
   {
     "date": "2026-11-05",
-    "theme": "Genius Ideas",
-    "answer": "Stethoscope",
-    "hints": [
-      "This invention transformed how professionals listen to what's happening inside the body.",
-      "A tube connects to earpieces, letting a listener amplify faint internal sounds with this medical device.",
-      "Doctors press this tool against a patient's chest to listen closely to heartbeats and breathing sounds."
+    "theme": "History",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Leif Erikson",
+        "hints": [
+          "This individual's journey across the sea happened centuries before a more famous voyage.",
+          "A Norse explorer who sailed from Greenland, this person reached a land they called Vinland.",
+          "This Viking is believed to have landed in North America around the year 1000."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Gettysburg",
+        "hints": [
+          "This place became the site of a turning point in a divided nation's bloodiest conflict.",
+          "A three-day battle fought here in 1863 ended a major invasion of the North.",
+          "Lincoln delivered a famous brief address at this Pennsylvania battlefield."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Silk Road",
+        "hints": [
+          "This network connected distant civilizations for centuries and carried far more than goods.",
+          "Merchants moving between China and the Mediterranean spread religions, inventions, and diseases along it.",
+          "It was named for the prized fabric that traveled west across Asia by caravan."
+        ]
+      }
     ]
   },
   {
     "date": "2026-11-06",
-    "theme": "Famous People",
-    "answer": "Alan Turing",
-    "hints": [
-      "This individual's ideas laid the groundwork for machines that could think.",
-      "Breaking a seemingly unbreakable code helped shorten a major 20th-century conflict thanks to this mathematician's work.",
-      "This British mathematician cracked the Enigma code during World War II and later proposed a test for machine intelligence."
-    ]
-  },
-  {
-    "date": "2026-11-07",
     "theme": "Pop Culture",
-    "answer": "Terminator",
-    "hints": [
-      "This creation comes from the future with a singular, relentless purpose.",
-      "A cyborg assassin sent back through time is reprogrammed to protect rather than kill in this franchise's sequel.",
-      "Arnold Schwarzenegger plays a relentless cyborg assassin sent from the future in this iconic science fiction franchise."
-    ]
-  },
-  {
-    "date": "2026-11-08",
-    "theme": "Food & Fun",
-    "answer": "Risotto",
-    "hints": [
-      "This dish requires constant stirring and patience to achieve its signature texture.",
-      "Arborio grains slowly absorb warm broth to create this creamy Italian specialty.",
-      "Often finished with butter and parmesan, this Northern Italian rice preparation is prized for its velvety consistency."
-    ]
-  },
-  {
-    "date": "2026-11-09",
-    "theme": "Sports & Games",
-    "answer": "Dressage",
-    "hints": [
-      "This discipline turns a simple walk into a form of artistry.",
-      "Precise, choreographed movements performed in near-silence define this equestrian pursuit.",
-      "Judges score the subtle communication between rider and horse as they perform a prescribed pattern of gaits in this classical riding discipline."
-    ]
-  },
-  {
-    "date": "2026-11-10",
-    "theme": "Wildcard",
-    "answer": "Glacier",
-    "hints": [
-      "This natural feature moves so slowly that its motion is nearly invisible to the eye.",
-      "Compacted snow accumulates over centuries to form this massive river of ice.",
-      "Carving valleys as it creeps downhill, this slow-moving ice mass can take centuries to travel just a few miles."
-    ]
-  },
-  {
-    "date": "2026-11-11",
-    "theme": "Around the World",
-    "answer": "Antarctica",
-    "hints": [
-      "This destination is defined entirely by ice and isolation.",
-      "No permanent population calls this frozen continent home, aside from rotating researchers.",
-      "Home to emperor penguins and covered almost entirely by ice sheets, this southernmost continent holds the record for coldest temperature on Earth."
-    ]
-  },
-  {
-    "date": "2026-11-12",
-    "theme": "Genius Ideas",
-    "answer": "Catapult",
-    "hints": [
-      "This invention hurls objects using stored mechanical energy rather than explosives.",
-      "A long arm snaps forward to launch projectiles over walls in this ancient siege device.",
-      "Used by ancient armies to breach fortifications, this mechanical device uses tension or torsion to fling heavy projectiles."
-    ]
-  },
-  {
-    "date": "2026-11-13",
-    "theme": "Famous People",
-    "answer": "Florence Nightingale",
-    "hints": [
-      "This individual transformed a chaotic, dangerous profession into a respected discipline.",
-      "Carrying a lamp through hospital wards at night, this caregiver dramatically improved sanitary conditions during wartime.",
-      "Known as the founder of modern nursing, this reformer improved hospital hygiene standards during the Crimean War."
-    ]
-  },
-  {
-    "date": "2026-11-14",
-    "theme": "Pop Culture",
-    "answer": "Frozen",
-    "hints": [
-      "This creation explores a bond between two royal sisters.",
-      "One sister's icy powers accidentally plunge an entire kingdom into eternal winter in this animated film.",
-      "In this Disney film, Elsa's icy powers trap the kingdom of Arendelle in eternal winter until her sister Anna intervenes."
-    ]
-  },
-  {
-    "date": "2026-11-15",
-    "theme": "Food & Fun",
-    "answer": "Kefir",
-    "hints": [
-      "This beverage is cultured using a unique blend of bacteria and yeast.",
-      "Tangy and effervescent, this fermented drink is often compared to a thinner, tart yogurt.",
-      "Originating in the Caucasus Mountains, this fermented milk drink is made using small clusters called grains."
-    ]
-  },
-  {
-    "date": "2026-11-16",
-    "theme": "Sports & Games",
-    "answer": "Curveball",
-    "hints": [
-      "This maneuver is designed to deceive in the split second before contact.",
-      "A sudden, sharp break in trajectory makes this pitch notoriously hard to predict.",
-      "Spin imparted by the fingers causes the baseball to dive and veer sideways just before it reaches home plate in this classic pitch."
-    ]
-  },
-  {
-    "date": "2026-11-17",
-    "theme": "Wildcard",
-    "answer": "Hologram",
-    "hints": [
-      "This creation plays tricks on your sense of depth.",
-      "Laser light is used to record interference patterns that produce this three-dimensional image.",
-      "Appearing to float in space, this three-dimensional projection is created using interfering beams of coherent light."
-    ]
-  },
-  {
-    "date": "2026-11-18",
-    "theme": "Around the World",
-    "answer": "Himalayas",
-    "hints": [
-      "This destination is home to the tallest points on the planet's surface.",
-      "Formed by the collision of two tectonic plates, this mountain range contains the highest peaks in the world.",
-      "Stretching across five countries, this massive mountain range includes the world's tallest peak and attracts climbers from around the globe."
-    ]
-  },
-  {
-    "date": "2026-11-19",
-    "theme": "Genius Ideas",
-    "answer": "Loom",
-    "hints": [
-      "This invention made it possible to produce patterned material far faster than by hand.",
-      "Threads are interlaced on a frame to create fabric using this device.",
-      "Warp and weft threads are woven together on this frame-based device to produce cloth."
-    ]
-  },
-  {
-    "date": "2026-11-20",
-    "theme": "Famous People",
-    "answer": "Benjamin Franklin",
-    "hints": [
-      "This individual's curiosity spanned science, diplomacy, and the printed word.",
-      "A famous kite experiment is often credited to this inventor's study of electricity.",
-      "This American statesman and inventor helped draft founding documents and is credited with inventing the lightning rod and bifocals."
-    ]
-  },
-  {
-    "date": "2026-11-21",
-    "theme": "Pop Culture",
-    "answer": "Wolverine",
-    "hints": [
-      "This creation features a hero whose body heals faster than almost anyone can hurt him.",
-      "Retractable metal claws and a short temper define this gruff superhero.",
-      "Known for his adamantium claws and rapid healing factor, this X-Men member is often portrayed by actor Hugh Jackman."
-    ]
-  },
-  {
-    "date": "2026-11-22",
-    "theme": "Food & Fun",
-    "answer": "Pierogi",
-    "hints": [
-      "This food is beloved comfort fare across Eastern Europe.",
-      "Dough is folded around a savory or sweet filling to create this type of dumpling.",
-      "Traditionally stuffed with potato, cheese, or sauerkraut, this Polish dumpling is often boiled, then pan-fried in butter."
-    ]
-  },
-  {
-    "date": "2026-11-23",
-    "theme": "Sports & Games",
-    "answer": "Powerlifting",
-    "hints": [
-      "This pursuit distills athletic strength into three precise movements.",
-      "Competitors attempt a single maximum effort in squat, bench, and deadlift movements in this strength sport.",
-      "Athletes chase personal records across three key barbell lifts, often wearing a supportive belt in this heavy discipline."
-    ]
-  },
-  {
-    "date": "2026-11-24",
-    "theme": "Wildcard",
-    "answer": "Avalanche",
-    "hints": [
-      "This event can be triggered by something as small as a single footstep.",
-      "Gravity suddenly pulls a huge mass of snow down a slope in this natural hazard.",
-      "Skiers and snowboarders fear this rapid, often deadly slide of snow, ice, and debris down a mountainside."
-    ]
-  },
-  {
-    "date": "2026-11-25",
-    "theme": "Around the World",
-    "answer": "Amalfi Coast",
-    "hints": [
-      "This destination is famous for its dramatic cliffside views.",
-      "Pastel-colored villages cling to steep cliffs above turquoise water along this scenic stretch of shoreline.",
-      "Located in southern Italy, this clifftop stretch near Naples includes towns like Positano and Ravello."
-    ]
-  },
-  {
-    "date": "2026-11-26",
-    "theme": "Genius Ideas",
-    "answer": "Abacus",
-    "hints": [
-      "This invention let people calculate long before electronic devices existed.",
-      "Sliding beads along rods allow users to perform arithmetic using this ancient counting device.",
-      "Still used in parts of Asia today, this bead-and-rod counting tool predates modern calculators by thousands of years."
-    ]
-  },
-  {
-    "date": "2026-11-27",
-    "theme": "Famous People",
-    "answer": "Jacques Cousteau",
-    "hints": [
-      "This individual brought the hidden world beneath the waves into people's living rooms.",
-      "Co-inventing an early breathing device allowed this explorer to film previously unseen depths of the ocean.",
-      "This French filmmaker co-invented the Aqua-Lung and produced documentaries exploring marine life aboard his ship, the Calypso."
-    ]
-  },
-  {
-    "date": "2026-11-28",
-    "theme": "Pop Culture",
-    "answer": "Gremlins",
-    "hints": [
-      "This creation warns against three very specific rules for caring for a strange pet.",
-      "Feeding a cute creature after midnight unleashes chaotic, mischievous creatures in this film.",
-      "In this 1984 film, a cuddly creature named Gizmo spawns mischievous monsters when the rules of care are broken."
-    ]
-  },
-  {
-    "date": "2026-11-29",
-    "theme": "Food & Fun",
-    "answer": "Shakshuka",
-    "hints": [
-      "This dish turns breakfast into a shared skillet experience.",
-      "Eggs are gently poached directly in a simmering sauce to create this one-pan meal.",
-      "Popular across North Africa and the Middle East, this dish features eggs cooked in a spiced tomato and pepper base."
-    ]
-  },
-  {
-    "date": "2026-11-30",
-    "theme": "Sports & Games",
-    "answer": "Shuttlecock",
-    "hints": [
-      "This item travels unusually slow through the air due to its unique shape.",
-      "A cone of feathers attached to a rounded base makes up this piece of sporting equipment.",
-      "Struck back and forth over a net with lightweight rackets, this feathered projectile is central to badminton."
-    ]
-  },
-  {
-    "date": "2026-12-01",
-    "theme": "Wildcard",
-    "answer": "Mosaic",
-    "hints": [
-      "This art form reveals its full picture only when viewed from a distance.",
-      "Thousands of small colored pieces are arranged together to form this type of artwork.",
-      "Ancient Romans decorated floors and walls with tiny fragments of glass, stone, or tile arranged into this decorative art form."
-    ]
-  },
-  {
-    "date": "2026-12-02",
-    "theme": "Around the World",
-    "answer": "Dead Sea",
-    "hints": [
-      "This destination allows visitors to float effortlessly on its surface.",
-      "Extremely high salt content makes swimming nearly impossible and floating nearly unavoidable at this body of water.",
-      "Bordering Jordan and Israel, this hypersaline lake sits at the lowest point of elevation on Earth's land surface."
-    ]
-  },
-  {
-    "date": "2026-12-03",
-    "theme": "Genius Ideas",
-    "answer": "Sextant",
-    "hints": [
-      "This invention helped travelers find their way using nothing but the stars.",
-      "Measuring the angle between a celestial body and the horizon allows navigators to determine location with this instrument.",
-      "Sailors historically used this hand-held optical instrument to calculate latitude by measuring the angle of the sun or stars."
-    ]
-  },
-  {
-    "date": "2026-12-04",
-    "theme": "Famous People",
-    "answer": "Grace Hopper",
-    "hints": [
-      "This individual helped machines understand something closer to everyday language.",
-      "Developing an early compiler, this programmer made it possible to write software instructions in plain English.",
-      "This computer scientist and Navy officer pioneered the COBOL programming language and popularized the term 'debugging.'"
-    ]
-  },
-  {
-    "date": "2026-12-05",
-    "theme": "Pop Culture",
-    "answer": "Chewbacca",
-    "hints": [
-      "This creation communicates only through growls and roars, yet everyone seems to understand him.",
-      "A tall, furry co-pilot serves as loyal companion to a roguish smuggler in this franchise.",
-      "This towering, furry Wookiee serves as co-pilot aboard the Millennium Falcon alongside Han Solo."
-    ]
-  },
-  {
-    "date": "2026-12-06",
-    "theme": "Food & Fun",
-    "answer": "Baguette",
-    "hints": [
-      "This food item is defined by its long, slender shape.",
-      "A crisp crust and airy crumb are the hallmarks of this classic loaf.",
-      "Carried under the arm throughout Paris, this crusty French bread must meet strict regulations to earn its traditional name."
-    ]
-  },
-  {
-    "date": "2026-12-07",
-    "theme": "Sports & Games",
-    "answer": "Grandmaster",
-    "hints": [
-      "This title represents the pinnacle of achievement within a classic strategy game.",
-      "Earned through years of tournament success, this title denotes mastery of chess at the highest level.",
-      "Fewer than two thousand people worldwide hold this elite title, awarded by the International Chess Federation for exceptional strategic skill."
-    ]
-  },
-  {
-    "date": "2026-12-08",
-    "theme": "Wildcard",
-    "answer": "Pendulum",
-    "hints": [
-      "This object has been used to both measure time and hypnotize an audience.",
-      "A weight swinging steadily from a fixed point powers this simple mechanical device.",
-      "Galileo supposedly studied the steady swing of this weighted object to help regulate the timing of early clocks."
-    ]
-  },
-  {
-    "date": "2026-12-09",
-    "theme": "Around the World",
-    "answer": "Socotra",
-    "hints": [
-      "This destination looks like it belongs on another planet.",
-      "Bizarre, umbrella-shaped trees found nowhere else on Earth define the landscape of this isolated island.",
-      "Located in the Arabian Sea off the coast of Yemen, this remote island is famous for its otherworldly dragon's blood trees."
-    ]
-  },
-  {
-    "date": "2026-12-10",
-    "theme": "Genius Ideas",
-    "answer": "Centrifuge",
-    "hints": [
-      "This invention separates things that would otherwise take far too long to settle naturally.",
-      "Rapid spinning forces denser materials to the outside in this laboratory device.",
-      "Blood samples are spun at high speed in this device to separate plasma from heavier cellular components."
-    ]
-  },
-  {
-    "date": "2026-12-11",
-    "theme": "Famous People",
-    "answer": "Marie Antoinette",
-    "hints": [
-      "This individual became a symbol of excess during a period of social upheaval.",
-      "A famous, though possibly apocryphal, quote about cake is often attributed to this royal figure.",
-      "This Austrian-born queen of France was executed by guillotine during the French Revolution."
-    ]
-  },
-  {
-    "date": "2026-12-12",
-    "theme": "Pop Culture",
-    "answer": "Yoda",
-    "hints": [
-      "This creation proves that wisdom has nothing to do with size.",
-      "Speaking in a distinctive inverted sentence structure, this tiny green mentor trains heroes in an ancient order.",
-      "This small, green Jedi Master trains Luke Skywalker on the swamp planet Dagobah."
-    ]
-  },
-  {
-    "date": "2026-12-13",
-    "theme": "Food & Fun",
-    "answer": "Fondue",
-    "hints": [
-      "This dish turns a meal into a communal dipping experience.",
-      "A pot kept warm over a small flame holds the melted base of this Swiss specialty.",
-      "Chunks of bread or vegetables are skewered and swirled through this melted cheese preparation."
-    ]
-  },
-  {
-    "date": "2026-12-14",
-    "theme": "Sports & Games",
-    "answer": "Freestyle",
-    "hints": [
-      "This category allows for maximum creative or physical expression within a competition.",
-      "In swimming, this stroke lets athletes choose their technique as long as certain rules are followed.",
-      "Often synonymous with the crawl stroke, this swimming event imposes the fewest technical restrictions of any competitive category."
-    ]
-  },
-  {
-    "date": "2026-12-15",
-    "theme": "Wildcard",
-    "answer": "Ventriloquism",
-    "hints": [
-      "This skill creates the illusion that words are coming from somewhere they are not.",
-      "A performer speaks without moving their lips to make an inanimate figure appear to talk in this act.",
-      "Often paired with a wooden puppet, this performance art tricks audiences into believing a dummy is speaking on its own."
-    ]
-  },
-  {
-    "date": "2026-12-16",
-    "theme": "Around the World",
-    "answer": "Zanzibar",
-    "hints": [
-      "This destination is steeped in centuries of spice trading history.",
-      "Fragrant cloves, cinnamon, and nutmeg once made this archipelago a vital stop along ancient trade routes.",
-      "Located off the coast of Tanzania, this archipelago's historic Stone Town blends Arab, Persian, and African influences."
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Indiana Jones",
+        "hints": [
+          "This character made archaeology look like an action career.",
+          "Armed with a bullwhip and a fedora, this professor hunts for artifacts while dodging booby traps.",
+          "This hero of 'Raiders of the Lost Ark' is played by Harrison Ford."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Narnia",
+        "hints": [
+          "This place is reached through an unlikely doorway and is ruled by magical creatures.",
+          "Children enter it through a piece of furniture and discover talking animals and a perpetual winter.",
+          "C. S. Lewis created this fantasy land, where the lion Aslan rules."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Walkman",
+        "hints": [
+          "This product let people take their own soundtrack wherever they went.",
+          "Introduced by a Japanese electronics company in 1979, it played cassette tapes through lightweight headphones.",
+          "Sony's portable cassette player changed how people listened to music."
+        ]
+      }
     ]
   }
 ]

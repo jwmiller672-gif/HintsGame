@@ -72,6 +72,58 @@ export function isMobile() {
   );
 }
 
+export const ROUND_TYPES = {
+  person: { label: "Person", emoji: "👤", prompt: "Who is this?" },
+  place: { label: "Place", emoji: "📍", prompt: "Where is this?" },
+  thing: { label: "Thing", emoji: "🧩", prompt: "What is this?" },
+};
+
+// Puzzle days come in two shapes: legacy single-round days ({answer, hints})
+// and three-round days ({rounds: [{type, answer, hints}, ...]}). The app
+// always plays a list of rounds, so legacy days become a one-round list.
+export function getRounds(puzzle) {
+  if (puzzle.rounds) return puzzle.rounds;
+  return [{ type: null, answer: puzzle.answer, hints: puzzle.hints }];
+}
+
+// One star per round: gold = solved on the first clue, blue = solved on any
+// later clue, hollow = never solved ("none" = round not played yet).
+export function roundRating(roundResult) {
+  if (!roundResult) return "none";
+  if (!roundResult.won) return "miss";
+  return roundResult.hints === 1 ? "gold" : "blue";
+}
+
+// Emoji for plain-text share cards (there is no blue star emoji).
+const RATING_EMOJI = { gold: "⭐️", blue: "🔷", miss: "☆", none: "☆" };
+
+export function ratingEmoji(roundResult) {
+  return RATING_EMOJI[roundRating(roundResult)];
+}
+
+// Three gold stars on a three-round day is the special perfect result.
+export function isTripleGold(roundResults, total) {
+  return (
+    total === 3 &&
+    roundResults.length === 3 &&
+    roundResults.every((r) => roundRating(r) === "gold")
+  );
+}
+
+// Stored results are either legacy {won, hints} or {rounds: [{won, hints}]}.
+export function getRoundResults(result) {
+  if (!result) return [];
+  if (result.rounds) return result.rounds;
+  return [{ won: result.won, hints: result.hints }];
+}
+
+// The streak continues when at least two thirds of the rounds are solved
+// (1 of 1 for legacy days, 2 of 3 for three-round days).
+export function streakQualifies(roundResults) {
+  const solved = roundResults.filter((r) => r.won).length;
+  return solved >= Math.ceil((roundResults.length * 2) / 3);
+}
+
 const ARCHIVE_RESULTS_KEY = "archiveResults";
 
 // Per-puzzle results, keyed by date, so the archive list can show which

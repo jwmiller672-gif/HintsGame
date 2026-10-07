@@ -1,15 +1,32 @@
 import styles from "./styles";
-import { formatDateForDisplay, getArchiveResult } from "./gameUtils";
+import Stars from "./Stars";
+import {
+  formatDateForDisplay,
+  getArchiveResult,
+  getRoundResults,
+  getRounds,
+  isTripleGold,
+} from "./gameUtils";
 
-function resultBadge(result) {
-  if (!result) {
-    return { text: "Not played", color: "#90a4ae" };
+function resultBadge(puzzle, result) {
+  const total = getRounds(puzzle).length;
+  const played = getRoundResults(result);
+  if (played.length === 0) {
+    return { content: "Not played", color: "#90a4ae" };
   }
-  if (!result.won) {
-    return { text: "Stumped", color: "#c62828" };
+  if (played.length < total) {
+    return { content: `In progress (${played.length}/${total})`, color: "#f57c00" };
   }
-  const stars = Math.max(4 - result.hints, 0);
-  return { text: "⭐️".repeat(stars) || "⭐️", color: "#2e7d32" };
+  const special = isTripleGold(played, total);
+  return {
+    content: (
+      <>
+        <Stars results={played} total={total} size={18} special={special} />
+        {special && " 🏆"}
+      </>
+    ),
+    color: "#2c3e50",
+  };
 }
 
 export default function Archive({ entries, onSelect, onBack }) {
@@ -37,7 +54,7 @@ export default function Archive({ entries, onSelect, onBack }) {
         <div style={styles.archiveList}>
           {entries.map(({ puzzle, number }) => {
             const result = getArchiveResult(puzzle.date);
-            const badge = resultBadge(result);
+            const badge = resultBadge(puzzle, result);
             return (
               <div
                 key={puzzle.date}
@@ -58,7 +75,7 @@ export default function Archive({ entries, onSelect, onBack }) {
                   </div>
                 </div>
                 <div style={{ ...styles.archiveBadge, color: badge.color }}>
-                  {badge.text}
+                  {badge.content}
                 </div>
               </div>
             );

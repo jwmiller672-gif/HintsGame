@@ -1,15 +1,33 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./styles";
+import Round from "./Round";
+import Stars from "./Stars";
 import {
+  ROUND_TYPES,
   formatDateForDisplay,
   formatDuration,
+  getArchiveResult,
+  getRoundResults,
+  getRounds,
   getTimeUntilTomorrow,
   isMobile,
-  levenshteinDistance,
-  normalizeAnswer,
+  isTripleGold,
+  ratingEmoji,
+  roundRating,
   saveArchiveResult,
+  streakQualifies,
 } from "./gameUtils";
 
+// Fixed positions for the triple-gold sparkles (keeps renders deterministic).
+const SPARKLES = [
+  { left: "8%", top: "22%", delay: 0 }, { left: "20%", top: "70%", delay: 0.4 },
+  { left: "33%", top: "12%", delay: 0.8 }, { left: "46%", top: "82%", delay: 0.2 },
+  { left: "58%", top: "18%", delay: 1.0 }, { left: "70%", top: "74%", delay: 0.6 },
+  { left: "82%", top: "26%", delay: 0.3 }, { left: "92%", top: "64%", delay: 0.9 },
+];
+
+// A puzzle day: plays each round in order (one for legacy days, three for
+// Person / Place / Thing days) and shows the combined results.
 export default function GameScreen({
   puzzle,
   puzzleNumber,
@@ -18,21 +36,27 @@ export default function GameScreen({
   onGameOver,
   onBack,
 }) {
-  const [hintsRevealed, setHintsRevealed] = useState(0);
-  const [guesses, setGuesses] = useState([]);
-  const [input, setInput] = useState("");
-  const [message, setMessage] = useState("");
-  const [gameOver, setGameOver] = useState(false);
-  const [won, setWon] = useState(false);
-  const [guessCount, setGuessCount] = useState(0);
-  const [showIncorrectPrompt, setShowIncorrectPrompt] = useState(false);
-  const [justRevealed, setJustRevealed] = useState(-1);
-  const [gameStarted, setGameStarted] = useState(false);
-  const [animatingHint, setAnimatingHint] = useState(-1);
+  const rounds = getRounds(puzzle);
+  const total = rounds.length;
+  const multi = total > 1;
+
+  // Today's progress survives a reload; archive replays always start fresh.
+  const [initialResults] = useState(() =>
+    isToday ? getRoundResults(getArchiveResult(puzzle.date)).slice(0, total) : []
+  );
+  const resumedComplete = initialResults.length >= total;
+
+  const [roundResults, setRoundResults] = useState(initialResults);
+  const [roundIndex, setRoundIndex] = useState(initialResults.length);
+  const [gameStarted, setGameStarted] = useState(initialResults.length > 0);
   const [timeUntilTomorrow, setTimeUntilTomorrow] = useState(getTimeUntilTomorrow());
-  const [resultVisible, setResultVisible] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
-  const [overlayDismissed, setOverlayDismissed] = useState(false);
+  const [overlayDismissed, setOverlayDismissed] = useState(resumedComplete);
+  const overlayTimer = useRef(null);
+
+  const dayComplete = roundResults.length >= total;
+  const solvedCount = roundResults.filter((r) => r.won).length;
+  const tripleGold = isTripleGold(roundResults, total);
 
   useEffect(() => {
     if (!isToday) return;
@@ -43,149 +67,59 @@ export default function GameScreen({
   }, [isToday]);
 
   useEffect(() => {
-    if (justRevealed >= 0) {
-      // Start with opacity 0, then animate to 1
-      setAnimatingHint(-1);
-      setTimeout(() => {
-        setAnimatingHint(justRevealed);
-      }, 50);
+    if (dayComplete && !resumedComplete) {
+      overlayTimer.current = setTimeout(() => setShowOverlay(true), 2000);
+      return () => clearTimeout(overlayTimer.current);
     }
-  }, [justRevealed]);
+  }, [dayComplete, resumedComplete]);
 
-  useEffect(() => {
-    if (gameOver) {
-      setTimeout(() => setResultVisible(true), 50);
-      setTimeout(() => setShowOverlay(true), 2000);
+  function handleRoundComplete(result) {
+    const next = [...roundResults, { won: result.won, hints: result.hints }];
+    setRoundResults(next);
+    // Today saves after every round so a reload resumes; archive replays only
+    // save once the whole day is finished.
+    if (isToday || next.length === total) {
+      saveArchiveResult(puzzle.date, { rounds: next });
     }
-  }, [gameOver]);
-
-  const canGuess = guessCount < hintsRevealed && !gameOver;
-
-  function revealHint(keepMessage = false) {
-    if (hintsRevealed < puzzle.hints.length) {
-      setJustRevealed(hintsRevealed);
-      setHintsRevealed(hintsRevealed + 1);
-      if (!keepMessage) {
-        setMessage("");
-        setShowIncorrectPrompt(false);
-      }
-      setGuessCount(0);
+    if (next.length === total && isToday && onGameOver) {
+      onGameOver(streakQualifies(next));
     }
   }
 
-  function calculateStars(hintsUsed) {
-    // Award stars based on how many hints were revealed when they won
-    // 1 hint = 3 stars, 2 hints = 2 stars, 3 hints = 1 star
-    return 4 - hintsUsed;
-  }
-
-  function finishGame(didWin, hintsUsed) {
-    saveArchiveResult(puzzle.date, { won: didWin, hints: hintsUsed });
-    if (isToday && onGameOver) {
-      onGameOver(didWin, hintsUsed);
-    }
-  }
-
-  function submitGuess(e) {
-    e.preventDefault();
-    if (!input.trim() || gameOver || !canGuess) return;
-
-    const guess = input.trim();
-    const answer = puzzle.answer.trim();
-    const answerLower = answer.toLowerCase();
-    const guessLower = guess.toLowerCase();
-
-    // Normalize both for comparison (removes articles like "the", "a", "an")
-    const normalizedGuess = normalizeAnswer(guess);
-    const normalizedAnswer = normalizeAnswer(answer);
-
-    const newGuesses = [...guesses, guess];
-
-    // Exact match (with normalization to ignore articles)
-    if (guessLower === answerLower || normalizedGuess === normalizedAnswer) {
-      setGuesses(newGuesses);
-      setMessage(
-        `🎉 Correct! You got it in ${hintsRevealed} hint${hintsRevealed !== 1 ? "s" : ""}!`
-      );
-      setGameOver(true);
-      setWon(true);
-      finishGame(true, hintsRevealed);
-      setGuessCount(guessCount + 1);
-      setInput("");
-      setShowIncorrectPrompt(false);
-      return;
-    }
-
-    // Partial/close match (use normalized versions)
-    const guessWords = normalizedGuess.split(" ");
-    const answerWords = normalizedAnswer.split(" ");
-
-    // Check word-by-word with slightly looser tolerance for longer words
-    const isWordClose = guessWords.every((word) =>
-      answerWords.some((ansWord) => {
-        const allowedEdits = ansWord.length > 4 ? 2 : 1;
-        return levenshteinDistance(word, ansWord) <= allowedEdits;
-      })
-    );
-
-    // Also check the entire string for overall closeness (handles spacing issues etc)
-    const totalDist = levenshteinDistance(normalizedGuess, normalizedAnswer);
-    const isOverallClose = totalDist <= 2 || (normalizedAnswer.length > 6 && totalDist <= 3);
-
-    if (isWordClose || isOverallClose) {
-      setMessage(
-        "Almost there! Check your spelling or adjust your guess and try again."
-      );
-      setShowIncorrectPrompt(false);
-      return;
-    }
-
-    // Incorrect guess
-    setGuesses(newGuesses);
-    setGuessCount(guessCount + 1);
-    setMessage("❌ Incorrect guess, try again!");
-    setShowIncorrectPrompt(true);
-
-    // Auto reveal next hint but keep incorrect message
-    if (hintsRevealed < puzzle.hints.length) {
-      revealHint(true);
-    } else {
-      setGameOver(true);
-      finishGame(false, hintsRevealed);
-      setMessage("❌ Out of guesses!");
-      setShowIncorrectPrompt(false);
-    }
-
-    setInput("");
+  function openResults() {
+    clearTimeout(overlayTimer.current);
+    setShowOverlay(true);
   }
 
   function getShareDetails() {
-    const stars = won ? calculateStars(hintsRevealed) : 0;
-    const starsFilled = "⭐️".repeat(Math.max(stars, 0));
-    const starsEmpty = "☆".repeat(Math.max(3 - stars, 0));
-    const starString = starsFilled + starsEmpty;
+    const shareUrl = window.location.href;
+    let baseShareText;
 
-    let resultMessage = "";
-
-    if (won) {
-      if (stars === 3) {
-        resultMessage = "I got it on the first hint 🥳! You try!";
+    if (!multi) {
+      const result = roundResults[0] || { won: false, hints: 3 };
+      let resultMessage;
+      if (result.won) {
+        resultMessage =
+          roundRating(result) === "gold"
+            ? "I got it on the first hint 🥳! You try!"
+            : `I got it in ${result.hints} hints! Can you do better?`;
       } else {
-        resultMessage = `I got it in ${hintsRevealed} hints! Can you do better?`;
+        resultMessage = "Stumped me today! Can you get it?";
       }
+      baseShareText = `Hints #${puzzleNumber}\n${ratingEmoji(result)}\n${resultMessage}`;
     } else {
-      resultMessage = "Stumped me today! Can you get it?";
+      const line = rounds
+        .map((round, i) => `${ROUND_TYPES[round.type].emoji}${ratingEmoji(roundResults[i])}`)
+        .join(" ");
+      const closing = tripleGold ? "TRIPLE GOLD! 🏆 Can you match it?" : "Can you beat my score?";
+      baseShareText = `Hints #${puzzleNumber}\n${line}\n${closing}`;
     }
 
-    const baseShareText = `Hints #${puzzleNumber}\n${starString}\n${resultMessage}`;
-    const shareUrl = window.location.href;
-    const fullShareText = `${baseShareText}\n${shareUrl}`;
-
-    return { baseShareText, fullShareText, shareUrl };
+    return { baseShareText, fullShareText: `${baseShareText}\n${shareUrl}`, shareUrl };
   }
 
   function shareResults() {
-    if (!gameOver) return;
+    if (!dayComplete) return;
     const { baseShareText, fullShareText, shareUrl } = getShareDetails();
 
     if (navigator.share && isMobile()) {
@@ -207,14 +141,36 @@ export default function GameScreen({
   }
 
   function shareToX() {
-    if (!gameOver) return;
+    if (!dayComplete) return;
     const { fullShareText } = getShareDetails();
     const xUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(fullShareText)}`;
     window.open(xUrl, '_blank');
   }
 
+  const currentRound = roundIndex < total ? rounds[roundIndex] : null;
+  const currentMeta = currentRound && currentRound.type ? ROUND_TYPES[currentRound.type] : null;
+  const isLastRound = roundIndex === total - 1;
+  const nextMeta =
+    currentRound && !isLastRound && multi ? ROUND_TYPES[rounds[roundIndex + 1].type] : null;
+  const nextLabel = isLastRound
+    ? "See Results 📊"
+    : nextMeta
+      ? `Next: ${nextMeta.emoji} ${nextMeta.label} →`
+      : null;
+
+  const overlayTitle = multi
+    ? tripleGold
+      ? "TRIPLE GOLD!"
+      : solvedCount === 0
+        ? "You got stumped today!"
+        : `You solved ${solvedCount} of ${total} rounds!`
+    : roundResults[0] && roundResults[0].won
+      ? `Congrats! You got it in ${roundResults[0].hints} hint${roundResults[0].hints !== 1 ? "s" : ""}!`
+      : "You got stumped!";
+  const overlayGood = solvedCount > 0;
+
   return (
-    <div style={styles.container}>
+    <div style={{ ...styles.container, minHeight: showOverlay ? 640 : undefined }}>
       {!isToday && (
         <button onClick={onBack} style={styles.backButton}>
           ← Back to Archive
@@ -233,123 +189,66 @@ export default function GameScreen({
         Reveal the hints and guess the correct answer. If you guess incorrectly,
         the next hint is revealed.
       </p>
-      <h3 style={{ ...styles.todayTheme, color: "#2c3e50" }}>
+      <h3 style={{ ...styles.todayTheme, color: "#2c3e50", marginBottom: multi ? 8 : 20 }}>
         {isToday
           ? `Today's Theme: ${puzzle.theme}`
           : `Puzzle #${puzzleNumber} • ${formatDateForDisplay(puzzle.date)} • ${puzzle.theme}`}
       </h3>
+      {multi && !gameStarted && (
+        <p style={{ ...styles.instructions, color: "#546e7a", marginBottom: 10 }}>
+          Three rounds: {rounds.map((r) => `${ROUND_TYPES[r.type].emoji} ${ROUND_TYPES[r.type].label}`).join(" · ")}
+        </p>
+      )}
 
       {!gameStarted ? (
         <button
-          onClick={() => {
-            setJustRevealed(0);
-            setTimeout(() => {
-              setGameStarted(true);
-              setHintsRevealed(1);
-            }, 0);
-          }}
+          onClick={() => setGameStarted(true)}
           style={{ ...styles.button, fontSize: 20, padding: "15px 40px", marginTop: 20 }}
         >
           Play
         </button>
       ) : (
         <>
-          <div style={styles.hintsContainer}>
-            {Array.from({ length: puzzle.hints.length }).map((_, i) => (
-              <div
-                key={i}
-                style={{
-                  ...styles.hint,
-                  backgroundColor: i < hintsRevealed || gameOver ? "#d4edda" : "#f8f9fa",
-                  color: "#2c3e50",
-                  userSelect: "none",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <strong style={{ minWidth: 60 }}>Hint {i + 1}:</strong>
-                <span
-                  style={{
-                    marginLeft: 10,
-                    minHeight: "1em",
-                    opacity: (i < hintsRevealed && i <= animatingHint) || gameOver ? 1 : 0,
-                    transition: "opacity 1.5s ease-in",
-                  }}
-                >
-                  {i < hintsRevealed || gameOver ? puzzle.hints[i] : ""}
-                </span>
-              </div>
-            ))}
-          </div>
-
-          {!gameOver && hintsRevealed < puzzle.hints.length && (
-            <button onClick={() => revealHint(false)} style={styles.button}>
-              Reveal Next Hint
-            </button>
-          )}
-
-          {!gameOver && (
-            <form onSubmit={submitGuess} style={styles.form}>
-              <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                placeholder={canGuess ? "Your guess" : ""}
-                style={{
-                  ...styles.input,
-                  backgroundColor: canGuess ? "white" : "#eee",
-                  color: canGuess ? "black" : "#888",
-                  cursor: canGuess ? "text" : "not-allowed",
-                }}
-                autoFocus
-                autoComplete="off"
-                disabled={!canGuess}
-              />
-              <button
-                type="submit"
-                style={{ ...styles.button, marginLeft: 10 }}
-                disabled={!canGuess}
-              >
-                Guess
-              </button>
-            </form>
-          )}
-
-          {message && !gameOver && (
-            <p style={{ color: showIncorrectPrompt ? "red" : "#f57c00", fontWeight: "bold", marginTop: 10 }}>
-              {message}
-            </p>
-          )}
-
-          <div style={styles.guesses}>
-            <strong>Guesses:</strong>{" "}
-            {guesses.length > 0 ? guesses.join(", ") : "None yet"}
-          </div>
-
-          {gameOver && (
-            <div style={styles.gameOverContainer}>
-              <div style={{
-                ...styles.answerBox,
-                opacity: resultVisible ? 1 : 0,
-                transition: 'opacity 1.5s ease-in'
-              }}>
-                <div style={styles.answerLabel}>The Answer</div>
-                <div style={styles.answerValue}>{puzzle.answer}</div>
-              </div>
-
-              {overlayDismissed && (
-                <button
-                  onClick={() => setShowOverlay(true)}
-                  style={{
-                    ...styles.button,
-                    marginTop: 10,
-                    backgroundColor: "#607d8b"
-                  }}
-                >
-                  View Results 📊
-                </button>
-              )}
+          {multi && roundIndex > 0 && (
+            <div style={styles.summaryList}>
+              {rounds.slice(0, Math.min(roundIndex, total)).map((round, i) => (
+                <div key={i} style={styles.summaryRow}>
+                  <span>
+                    {ROUND_TYPES[round.type].emoji} <strong>{ROUND_TYPES[round.type].label}:</strong> {round.answer}
+                  </span>
+                  <Stars results={[roundResults[i]]} total={1} size={20} />
+                </div>
+              ))}
             </div>
+          )}
+
+          {currentRound && (
+            <>
+              {multi && currentMeta && (
+                <>
+                  <div style={styles.roundHeader}>
+                    {currentMeta.emoji} Round {roundIndex + 1} of {total} · {currentMeta.label}
+                  </div>
+                  <div style={styles.roundPrompt}>{currentMeta.prompt}</div>
+                </>
+              )}
+              <Round
+                key={roundIndex}
+                round={currentRound}
+                nextLabel={multi ? nextLabel : null}
+                onComplete={handleRoundComplete}
+                onNext={() => (isLastRound ? openResults() : setRoundIndex(roundIndex + 1))}
+              />
+            </>
+          )}
+
+          {dayComplete && overlayDismissed && (
+            <button
+              onClick={openResults}
+              style={{ ...styles.button, marginTop: 15, backgroundColor: "#607d8b" }}
+            >
+              View Results 📊
+            </button>
           )}
         </>
       )}
@@ -365,9 +264,8 @@ export default function GameScreen({
           borderRadius: 24,
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
           padding: '20px',
+          overflowY: 'auto',
           animation: 'fadeIn 0.5s ease-in',
           zIndex: 10
         }}>
@@ -390,55 +288,119 @@ export default function GameScreen({
             ✕
           </button>
 
-          <div style={{
-            fontSize: 24,
-            fontWeight: 'bold',
-            color: won ? '#1565c0' : '#c62828',
-            marginBottom: 20,
-            textAlign: 'center'
-          }}>
-            {won ? `Congrats! You got it in ${hintsRevealed} hint${hintsRevealed !== 1 ? 's' : ''}!` : "You got stumped!"}
-          </div>
+          {tripleGold && (
+            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, pointerEvents: 'none', overflow: 'hidden' }}>
+              {SPARKLES.map((s, i) => (
+                <span
+                  key={i}
+                  className="fx"
+                  style={{
+                    position: 'absolute',
+                    left: s.left,
+                    top: s.top,
+                    fontSize: 22,
+                    animation: `sparkleFloat 2.4s ${s.delay}s infinite`,
+                  }}
+                >
+                  ✨
+                </span>
+              ))}
+            </div>
+          )}
 
-          {isToday && (
-            <div style={{ ...styles.scoreSummary, marginBottom: 30 }}>
-              <div style={styles.scoreItem}>
-                <div style={styles.scoreLabel}>Streak</div>
-                <div style={styles.scoreValue}>{streak} 🔥</div>
+          <div style={{ margin: 'auto', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div
+              className={tripleGold ? "fx" : undefined}
+              style={tripleGold ? {
+                fontSize: 38,
+                fontWeight: 900,
+                letterSpacing: 1,
+                marginBottom: 6,
+                textAlign: 'center',
+                backgroundImage: 'linear-gradient(90deg, #f9a825, #fff59d, #f9a825)',
+                backgroundSize: '200% 100%',
+                WebkitBackgroundClip: 'text',
+                backgroundClip: 'text',
+                color: 'transparent',
+                animation: 'goldShimmer 2s linear infinite',
+              } : {
+                fontSize: 24,
+                fontWeight: 'bold',
+                color: overlayGood ? '#1565c0' : '#c62828',
+                marginBottom: 12,
+                textAlign: 'center'
+              }}
+            >
+              {overlayTitle}
+            </div>
+            <div style={{ marginBottom: tripleGold ? 8 : 16 }}>
+              <Stars
+                results={roundResults}
+                total={total}
+                size={tripleGold ? 54 : 40}
+                special={tripleGold}
+                animate
+              />
+            </div>
+            {tripleGold && (
+              <div style={{ fontSize: 16, fontWeight: 700, color: '#f57f17', marginBottom: 16 }}>
+                A perfect day: every round on the first clue! 🏆
               </div>
-            </div>
-          )}
+            )}
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', alignItems: 'center', width: '100%', maxWidth: '300px' }}>
-            <button
-              onClick={shareResults}
-              style={{ ...styles.button, ...styles.mobileButton, backgroundColor: "#1565c0" }}
-              aria-label="Share via text"
-            >
-              Share Results on <span style={{ fontSize: '1.2em' }}>💬</span>
-            </button>
-            <button
-              onClick={shareToX}
-              style={{ ...styles.button, ...styles.mobileButton, backgroundColor: "black" }}
-              aria-label="Share on X"
-            >
-              Share Results on 𝕏
-            </button>
+            {multi && (
+              <div style={{ ...styles.summaryList, width: '100%', maxWidth: 340, marginBottom: 20 }}>
+                {rounds.map((round, i) => (
+                  <div key={i} style={styles.summaryRow}>
+                    <span>
+                      {ROUND_TYPES[round.type].emoji} <strong>{ROUND_TYPES[round.type].label}:</strong> {round.answer}
+                    </span>
+                    <Stars results={[roundResults[i]]} total={1} size={20} />
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {isToday && (
+              <div style={{ ...styles.scoreSummary, marginBottom: 30 }}>
+                <div style={styles.scoreItem}>
+                  <div style={styles.scoreLabel}>Streak</div>
+                  <div style={styles.scoreValue}>{streak} 🔥</div>
+                </div>
+              </div>
+            )}
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', alignItems: 'center', width: '100%', maxWidth: '300px' }}>
+              <button
+                onClick={shareResults}
+                style={{ ...styles.button, ...styles.mobileButton, backgroundColor: "#1565c0" }}
+                aria-label="Share via text"
+              >
+                Share Results on <span style={{ fontSize: '1.2em' }}>💬</span>
+              </button>
+              <button
+                onClick={shareToX}
+                style={{ ...styles.button, ...styles.mobileButton, backgroundColor: "black" }}
+                aria-label="Share on X"
+              >
+                Share Results on 𝕏
+              </button>
+            </div>
+
+            {isToday ? (
+              <div style={{ ...styles.nextPuzzleTimer, backgroundColor: '#f5f5f5', marginTop: 30 }}>
+                <div style={{ fontWeight: 'bold', marginBottom: 5 }}>Play again tomorrow!</div>
+                <div style={{ fontSize: '0.9em', color: '#666' }}>Next puzzle in: {formatDuration(timeUntilTomorrow)}</div>
+              </div>
+            ) : (
+              <button
+                onClick={onBack}
+                style={{ ...styles.button, marginTop: 30, backgroundColor: "#607d8b" }}
+              >
+                ← Back to Archive
+              </button>
+            )}
           </div>
-
-          {isToday ? (
-            <div style={{ ...styles.nextPuzzleTimer, backgroundColor: '#f5f5f5', marginTop: 30 }}>
-              <div style={{ fontWeight: 'bold', marginBottom: 5 }}>Play again tomorrow!</div>
-              <div style={{ fontSize: '0.9em', color: '#666' }}>Next puzzle in: {formatDuration(timeUntilTomorrow)}</div>
-            </div>
-          ) : (
-            <button
-              onClick={onBack}
-              style={{ ...styles.button, marginTop: 30, backgroundColor: "#607d8b" }}
-            >
-              ← Back to Archive
-            </button>
-          )}
         </div>
       )}
 

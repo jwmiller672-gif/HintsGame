@@ -64,7 +64,8 @@ export default function App() {
     }
   }, []);
 
-  function updateStreak(wonToday, hintsUsed) {
+  // `wonToday` means the day counted toward the streak (see streakQualifies).
+  function updateStreak(wonToday) {
     const todayStr = formatDateToYMD_Local(new Date());
     const lastPlayedDate = localStorage.getItem("lastPlayedDate");
 
