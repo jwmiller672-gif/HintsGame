@@ -2168,5 +2168,995 @@
         ]
       }
     ]
+  },
+  {
+    "date": "2026-11-07",
+    "theme": "Science & Nature",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Carl Sagan",
+        "hints": [
+          "This individual spent a career helping ordinary people understand the universe.",
+          "This scientist hosted a landmark television series that brought the cosmos into living rooms worldwide.",
+          "This astronomer wrote 'Cosmos' and often spoke about 'billions and billions' of stars."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Galapagos",
+        "hints": [
+          "This place is a remote cluster of islands known for creatures found nowhere else on Earth.",
+          "A famous naturalist visited this archipelago and used its finches to develop a groundbreaking theory.",
+          "This volcanic island chain off Ecuador inspired Charles Darwin's theory of evolution."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Platypus",
+        "hints": [
+          "This creature baffled scientists when it was first described, since it did not fit existing categories.",
+          "This mammal has a duck-like bill and lays eggs instead of giving live birth.",
+          "Native to Australia, this egg-laying mammal also produces venom from spurs on its hind legs."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "theme": "Sports & Games",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Pele",
+        "hints": [
+          "This athlete rose from humble beginnings to become one of the most celebrated competitors in his sport's history.",
+          "This player won multiple world championships representing his national team on the pitch.",
+          "Known as 'The King', this Brazilian forward won three World Cups."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Daytona",
+        "hints": [
+          "This place hosts high-speed competitions that draw massive crowds every year.",
+          "This American venue is famous for a grueling 500-mile race held every February.",
+          "Located in Florida, this speedway hosts NASCAR's most famous race."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Cricket",
+        "hints": [
+          "This activity involves two teams taking turns trying to outscore one another using specialized gear.",
+          "Played with a bat and ball on a large oval field, this pastime can last for days.",
+          "Popular in England, India, and Australia, this bat-and-ball sport features overs and wickets."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "theme": "Arts & Music",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Mozart",
+        "hints": [
+          "This figure showed remarkable talent from a very young age and left a lasting mark on their art form.",
+          "This composer wrote symphonies and operas while touring European courts as a child prodigy.",
+          "This Austrian composer wrote 'The Magic Flute' and over 600 works before his early death."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Sistine Chapel",
+        "hints": [
+          "This place houses one of the most studied ceilings in the world.",
+          "Located within a small city-state, this building holds frescoes painted while the artist lay on scaffolding.",
+          "This Vatican building's ceiling was painted by Michelangelo, depicting the Creation of Adam."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Cubism",
+        "hints": [
+          "This style broke away from realistic representation in favor of fragmented, geometric forms.",
+          "This art movement depicted subjects from multiple angles at once, often using muted colors.",
+          "Pioneered by Picasso and Braque, this early 20th-century movement shattered traditional perspective."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "theme": "Tech & Business",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Elon Musk",
+        "hints": [
+          "This figure built a reputation moving between very different high-stakes industries.",
+          "This entrepreneur leads companies focused on electric vehicles and private space travel.",
+          "This businessman founded SpaceX and leads the automaker Tesla."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Seattle",
+        "hints": [
+          "This place grew into a major hub for technology and trade in the Pacific Northwest.",
+          "This American city is headquarters to a global coffee chain and a massive online retailer.",
+          "This Washington State city is home to Amazon and Microsoft's headquarters."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Bitcoin",
+        "hints": [
+          "This creation changed how some people think about money and ownership.",
+          "This digital asset relies on a decentralized ledger shared across thousands of computers.",
+          "Created by the pseudonymous Satoshi Nakamoto, this cryptocurrency launched in 2009."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "theme": "Wildcard",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Oprah Winfrey",
+        "hints": [
+          "This individual built an influential career in media that reached millions of households daily.",
+          "This media personality hosted a long-running daytime talk show and built a major production company.",
+          "This American media mogul hosted a long-running daytime talk show for 25 years and later launched her own television network."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Timbuktu",
+        "hints": [
+          "This place is often used as a byword for somewhere remote and hard to reach.",
+          "This historic trading city sits near the edge of a vast desert in West Africa.",
+          "Located in Mali, this city was a legendary center of Islamic scholarship and the gold-salt trade."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Kimono",
+        "hints": [
+          "This item carries deep cultural meaning and has been worn for special occasions for centuries.",
+          "This traditional garment is wrapped and tied with a wide sash, often worn for ceremonies.",
+          "This traditional Japanese robe is fastened with an obi sash."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "theme": "History",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Marco Polo",
+        "hints": [
+          "This individual's journeys opened European eyes to distant lands and cultures.",
+          "This traveler's written account described the court of a powerful Mongol emperor.",
+          "This Venetian merchant wrote about his travels along trade routes to the court of Kublai Khan."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Carthage",
+        "hints": [
+          "This place was once a formidable rival to a growing empire across the sea.",
+          "This ancient North African city fought a series of wars against Rome.",
+          "Led by generals like Hannibal, this Phoenician city-state fought the Punic Wars against Rome."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Renaissance",
+        "hints": [
+          "This period marked a dramatic flourishing of creativity after a long stretch of relative stagnation.",
+          "This era saw renewed interest in classical learning, spreading across European city-states.",
+          "Beginning in Florence, this period of artistic and intellectual rebirth produced masters like Da Vinci."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "theme": "Pop Culture",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Harry Styles",
+        "hints": [
+          "This individual first found fame as part of a group before building a solo career.",
+          "This British singer rose to fame in a boy band before launching a successful solo music and acting career.",
+          "This former member of One Direction released solo albums like 'Fine Line' and starred in 'Dunkirk'."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Gotham",
+        "hints": [
+          "This place is a sprawling, crime-ridden metropolis that exists only in fiction.",
+          "This fictional American city is patrolled by a billionaire vigilante dressed as a bat.",
+          "This fictional home of Batman is famous for Wayne Manor and Arkham Asylum."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "PlayStation",
+        "hints": [
+          "This product changed how millions of people spend their evenings at home.",
+          "This gaming console brand has released several numbered generations since the 1990s.",
+          "Made by Sony, this console line includes the PS4 and PS5."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "theme": "Science & Nature",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Katherine Johnson",
+        "hints": [
+          "This individual's calculations helped send others safely into space, long before she received public recognition.",
+          "This mathematician's orbital calculations were crucial to early American spaceflight missions.",
+          "This NASA mathematician calculated the trajectory for John Glenn's 1962 orbital flight."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Everglades",
+        "hints": [
+          "This place is a vast wetland teeming with wildlife found almost nowhere else.",
+          "This subtropical wilderness in the southeastern United States is home to alligators and mangroves.",
+          "Located in southern Florida, this massive wetland is a national park famous for its sawgrass marshes."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Venus Flytrap",
+        "hints": [
+          "This organism surprises people because it behaves almost like an animal despite being rooted in place.",
+          "This plant snaps shut on unsuspecting insects that trigger its sensitive leaves.",
+          "Native to the Carolinas, this carnivorous plant traps bugs with hinged, trigger-haired leaves."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "theme": "Sports & Games",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Babe Ruth",
+        "hints": [
+          "This athlete became a larger-than-life figure whose legend grew well beyond the record books.",
+          "This player was famous for pointing to the outfield before launching a ball over the fence.",
+          "This New York Yankees slugger set a single-season home run record in 1927."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Lambeau Field",
+        "hints": [
+          "This place turns bitterly cold in winter, yet fans still pack in to watch.",
+          "This outdoor stadium in a small Midwestern city is nicknamed for its frozen late-season games.",
+          "Home of the Green Bay Packers, this Wisconsin stadium is nicknamed the 'Frozen Tundra'."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Penalty Kick",
+        "hints": [
+          "This moment puts enormous pressure on a single player with everyone else watching.",
+          "This set piece gives one attacker a free shot from a fixed spot against only the goalkeeper.",
+          "Taken from twelve yards out, this soccer set piece often decides tied matches in a shootout."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "theme": "Arts & Music",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Pablo Picasso",
+        "hints": [
+          "This figure constantly reinvented their style, moving through several distinct creative phases.",
+          "This painter co-founded a movement that broke subjects into geometric fragments.",
+          "This Spanish painter created 'Guernica' and co-founded Cubism."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Globe Theatre",
+        "hints": [
+          "This place was rebuilt centuries after fire destroyed the original wooden structure.",
+          "This open-air playhouse on the River Thames once staged works by England's most famous playwright.",
+          "This London playhouse was where many of Shakespeare's plays premiered in the early 1600s."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Haiku",
+        "hints": [
+          "This form favors brevity, capturing a single moment in very few words.",
+          "This short poem traditionally follows a strict syllable pattern across three lines.",
+          "This Japanese poetic form uses a 5-7-5 syllable structure, often evoking nature."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "theme": "Tech & Business",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Jeff Bezos",
+        "hints": [
+          "This individual started a company out of a garage that grew into one of the world's largest retailers.",
+          "This entrepreneur founded an online bookstore that expanded into nearly every retail category.",
+          "This businessman founded Amazon and later founded the aerospace company Blue Origin."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Bangalore",
+        "hints": [
+          "This place earned a nickname comparing it to a famous American tech region.",
+          "This southern Indian city is a major center for software development and outsourcing.",
+          "Known as India's Silicon Valley, this city hosts major IT companies and startups."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Laptop",
+        "hints": [
+          "This item freed workers from needing to stay tied to a single desk.",
+          "This portable device combines a screen, keyboard, and processor into a single foldable case.",
+          "This portable computer folds shut and runs on a rechargeable battery."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "theme": "Wildcard",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Leonardo DiCaprio",
+        "hints": [
+          "This individual became known for picking roles in acclaimed, often intense dramas.",
+          "This actor starred in a blockbuster romance set aboard a doomed ocean liner.",
+          "This actor won an Oscar for 'The Revenant' after starring in 'Titanic'."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Reykjavik",
+        "hints": [
+          "This place is the world's northernmost capital of its kind.",
+          "This chilly capital city sits near volcanoes, geysers, and hot springs.",
+          "This capital of Iceland is known for geothermal pools and the Northern Lights."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Tamale",
+        "hints": [
+          "This food is wrapped before it is cooked, and the wrapping is not meant to be eaten.",
+          "This dish consists of masa dough steamed inside a corn husk or banana leaf.",
+          "This Mesoamerican dish is traditionally filled with meat or cheese and steamed in a husk."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "theme": "History",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Sun Tzu",
+        "hints": [
+          "This individual's writings have influenced leaders far beyond the field where they first applied.",
+          "This strategist's treatise is still studied in military academies and business schools alike.",
+          "This ancient Chinese general wrote 'The Art of War'."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Normandy",
+        "hints": [
+          "This place became the stage for one of the largest military operations ever attempted.",
+          "This coastal region in northern France was the site of a massive Allied invasion.",
+          "Allied forces landed on the beaches of this French region on D-Day in 1944."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Crusades",
+        "hints": [
+          "These events stretched across centuries and reshaped relations between distant regions.",
+          "These religiously motivated military campaigns targeted the Holy Land over several centuries.",
+          "These medieval Christian military expeditions aimed to reclaim Jerusalem from Muslim rule."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "theme": "Pop Culture",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Beyonce",
+        "hints": [
+          "This individual first gained fame as part of a group before becoming a solo superstar.",
+          "This singer led a successful girl group before launching an even bigger solo career.",
+          "This singer was the lead vocalist of Destiny's Child before going solo with albums like 'Lemonade'."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Wakanda",
+        "hints": [
+          "This place hides remarkable technology behind an ordinary-looking exterior.",
+          "This fictional African nation conceals vast resources of a rare, powerful metal.",
+          "This fictional homeland of the Black Panther is powered by vibranium."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Tetris",
+        "hints": [
+          "This creation challenges players to manage falling shapes before space runs out.",
+          "This puzzle game involves arranging colorful falling blocks to clear complete lines.",
+          "Created in the Soviet Union in 1984, this game involves rotating tetromino blocks."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "theme": "Science & Nature",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Gregor Mendel",
+        "hints": [
+          "This individual's careful record-keeping in a garden revealed hidden patterns of inheritance.",
+          "This monk's experiments crossing plants revealed basic laws of inheritance.",
+          "This Austrian monk's pea plant experiments founded the modern science of genetics."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Siberia",
+        "hints": [
+          "This place is defined by brutally cold winters across an enormous stretch of land.",
+          "This vast, sparsely populated region spans much of northern Asia.",
+          "This frigid Russian region is home to Lake Baikal, the world's deepest lake."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Helium",
+        "hints": [
+          "This substance is prized for being far lighter than the air around us.",
+          "This gas is used to fill party balloons and cool powerful superconducting magnets.",
+          "This noble gas has the chemical symbol He and the second-lowest boiling point of any element."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "theme": "Sports & Games",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Tiger Woods",
+        "hints": [
+          "This athlete dominated a sport usually associated with patience and precision, drawing a huge new audience.",
+          "This golfer won multiple major championships and briefly held every major title at once.",
+          "This American golfer won 15 major championships and once held all four major titles simultaneously."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Churchill Downs",
+        "hints": [
+          "This place hosts an event famous for its extravagant hats almost as much as the race itself.",
+          "This racetrack hosts the first leg of a prestigious three-race series for three-year-old horses.",
+          "Located in Louisville, this track has hosted the Kentucky Derby since 1875."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Scrabble",
+        "hints": [
+          "This activity rewards a strong vocabulary and a knack for spotting unusual letter combinations.",
+          "This board game challenges players to form words on a grid using lettered tiles.",
+          "In this word game, players earn points by placing tiles on a 15-by-15 board, with triple-letter and triple-word squares."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "theme": "Arts & Music",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Jane Austen",
+        "hints": [
+          "This individual wrote about everyday social life with a sharp eye for irony.",
+          "This novelist's stories centered on marriage, manners, and social standing in rural England.",
+          "This English novelist wrote 'Pride and Prejudice' and 'Sense and Sensibility'."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Juilliard",
+        "hints": [
+          "This place trains some of the most accomplished performers before they reach the world stage.",
+          "This prestigious New York institution trains musicians, dancers, and actors.",
+          "Located in Manhattan, this performing arts conservatory has trained countless renowned musicians and actors."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Ballet",
+        "hints": [
+          "This art form demands years of rigorous physical training before a single public performance.",
+          "This highly technical dance style is often performed on pointe to classical orchestral music.",
+          "This formal dance style originated in Italian and French royal courts and includes works like 'Swan Lake'."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "theme": "Tech & Business",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Mark Zuckerberg",
+        "hints": [
+          "This individual started a project in a college dorm room that grew into a global company.",
+          "This entrepreneur co-founded a social networking site that began as a campus-only platform.",
+          "This entrepreneur co-founded Facebook and later renamed the parent company Meta."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Nasdaq",
+        "hints": [
+          "This place tracks the daily rise and fall of some of the world's biggest companies.",
+          "This electronic marketplace lists many major technology companies' shares.",
+          "This American stock exchange was the first in the world to trade entirely electronically."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Firewall",
+        "hints": [
+          "This safeguard works quietly in the background, mostly noticed only when something goes wrong.",
+          "This security system monitors incoming and outgoing network traffic based on set rules.",
+          "This network security system blocks unauthorized access while permitting legitimate traffic."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "theme": "Wildcard",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Malala Yousafzai",
+        "hints": [
+          "This individual became a global voice for a cause after surviving a violent attack.",
+          "This activist campaigned for girls' education and survived an assassination attempt as a teenager.",
+          "This Pakistani activist became the youngest-ever Nobel Peace Prize laureate at age 17."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Bermuda",
+        "hints": [
+          "This place is better known for a mystery than for its actual geography.",
+          "This British territory in the Atlantic gives its name to a notorious stretch of ocean.",
+          "This island territory lends its name to a triangle associated with unexplained disappearances."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Flamingo",
+        "hints": [
+          "This creature's famous color actually comes from what it eats.",
+          "This wading bird stands on one leg for long stretches and gathers in large colonies.",
+          "This pink wading bird gets its coloring from pigments in the shrimp and algae it eats."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "theme": "History",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Attila",
+        "hints": [
+          "This individual led a nomadic people whose name alone struck fear across a crumbling empire.",
+          "This ruler united various tribes and launched devastating invasions into Roman territory.",
+          "This 5th-century ruler of the Huns was called the 'Scourge of God' by his enemies."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Versailles",
+        "hints": [
+          "This place began as a hunting lodge before becoming a symbol of extravagant royal power.",
+          "This opulent French palace features a famous hall lined with mirrors.",
+          "This palace outside Paris was home to French royalty and the site of a 1919 peace treaty."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Hieroglyphics",
+        "hints": [
+          "This system puzzled scholars for centuries until a lucky discovery provided the key to reading it.",
+          "This ancient writing system used pictures and symbols rather than a simple alphabet.",
+          "This ancient Egyptian writing system was finally decoded with help from the Rosetta Stone."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "theme": "Pop Culture",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Yoda",
+        "hints": [
+          "This figure speaks in a distinctive, reversed sentence structure that fans instantly recognize.",
+          "This small, wise mentor trains young heroes in the use of a mystical power.",
+          "This centuries-old Jedi Master trained Luke Skywalker on the swamp planet Dagobah."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Pixar",
+        "hints": [
+          "This place is where countless beloved animated characters first came to life on screen.",
+          "This California animation studio is known for pairing heartfelt stories with groundbreaking computer animation.",
+          "This studio behind 'Toy Story' and 'Finding Nemo' is based in Emeryville, California."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Jenga",
+        "hints": [
+          "This activity rewards a steady hand far more than quick reflexes.",
+          "This stacking game ends dramatically when a players' tower finally tips over.",
+          "In this game, players remove wooden blocks from a tower one at a time and stack them on top."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-28",
+    "theme": "Science & Nature",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Alan Turing",
+        "hints": [
+          "This individual's theoretical work laid the foundation for an entire field that did not exist yet.",
+          "This mathematician helped crack a crucial wartime code and later conceived a test for machine intelligence.",
+          "This British mathematician broke the German Enigma code during World War II and later proposed a famous test for machine intelligence."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Jupiter",
+        "hints": [
+          "This place dwarfs its planetary neighbors by an enormous margin.",
+          "This gas giant features a massive, centuries-old storm visible from telescopes on Earth.",
+          "This largest planet in the solar system is famous for its Great Red Spot and dozens of moons."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Migraine",
+        "hints": [
+          "This condition can be far more disruptive than an ordinary version of a common complaint.",
+          "This neurological condition causes intense, often one-sided head pain along with sensitivity to light.",
+          "This severe headache disorder is often preceded by visual disturbances called an aura."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-29",
+    "theme": "Sports & Games",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Michael Phelps",
+        "hints": [
+          "This athlete's record medal haul spans multiple Olympic Games.",
+          "This swimmer won more Olympic medals than any athlete in history.",
+          "This American swimmer won 23 Olympic gold medals, including eight at a single Games in 2008."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Roland Garros",
+        "hints": [
+          "This place turns the usual surface of its sport's biggest events into reddish dust.",
+          "This Parisian venue hosts a major tennis tournament played on red clay.",
+          "This Paris stadium hosts the French Open, the only Grand Slam played on clay."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Grand Prix",
+        "hints": [
+          "This event draws massive crowds to watch high-speed machines navigate tight turns.",
+          "This racing event is held on closed circuits around the world throughout a season.",
+          "This term names a round of Formula One racing, such as the one held through the streets of Monaco."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-11-30",
+    "theme": "Arts & Music",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Michelangelo",
+        "hints": [
+          "This individual excelled at multiple art forms, from carving stone to covering ceilings.",
+          "This sculptor and painter carved a famous marble figure of a biblical hero.",
+          "This Renaissance master sculpted 'David' and painted the Sistine Chapel ceiling."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Woodstock",
+        "hints": [
+          "This place became synonymous with a cultural moment far bigger than the town itself.",
+          "This rural venue hosted a massive outdoor music festival defined by mud and peace signs.",
+          "This 1969 festival near Bethel, New York, featured Jimi Hendrix and Janis Joplin."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Trumpet",
+        "hints": [
+          "This object requires strong lungs and careful lip control to produce a clear sound.",
+          "This brass instrument uses three valves to change pitch and is common in jazz ensembles.",
+          "This brass instrument was famously played by jazz legend Louis Armstrong."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-12-01",
+    "theme": "Tech & Business",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Thomas Edison",
+        "hints": [
+          "This individual held hundreds of patents across a long and prolific career.",
+          "This inventor's laboratory produced breakthroughs in recorded sound and electric lighting.",
+          "This American inventor developed the phonograph and a practical incandescent light bulb."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Pittsburgh",
+        "hints": [
+          "This place transformed from a smoky industrial powerhouse into a modern center for technology and medicine.",
+          "This Pennsylvania city was once the heart of the American steel industry.",
+          "Nicknamed the 'Steel City', this Pennsylvania city is now a hub for robotics and healthcare technology."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Spotify",
+        "hints": [
+          "This product changed how an entire generation discovers and listens to music.",
+          "This streaming service offers millions of songs and podcasts for a monthly subscription.",
+          "Founded in Sweden, this app streams music and podcasts to listeners worldwide."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-12-02",
+    "theme": "Wildcard",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Confucius",
+        "hints": [
+          "This individual's teachings on ethics and relationships shaped an entire region's culture for millennia.",
+          "This philosopher's sayings were collected by followers into a widely studied text.",
+          "This ancient Chinese philosopher's teachings were compiled in 'The Analects'."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Kyoto",
+        "hints": [
+          "This place was spared from a devastating wartime attack specifically to preserve its cultural heritage.",
+          "This former imperial capital is dotted with traditional wooden temples and bamboo groves.",
+          "This former capital of Japan is home to thousands of Buddhist temples and Shinto shrines."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Umbrella",
+        "hints": [
+          "This item only gets attention on the one day people actually need it.",
+          "This handheld object opens into a protective canopy to shield against rain or sun.",
+          "This foldable, canopy-shaped object is carried to stay dry in the rain."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-12-03",
+    "theme": "History",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Pocahontas",
+        "hints": [
+          "This individual's life became the subject of legend, often overshadowing the historical reality.",
+          "This Indigenous woman served as an intermediary between her people and English settlers.",
+          "This daughter of Powhatan chief Wahunsenacawh helped maintain peace with Jamestown's early colonists."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Babylon",
+        "hints": [
+          "This place was renowned in the ancient world for its wealth and architectural ambition.",
+          "This Mesopotamian city was said to feature legendary hanging gardens.",
+          "Ruled by Hammurabi and later Nebuchadnezzar, this ancient city sat along the Euphrates River."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Guillotine",
+        "hints": [
+          "This device was intended as a swifter, more 'humane' method of carrying out a grim task.",
+          "This mechanical device uses a heavy angled blade dropped from a height.",
+          "This execution device became infamous during the French Revolution's Reign of Terror."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-12-04",
+    "theme": "Pop Culture",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Homer Simpson",
+        "hints": [
+          "This figure works at a power plant and frequently makes questionable decisions for comedic effect.",
+          "This cartoon father is known for his love of donuts and his catchphrase of exasperation.",
+          "This bumbling patriarch of a long-running animated sitcom works at a nuclear plant and loves donuts."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Bollywood",
+        "hints": [
+          "This place produces more films each year than almost anywhere else on the planet.",
+          "This nickname refers to a massive film industry known for elaborate musical numbers.",
+          "Centered in Mumbai, this Hindi-language film industry produces thousands of movies a year."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Transformers",
+        "hints": [
+          "This creation features ordinary-looking machines hiding an extraordinary secret.",
+          "This franchise centers on robots that disguise themselves as everyday vehicles.",
+          "This toy and film franchise features robots like Optimus Prime that transform into vehicles."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-12-05",
+    "theme": "Science & Nature",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Jacques Cousteau",
+        "hints": [
+          "This individual brought a hidden world to audiences who had never seen it before.",
+          "This explorer co-invented early scuba equipment and filmed documentaries beneath the waves.",
+          "This French explorer co-invented the Aqua-Lung and hosted 'The Undersea World'."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Europa",
+        "hints": [
+          "This place is hidden beneath a thick, icy shell that scientists have never drilled through.",
+          "This icy moon may hide a vast ocean of liquid water beneath its frozen surface.",
+          "This moon of Jupiter is considered one of the solar system's most promising places to search for life."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Pancreas",
+        "hints": [
+          "This part works quietly behind the scenes, and most people only notice it when something goes wrong.",
+          "This organ regulates blood sugar by producing insulin and also aids digestion.",
+          "This abdominal organ produces insulin and digestive enzymes."
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-12-06",
+    "theme": "Sports & Games",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Wayne Gretzky",
+        "hints": [
+          "This athlete's scoring records in his sport have stood for decades without a serious challenger.",
+          "This player's uncanny vision on the rink earned him a nickname referencing his extraordinary skill.",
+          "Nicknamed 'The Great One', this Canadian holds nearly every major scoring record in hockey."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Monaco",
+        "hints": [
+          "This place packs incredible wealth and glamour into one of the smallest territories on Earth.",
+          "This tiny European principality hosts a famous casino and a street race through its city center.",
+          "This microstate on the French Riviera hosts a prestigious Formula One race through its narrow streets."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Overtime",
+        "hints": [
+          "This period only happens when neither side could be separated after regular play.",
+          "This extra period of play is used to break a tie when a game ends level.",
+          "In sports like hockey and football, this sudden-death extra period follows a tied regulation game."
+        ]
+      }
+    ]
   }
 ]
