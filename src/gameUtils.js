@@ -117,6 +117,16 @@ export function getRoundResults(result) {
   return [{ won: result.won, hints: result.hints }];
 }
 
+// Results record how many rounds the day had (`total`); results saved before
+// that field existed were single-round. A result whose round count no longer
+// matches the day (a single-round day later replaced by a three-round one) is
+// ignored rather than shown as partial progress.
+export function getSavedRounds(result, total) {
+  if (!result) return [];
+  const savedTotal = result.total === undefined ? 1 : result.total;
+  return savedTotal === total ? getRoundResults(result).slice(0, total) : [];
+}
+
 // The streak continues when at least two thirds of the rounds are solved
 // (1 of 1 for legacy days, 2 of 3 for three-round days).
 export function streakQualifies(roundResults) {

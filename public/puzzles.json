@@ -1171,12 +1171,35 @@
   },
   {
     "date": "2026-10-07",
-    "theme": "Around the World",
-    "answer": "Amazon River",
-    "hints": [
-      "This waterway carries more flow than the next seven largest combined and has no bridges spanning its main course.",
-      "It begins in the Andes and crosses a continent, draining a basin that holds the world's largest tropical forest.",
-      "It empties into the Atlantic on the northern coast of Brazil after passing through Peru and Colombia."
+    "theme": "Wildcard",
+    "rounds": [
+      {
+        "type": "person",
+        "answer": "Charlie Chaplin",
+        "hints": [
+          "This individual's work made audiences around the world laugh and cry without the help of spoken dialogue.",
+          "A baggy-trousered, bowler-hatted character with a toothbrush mustache and a cane made this performer instantly recognizable in the 1910s and 1920s.",
+          "This British filmmaker starred in 'The Kid' and 'Modern Times' as the Little Tramp."
+        ]
+      },
+      {
+        "type": "place",
+        "answer": "Cappadocia",
+        "hints": [
+          "This place is famous for a dramatic landscape shaped over millions of years by volcanoes and wind.",
+          "People here carved homes, churches, and even entire underground cities into soft rock formations known as fairy chimneys.",
+          "Hot air balloons fill the sky at dawn over this region of central Turkey."
+        ]
+      },
+      {
+        "type": "thing",
+        "answer": "Pretzel",
+        "hints": [
+          "This snack comes in a shape that is recognizable even from a simple outline.",
+          "Dough is briefly dipped in an alkaline solution before baking, which gives it a dark, glossy crust.",
+          "This salty, knot-shaped snack is popular at German beer gardens and ballparks, often served with mustard."
+        ]
+      }
     ]
   },
   {

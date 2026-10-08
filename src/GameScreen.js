@@ -7,8 +7,8 @@ import {
   formatDateForDisplay,
   formatDuration,
   getArchiveResult,
-  getRoundResults,
   getRounds,
+  getSavedRounds,
   getTimeUntilTomorrow,
   isMobile,
   isTripleGold,
@@ -42,7 +42,7 @@ export default function GameScreen({
 
   // Today's progress survives a reload; archive replays always start fresh.
   const [initialResults] = useState(() =>
-    isToday ? getRoundResults(getArchiveResult(puzzle.date)).slice(0, total) : []
+    isToday ? getSavedRounds(getArchiveResult(puzzle.date), total) : []
   );
   const resumedComplete = initialResults.length >= total;
 
@@ -79,7 +79,7 @@ export default function GameScreen({
     // Today saves after every round so a reload resumes; archive replays only
     // save once the whole day is finished.
     if (isToday || next.length === total) {
-      saveArchiveResult(puzzle.date, { rounds: next });
+      saveArchiveResult(puzzle.date, { rounds: next, total });
     }
     if (next.length === total && isToday && onGameOver) {
       onGameOver(streakQualifies(next));

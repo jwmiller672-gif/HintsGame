@@ -3,14 +3,14 @@ import Stars from "./Stars";
 import {
   formatDateForDisplay,
   getArchiveResult,
-  getRoundResults,
   getRounds,
+  getSavedRounds,
   isTripleGold,
 } from "./gameUtils";
 
 function resultBadge(puzzle, result) {
   const total = getRounds(puzzle).length;
-  const played = getRoundResults(result);
+  const played = getSavedRounds(result, total);
   if (played.length === 0) {
     return { content: "Not played", color: "#90a4ae" };
   }
